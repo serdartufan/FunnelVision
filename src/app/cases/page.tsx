@@ -1,62 +1,88 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import { cases } from '@/data/content';
 
 export const metadata: Metadata = {
-  title: 'Cases',
-  description: 'Bekijk de resultaten die FunnelVision behaalt voor haar klanten. Van beauty salons tot webshops.',
+  title: 'Cases & Resultaten — FunnelVision Marketing Bureau',
+  description:
+    'Bekijk de resultaten die FunnelVision heeft behaald voor Nederlandse ondernemers via Meta ads, Google Ads en e-mailmarketing.',
 };
 
 export default function CasesPage() {
   return (
     <>
-      <section className="bg-[#4A4A4A] pb-20 pt-36">
-        <div className="mx-auto max-w-7xl px-4 md:px-8">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-[#F5A623]">Bewezen resultaten</p>
-          <h1 className="font-bold text-white" style={{fontSize: 'clamp(2rem, 5vw, 4rem)'}}>Onze cases</h1>
-          <p className="mt-6 max-w-lg text-lg text-white/70">
-            Cijfers liegen niet. Bekijk wat we voor andere bedrijven hebben bereikt.
+      {/* Hero */}
+      <section className="bg-[#1A1A1A] pt-36 pb-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <span className="text-xs font-semibold text-[#F5A623] uppercase tracking-widest block mb-4">Cases</span>
+          <h1
+            className="text-4xl lg:text-6xl font-bold text-white leading-tight"
+            style={{ fontFamily: 'var(--font-playfair)' }}
+          >
+            Resultaten die <em className="italic text-[#F5A623]">spreken.</em>
+          </h1>
+          <p className="mt-6 text-lg text-gray-400 max-w-xl leading-relaxed">
+            Geen mooie praatjes, maar harde cijfers. Bekijk wat FunnelVision heeft bereikt voor ondernemers zoals jij.
           </p>
         </div>
       </section>
 
-      <section className="bg-[#F8F8F8] py-24">
-        <div className="mx-auto max-w-7xl px-4 md:px-8">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {/* Cases grid */}
+      <section className="bg-[#F5F2EB] py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {cases.map((c) => (
-              <div key={c.id} className="overflow-hidden rounded-2xl bg-white shadow-sm transition-shadow hover:shadow-md">
-                <div className="relative h-56">
-                  <Image src={c.img} alt={c.bedrijf} fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between">
-                    <span className="rounded-full bg-[#F5A623] px-3 py-1 text-xs font-semibold text-white">
-                      {c.branche}
-                    </span>
-                    <span className="rounded-full bg-white/20 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
-                      {c.dienst}
-                    </span>
+              <article key={c.id} className="group rounded-2xl overflow-hidden bg-white">
+                <div className="relative h-52 overflow-hidden">
+                  <Image
+                    src={c.unsplash}
+                    alt={c.unsplashAlt}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-7">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-xs font-semibold text-[#F5A623] uppercase tracking-wider">{c.branch}</span>
+                    <span className="text-xs text-gray-400 bg-[#F5F2EB] px-2 py-1 rounded-full">{c.service}</span>
                   </div>
+                  <h2 className="font-bold text-lg text-[#3D3D3D] mb-3" style={{ fontFamily: 'var(--font-playfair)' }}>
+                    {c.company}
+                  </h2>
+                  <p
+                    className="text-5xl font-bold text-[#3D3D3D] mb-1"
+                    style={{ fontFamily: 'var(--font-playfair)' }}
+                  >
+                    {c.result}
+                  </p>
+                  <p className="text-sm font-medium text-[#F5A623] mb-4">{c.metric}</p>
+                  <p className="text-sm text-gray-500 leading-relaxed">{c.description}</p>
                 </div>
-                <div className="p-6">
-                  <p className="mb-1 text-xs font-medium text-[#4A4A4A]/50">{c.bedrijf}</p>
-                  <p className="mb-1 text-2xl font-bold text-[#4A4A4A]">{c.resultaat}</p>
-                  <p className="mb-3 text-xs text-[#F5A623]">in {c.periode}</p>
-                  <p className="text-sm leading-relaxed text-[#4A4A4A]/65">{c.beschrijving}</p>
-                </div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="bg-[#4A4A4A] py-20 text-center">
-        <div className="mx-auto max-w-xl px-4">
-          <h2 className="mb-4 text-3xl font-bold text-white">Jouw bedrijf als volgende case?</h2>
-          <p className="mb-8 text-white/70">Plan een kennismakingsgesprek en we laten zien wat er mogelijk is voor jouw situatie.</p>
-          <a href="/contact" className="inline-block rounded-full bg-[#F5A623] px-8 py-4 text-sm font-semibold text-white transition-opacity hover:opacity-90">
-            Ja, ik wil groeien
-          </a>
+      <section className="bg-[#1A1A1A] py-24">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
+          <h2
+            className="text-3xl lg:text-4xl font-bold text-white mb-6"
+            style={{ fontFamily: 'var(--font-playfair)' }}
+          >
+            Jouw bedrijf hier? <em className="italic text-[#F5A623]">Laten we praten.</em>
+          </h2>
+          <p className="text-gray-400 mb-8">
+            Plan een gratis kennismakingsgesprek en ontdek hoe wij jouw cijfers kunnen verbeteren.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 bg-[#F5A623] text-white font-bold px-8 py-4 rounded-full hover:bg-[#e09520] transition-colors"
+          >
+            Gratis kennismaken
+          </Link>
         </div>
       </section>
     </>

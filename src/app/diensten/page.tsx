@@ -1,72 +1,94 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { diensten } from '@/data/content';
+import { services } from '@/data/content';
 
 export const metadata: Metadata = {
-  title: 'Diensten',
-  description: 'Meta Ads, Google Ads, e-mailmarketing en websitebouw door FunnelVision. Ontdek hoe wij jouw bedrijf laten groeien.',
+  title: 'Onze Diensten — FunnelVision Marketing Bureau',
+  description:
+    'Meta advertenties, Google Ads, e-mailmarketing en website bouwen. Ontdek hoe FunnelVision jouw bedrijf laat groeien.',
 };
 
 export default function DienstenPage() {
   return (
     <>
-      <section className="bg-[#4A4A4A] pb-20 pt-36">
-        <div className="mx-auto max-w-7xl px-4 md:px-8">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-[#F5A623]">Wat wij doen</p>
-          <h1 className="max-w-xl font-bold text-white" style={{fontSize: 'clamp(2rem, 5vw, 4rem)'}}>
-            Onze diensten
+      {/* Hero */}
+      <section className="bg-[#1A1A1A] pt-36 pb-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <span className="text-xs font-semibold text-[#F5A623] uppercase tracking-widest block mb-4">Diensten</span>
+          <h1
+            className="text-4xl lg:text-6xl font-bold text-white leading-tight"
+            style={{ fontFamily: 'var(--font-playfair)' }}
+          >
+            Wat we <em className="italic text-[#F5A623]">voor je doen.</em>
           </h1>
-          <p className="mt-6 max-w-lg text-lg text-white/70">
-            Van advertenties tot websites &mdash; alles wat je nodig hebt om online te groeien.
+          <p className="mt-6 text-lg text-gray-400 max-w-xl leading-relaxed">
+            Van advertenties tot websites — alles gericht op één doel: meer omzet voor jouw bedrijf.
           </p>
         </div>
       </section>
 
-      <section className="bg-white py-24">
-        <div className="mx-auto max-w-7xl px-4 md:px-8">
-          <div className="space-y-32">
-            {diensten.map((d, i) => (
-              <div
-                key={d.id}
-                className={`grid grid-cols-1 items-center gap-16 md:grid-cols-2 ${i % 2 === 1 ? 'md:[&>*:first-child]:order-2' : ''}`}
-              >
-                <div className="relative h-80 overflow-hidden rounded-3xl md:h-[420px]">
-                  <Image src={d.img} alt={d.titel} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
-                </div>
-                <div>
-                  <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-[#F5A623]">{d.subtitel}</p>
-                  <h2 className="mb-5 text-4xl font-bold text-[#4A4A4A]">{d.titel}</h2>
-                  <p className="mb-8 leading-relaxed text-[#4A4A4A]/70">{d.beschrijving}</p>
-                  <ul className="space-y-3">
-                    {d.punten.map((punt) => (
-                      <li key={punt} className="flex items-center gap-3 text-[#4A4A4A]/80">
-                        <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-[#F5A623]/20">
-                          <svg className="h-3 w-3 text-[#F5A623]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                          </svg>
-                        </span>
-                        {punt}
-                      </li>
-                    ))}
-                  </ul>
-                  <Link href="/contact" className="mt-10 inline-block rounded-full bg-[#F5A623] px-8 py-3.5 text-sm font-semibold text-white transition-opacity hover:opacity-90">
-                    Vraag een gratis adviesgesprek aan
-                  </Link>
-                </div>
+      {/* Diensten afwisselend */}
+      <section className="bg-[#F5F2EB] py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 space-y-24">
+          {services.map((service, i) => (
+            <article
+              key={service.slug}
+              className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+                i % 2 === 1 ? 'lg:[direction:rtl]' : ''
+              }`}
+            >
+              <div className={i % 2 === 1 ? 'lg:[direction:ltr]' : ''}>
+                <span className="text-xs font-semibold text-[#F5A623] uppercase tracking-widest block mb-4">
+                  {service.number} · {service.subtitle}
+                </span>
+                <h2
+                  className="text-3xl lg:text-4xl font-bold text-[#3D3D3D] mb-5"
+                  style={{ fontFamily: 'var(--font-playfair)' }}
+                >
+                  {service.title}
+                </h2>
+                <p className="text-gray-500 leading-relaxed mb-8">{service.description}</p>
+                <ul className="space-y-3 mb-10">
+                  {service.bullets.map((b) => (
+                    <li key={b} className="flex items-start gap-3 text-sm text-[#3D3D3D]">
+                      <span className="text-[#F5A623] mt-0.5 shrink-0">✓</span>
+                      {b}
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href={`/diensten/${service.slug}`}
+                  className="inline-flex items-center gap-2 bg-[#F5A623] text-white font-semibold px-6 py-3 rounded-full hover:bg-[#e09520] transition-colors"
+                >
+                  Meer over {service.title} →
+                </Link>
               </div>
-            ))}
-          </div>
+              <div className={`relative h-80 lg:h-96 rounded-2xl overflow-hidden ${i % 2 === 1 ? 'lg:[direction:ltr]' : ''}`}>
+                <Image src={service.unsplash} alt={service.unsplashAlt} fill className="object-cover" />
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
       {/* CTA */}
-      <section className="bg-[#F8F8F8] py-20 text-center">
-        <div className="mx-auto max-w-xl px-4">
-          <h2 className="mb-4 text-3xl font-bold text-[#4A4A4A]">Nog niet zeker welke dienst past?</h2>
-          <p className="mb-8 text-[#4A4A4A]/70">Neem contact op en we kijken samen wat het beste bij jouw situatie past.</p>
-          <Link href="/contact" className="inline-block rounded-full bg-[#4A4A4A] px-8 py-4 text-sm font-semibold text-white transition-opacity hover:opacity-80">
-            Neem contact op
+      <section className="bg-[#1A1A1A] py-24">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
+          <h2
+            className="text-3xl lg:text-4xl font-bold text-white mb-6"
+            style={{ fontFamily: 'var(--font-playfair)' }}
+          >
+            Niet zeker welke dienst <em className="italic text-[#F5A623]">bij jou past?</em>
+          </h2>
+          <p className="text-gray-400 mb-8">
+            Plan een gratis gesprek en we kijken samen wat het meeste resultaat oplevert voor jouw bedrijf.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 bg-[#F5A623] text-white font-bold px-8 py-4 rounded-full hover:bg-[#e09520] transition-colors"
+          >
+            Gratis kennismaken
           </Link>
         </div>
       </section>

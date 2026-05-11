@@ -1,110 +1,175 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { images } from '@/data/content';
+import { team } from '@/data/content';
 
 export const metadata: Metadata = {
-  title: 'Over Ons',
-  description: 'Leer Serdar en Dogukan kennen — de twee broers achter FunnelVision, het resultaatgerichte marketingbureau voor het MKB.',
+  title: 'Over Ons — Marketing Bureau Den Haag | FunnelVision',
+  description:
+    'Maak kennis met Serdar en Dogukan, de drijvende krachten achter FunnelVision. Resultaatgericht, persoonlijk en transparant.',
 };
 
-const aanpak = [
-  { icon: '🤝', titel: 'Geen contracten', tekst: 'Wij geloven in resultaten. Geen langlopende contracten, gewoon maand-tot-maand.' },
-  { icon: '📈', titel: 'Resultaatgericht', tekst: 'Elke euro die je investeert moet terugverdiend worden. Dat is onze belofte.' },
-  { icon: '📞', titel: 'Persoonlijk contact', tekst: 'Geen accountmanagers of tussenpersonen. Je werkt altijd direct met Serdar of Dogukan.' },
-  { icon: '🇳🇱', titel: 'MKB-specialist', tekst: 'We begrijpen het Nederlandse MKB en weten wat werkt voor bedrijven zoals dat van jou.' },
+const milestones = [
+  { year: '2023', event: 'FunnelVision opgericht. Eerste klanten via Meta Ads.' },
+  { year: '2024', event: 'Team uitgebreid met Google Ads expertise. 25+ actieve klanten.' },
+  { year: '2025', event: '€2M+ beheerd advertentiebudget. 50+ bedrijven geholpen.' },
+  { year: '2026', event: 'Uitbreiding naar e-mailmarketing en websitebouw diensten.' },
 ];
 
 export default function OverOnsPage() {
   return (
     <>
-      <section className="bg-[#4A4A4A] pb-20 pt-36">
-        <div className="mx-auto max-w-7xl px-4 md:px-8">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-[#F5A623]">Het team</p>
-          <h1 className="font-bold text-white" style={{fontSize: 'clamp(2rem, 5vw, 4rem)'}}>
-            Twee broers.<br />Één missie.
+      {/* Hero */}
+      <section className="bg-[#1A1A1A] pt-36 pb-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <span className="text-xs font-semibold text-[#F5A623] uppercase tracking-widest block mb-4">Over ons</span>
+          <h1
+            className="text-4xl lg:text-6xl font-bold text-white leading-tight"
+            style={{ fontFamily: 'var(--font-playfair)' }}
+          >
+            Twee broers. <em className="italic text-[#F5A623]">Één missie.</em>
           </h1>
-          <p className="mt-6 max-w-lg text-lg text-white/70">
-            FunnelVision is opgericht door Serdar en Dogukan met één doel: Nederlandse MKB-bedrijven laten groeien met eerlijke, resultaatgerichte marketing.
+          <p className="mt-6 text-lg text-gray-400 max-w-xl leading-relaxed">
+            FunnelVision is opgericht door Serdar en Dogukan — twee specialisten die geloven dat marketing meetbaar,
+            transparant en eerlijk moet zijn.
           </p>
         </div>
       </section>
 
-      {/* Team members */}
-      <section className="bg-white py-24">
-        <div className="mx-auto max-w-7xl px-4 md:px-8">
-          <div className="grid grid-cols-1 gap-20 md:grid-cols-2">
-            {/* Serdar */}
-            <div>
-              <div className="relative mb-8 h-[420px] overflow-hidden rounded-3xl">
-                <Image src={images.serdar} alt="Serdar — oprichter FunnelVision" fill className="object-cover object-top" sizes="(max-width: 768px) 100vw, 50vw" />
-              </div>
-              <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-[#F5A623]">Oprichter &amp; Meta Specialist</p>
-              <h2 className="mb-4 text-3xl font-bold text-[#4A4A4A]">Serdar</h2>
-              <p className="leading-relaxed text-[#4A4A4A]/70">
-                Serdar is gespecialiseerd in Meta Ads en het bouwen van winstgevende marketing funnels. Met jarenlange ervaring in het helpen van MKB-bedrijven weet hij precies hoe je koude doelgroepen omzet in betalende klanten.
-              </p>
-              <p className="mt-4 leading-relaxed text-[#4A4A4A]/70">
-                Zijn aanpak: data-gedreven, creatief en altijd gericht op meetbaar resultaat.
-              </p>
-            </div>
-
-            {/* Dogukan */}
-            <div>
-              <div className="relative mb-8 h-[420px] overflow-hidden rounded-3xl">
-                <Image src={images.dogukan} alt="Dogukan — Google Ads specialist FunnelVision" fill className="object-cover object-top" sizes="(max-width: 768px) 100vw, 50vw" />
-              </div>
-              <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-[#F5A623]">Google Ads Specialist</p>
-              <h2 className="mb-4 text-3xl font-bold text-[#4A4A4A]">Dogukan</h2>
-              <p className="leading-relaxed text-[#4A4A4A]/70">
-                Dogukan is de Google Ads expert van het duo. Van zoekadvertenties tot shopping campagnes &mdash; hij zorgt ervoor dat jij zichtbaar bent op het moment dat je potenti&euml;le klanten zoeken.
-              </p>
-              <p className="mt-4 leading-relaxed text-[#4A4A4A]/70">
-                Zijn kracht: technische precisie gecombineerd met een scherp oog voor conversie-optimalisatie.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Aanpak */}
-      <section className="bg-[#F8F8F8] py-24">
-        <div className="mx-auto max-w-7xl px-4 md:px-8">
-          <div className="mb-14 text-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-[#F5A623]">Waarom FunnelVision</p>
-            <h2 className="text-4xl font-bold text-[#4A4A4A]">Onze aanpak</h2>
-          </div>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {aanpak.map((item) => (
-              <div key={item.titel} className="rounded-2xl bg-white p-8 shadow-sm">
-                <div className="mb-4 text-4xl">{item.icon}</div>
-                <h3 className="mb-3 text-lg font-bold text-[#4A4A4A]">{item.titel}</h3>
-                <p className="text-sm leading-relaxed text-[#4A4A4A]/65">{item.tekst}</p>
-              </div>
+      {/* Team */}
+      <section className="bg-[#F5F2EB] py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {team.map((member, i) => (
+              <article key={member.name} className="bg-white rounded-2xl overflow-hidden">
+                <div className="relative h-72">
+                  <Image
+                    src={member.unsplash}
+                    alt={member.unsplashAlt}
+                    fill
+                    className="object-cover object-top"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className="absolute bottom-6 left-6">
+                    <h2 className="text-2xl font-bold text-white" style={{ fontFamily: 'var(--font-playfair)' }}>
+                      {member.name}
+                    </h2>
+                    <p className="text-[#F5A623] font-medium text-sm mt-1">{member.role}</p>
+                  </div>
+                  {i === 0 && (
+                    <div className="absolute top-4 right-4 bg-[#F5A623] text-white text-xs font-bold px-3 py-1 rounded-full">
+                      Oprichter
+                    </div>
+                  )}
+                </div>
+                <div className="p-8">
+                  <p className="text-gray-500 leading-relaxed mb-6">{member.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {member.expertise.map((tag) => (
+                      <span
+                        key={tag}
+                        className="text-xs bg-[#F5F2EB] text-[#3D3D3D] px-3 py-1.5 rounded-full font-medium"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Office/vibe image */}
-      <section className="relative h-80 md:h-[480px]">
-        <Image src={images.office} alt="FunnelVision kantoor" fill className="object-cover" sizes="100vw" />
-        <div className="absolute inset-0 bg-[#4A4A4A]/60" />
-        <div className="relative z-10 flex h-full items-center justify-center text-center">
-          <div>
-            <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-[#F5A623]">Den Haag</p>
-            <p className="text-3xl font-bold text-white md:text-4xl">Wij werken voor heel Nederland</p>
+      {/* Aanpak */}
+      <section className="bg-white py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <h2
+              className="text-3xl lg:text-4xl font-bold text-[#3D3D3D] mb-8"
+              style={{ fontFamily: 'var(--font-playfair)' }}
+            >
+              Onze <em className="italic text-[#F5A623]">aanpak.</em>
+            </h2>
+            <div className="space-y-8">
+              {[
+                {
+                  title: 'Persoonlijk',
+                  desc: 'Geen accountmanager die je doorschuift. Je werkt direct met Serdar of Dogukan — de specialist die jouw campagnes bouwt en beheert.',
+                },
+                {
+                  title: 'Transparant',
+                  desc: 'Je krijgt maandelijks een helder rapport met alle cijfers. We leggen uit wat werkt, wat niet, en wat we gaan aanpassen.',
+                },
+                {
+                  title: 'Resultaatgericht',
+                  desc: 'Alles draait om jouw groei. We kijken niet naar likes of bereik, maar naar leads, omzet en rendement op jouw investering.',
+                },
+              ].map((item) => (
+                <div key={item.title} className="flex gap-6 items-start">
+                  <div className="w-10 h-10 rounded-full bg-[#F5A623] flex items-center justify-center shrink-0 mt-1">
+                    <div className="w-2 h-2 rounded-full bg-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg text-[#3D3D3D] mb-2" style={{ fontFamily: 'var(--font-playfair)' }}>
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-500 leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Tijdlijn */}
+      <section className="bg-[#F5F2EB] py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2
+            className="text-3xl lg:text-4xl font-bold text-[#3D3D3D] mb-16"
+            style={{ fontFamily: 'var(--font-playfair)' }}
+          >
+            Onze <em className="italic text-[#F5A623]">mijlpalen.</em>
+          </h2>
+          <div className="relative">
+            <div className="absolute left-5 top-0 bottom-0 w-px bg-[#F5A623]/30 hidden md:block" />
+            <div className="space-y-10">
+              {milestones.map((m) => (
+                <div key={m.year} className="flex gap-8 items-start">
+                  <div className="relative flex flex-col items-center hidden md:flex">
+                    <div className="w-10 h-10 rounded-full bg-[#F5A623] flex items-center justify-center text-white text-xs font-bold shrink-0">
+                      {m.year.slice(2)}
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-xl p-6 flex-1">
+                    <span className="text-xs font-semibold text-[#F5A623] block mb-2">{m.year}</span>
+                    <p className="text-[#3D3D3D] font-medium">{m.event}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="bg-white py-20 text-center">
-        <div className="mx-auto max-w-xl px-4">
-          <h2 className="mb-4 text-3xl font-bold text-[#4A4A4A]">Maak kennis met ons</h2>
-          <p className="mb-8 text-[#4A4A4A]/70">Een gratis kennismakingsgesprek kost je niets en levert je altijd iets op.</p>
-          <Link href="/contact" className="inline-block rounded-full bg-[#F5A623] px-10 py-4 text-sm font-semibold text-white transition-opacity hover:opacity-90">
-            Plan een kennismakingsgesprek
+      <section className="bg-[#1A1A1A] py-24">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
+          <h2
+            className="text-3xl lg:text-4xl font-bold text-white mb-6"
+            style={{ fontFamily: 'var(--font-playfair)' }}
+          >
+            Klaar om samen te <em className="italic text-[#F5A623]">groeien?</em>
+          </h2>
+          <p className="text-gray-400 mb-8">
+            Plan een vrijblijvend kennismakingsgesprek met Serdar of Dogukan.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 bg-[#F5A623] text-white font-bold px-8 py-4 rounded-full hover:bg-[#e09520] transition-colors"
+          >
+            Gratis kennismaken
           </Link>
         </div>
       </section>

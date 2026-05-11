@@ -1,67 +1,86 @@
 import type { Metadata } from 'next';
+import { siteConfig } from '@/data/content';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Contact',
-  description: 'Neem contact op met FunnelVision voor een gratis kennismakingsgesprek. Wij reageren binnen één werkdag.',
+  title: 'Contact — FunnelVision Marketing Bureau',
+  description:
+    'Plan een gratis kennismakingsgesprek met FunnelVision. We kijken samen wat Meta ads, Google Ads of e-mailmarketing voor jouw bedrijf kan betekenen.',
 };
 
 export default function ContactPage() {
   return (
     <>
-      <section className="bg-[#4A4A4A] pb-20 pt-36">
-        <div className="mx-auto max-w-7xl px-4 md:px-8">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-[#F5A623]">Neem contact op</p>
-          <h1 className="font-bold text-white" style={{fontSize: 'clamp(2rem, 5vw, 4rem)'}}>
-            Gratis kennismaken
+      {/* Hero */}
+      <section className="bg-[#1A1A1A] pt-36 pb-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <span className="text-xs font-semibold text-[#F5A623] uppercase tracking-widest block mb-4">Contact</span>
+          <h1
+            className="text-4xl lg:text-6xl font-bold text-white leading-tight"
+            style={{ fontFamily: 'var(--font-playfair)' }}
+          >
+            Laten we <em className="italic text-[#F5A623]">kennismaken.</em>
           </h1>
-          <p className="mt-6 max-w-lg text-lg text-white/70">
-            Vertel ons over jouw bedrijf en doelen. We nemen binnen één werkdag contact op.
+          <p className="mt-6 text-lg text-gray-400 max-w-xl leading-relaxed">
+            Plan een vrijblijvend gesprek van 20 minuten. We kijken samen wat FunnelVision voor jouw bedrijf kan
+            betekenen.
           </p>
         </div>
       </section>
 
-      <section className="bg-[#F8F8F8] py-24">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-16 px-4 md:grid-cols-2 md:px-8">
-          {/* Contact info */}
-          <div>
-            <h2 className="mb-8 text-2xl font-bold text-[#4A4A4A]">Direct contact</h2>
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#F5A623]/20 text-lg">
-                  ✉️
-                </div>
+      {/* Form + contact info */}
+      <section className="bg-[#F5F2EB] py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+            {/* Contact info */}
+            <div>
+              <h2
+                className="text-2xl font-bold text-[#3D3D3D] mb-8"
+                style={{ fontFamily: 'var(--font-playfair)' }}
+              >
+                Direct contact
+              </h2>
+              <div className="space-y-6">
                 <div>
-                  <p className="text-sm font-semibold text-[#4A4A4A]">E-mail</p>
-                  <a href="mailto:serdar@funnelvisionagency.com" className="text-sm text-[#F5A623]">
-                    serdar@funnelvisionagency.com
+                  <p className="text-xs font-semibold text-[#F5A623] uppercase tracking-wider mb-2">E-mail</p>
+                  <a
+                    href={`mailto:${siteConfig.email}`}
+                    className="text-[#3D3D3D] hover:text-[#F5A623] transition-colors"
+                  >
+                    {siteConfig.email}
                   </a>
                 </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#F5A623]/20 text-lg">
-                  ⏱️
+                <div>
+                  <p className="text-xs font-semibold text-[#F5A623] uppercase tracking-wider mb-2">Reactietijd</p>
+                  <p className="text-[#3D3D3D]">Binnen 24 uur op werkdagen</p>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-[#4A4A4A]">Reactietijd</p>
-                  <p className="text-sm text-[#4A4A4A]/70">Binnen één werkdag</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[#F5A623]/20 text-lg">
-                  🆓
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-[#4A4A4A]">Kennismakingsgesprek</p>
-                  <p className="text-sm text-[#4A4A4A]/70">Altijd gratis en vrijblijvend</p>
+                  <p className="text-xs font-semibold text-[#F5A623] uppercase tracking-wider mb-3">Volg ons</p>
+                  <div className="flex gap-4">
+                    {[
+                      { href: siteConfig.instagram, label: 'Instagram' },
+                      { href: siteConfig.linkedin, label: 'LinkedIn' },
+                      { href: siteConfig.facebook, label: 'Facebook' },
+                    ].map((s) => (
+                      <a
+                        key={s.label}
+                        href={s.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-[#3D3D3D] hover:text-[#F5A623] transition-colors font-medium"
+                      >
+                        {s.label}
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Form */}
-          <div className="rounded-3xl bg-white p-8 shadow-sm md:p-10">
-            <ContactForm />
+            {/* Form */}
+            <div className="lg:col-span-2">
+              <ContactForm />
+            </div>
           </div>
         </div>
       </section>
