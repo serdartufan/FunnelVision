@@ -4,6 +4,8 @@ import { useState } from 'react';
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     naam: '',
     bedrijf: '',
@@ -17,9 +19,25 @@ export default function ContactForm() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError(false);
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+
+      if (!res.ok) throw new Error('Send failed');
+      setSubmitted(true);
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   }
 
   if (submitted) {
@@ -121,6 +139,7 @@ export default function ContactForm() {
           <option value="google">Google Ads</option>
           <option value="email">E-mailmarketing</option>
           <option value="website">Website Bouwen</option>
+          <option value="linkedin">LinkedIn Advertising</option>
           <option value="anders">Ik weet het nog niet</option>
         </select>
       </div>
@@ -138,11 +157,20 @@ export default function ContactForm() {
           placeholder="Wat doe je, wat is je doel, en wat loopt er nu nog niet zoals je wilt?"
         />
       </div>
+      {error && (
+        <p className="text-sm text-red-500 text-center">
+          Er ging iets mis, probeer het opnieuw of mail ons direct op{' '}
+          <a href="mailto:serdar@funnelvisionagency.com" className="underline">
+            serdar@funnelvisionagency.com
+          </a>.
+        </p>
+      )}
       <button
         type="submit"
-        className="w-full bg-[#F5A623] text-white font-bold py-4 rounded-full hover:bg-[#e09520] transition-colors text-lg"
+        disabled={loading}
+        className="w-full bg-[#F5A623] text-white font-bold py-4 rounded-full hover:bg-[#e09520] transition-colors text-lg disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        Verstuur bericht
+        {loading ? 'Bezig met verzenden…' : 'Verstuur bericht'}
       </button>
       <p className="text-xs text-gray-400 text-center">
         We reageren binnen 24 uur op werkdagen. Geen spam, nooit.

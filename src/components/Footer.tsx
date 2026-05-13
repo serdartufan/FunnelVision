@@ -64,6 +64,7 @@ export default function Footer() {
                 { href: '/diensten/google-ads', label: 'Google Ads' },
                 { href: '/diensten/emailmarketing', label: 'E-mailmarketing' },
                 { href: '/diensten/website-bouwen', label: 'Website Bouwen' },
+                { href: '/diensten/linkedin-advertising', label: 'LinkedIn Advertising' },
               ].map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} className="text-sm text-gray-400 hover:text-[#F5A623] transition-colors">
@@ -120,7 +121,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-500">© 2026 FunnelVision. Alle rechten voorbehouden.</p>
           <div className="flex gap-6">
-            <Link href="/privacybeleid" className="text-sm text-gray-500 hover:text-[#F5A623] transition-colors">
+            <Link href="/privacy-policy" className="text-sm text-gray-500 hover:text-[#F5A623] transition-colors">
               Privacybeleid
             </Link>
             <Link href="/algemene-voorwaarden" className="text-sm text-gray-500 hover:text-[#F5A623] transition-colors">

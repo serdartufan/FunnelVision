@@ -11,7 +11,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/diensten/google-ads`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/diensten/emailmarketing`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/diensten/website-bouwen`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/diensten/linkedin-advertising`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/cases`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/privacy-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${base}/algemene-voorwaarden`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${base}/over-ons`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/contact`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
   ];

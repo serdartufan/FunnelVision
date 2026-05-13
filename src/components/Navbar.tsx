@@ -8,6 +8,7 @@ const serviceLinks = [
   { href: '/diensten/google-ads', label: 'Google Ads' },
   { href: '/diensten/emailmarketing', label: 'E-mailmarketing' },
   { href: '/diensten/website-bouwen', label: 'Website Bouwen' },
+  { href: '/diensten/linkedin-advertising', label: 'LinkedIn Advertising' },
 ];
 
 export default function Navbar() {

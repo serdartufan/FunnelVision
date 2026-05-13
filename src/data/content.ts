@@ -102,6 +102,29 @@ export const services = [
     unsplash: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80',
     unsplashAlt: 'Website design op meerdere apparaten',
   },
+  {
+    slug: 'linkedin-advertising',
+    number: '05',
+    title: 'LinkedIn Advertising',
+    subtitle: 'B2B Lead Generatie',
+    short: 'Bereik beslissers en professionals via het meest effectieve B2B advertentieplatform.',
+    description:
+      'LinkedIn is hét platform voor B2B marketing. We bouwen gerichte campagnes die beslissers bereiken op het moment dat ze openstaan voor jouw aanbod — van awareness tot directe leadgeneratie.',
+    bullets: [
+      'Doelgroep op functietitel, bedrijfsgrootte en branche',
+      'Sponsored Content en Message Ads',
+      'Lead Gen Forms voor directe conversie',
+      'Retargeting van websitebezoekers',
+      'Maandelijkse rapportage',
+    ],
+    target: 'B2B bedrijven, consultants en dienstverleners die zakelijke klanten willen bereiken.',
+    stats: [
+      { label: 'Gem. lead kwaliteit', value: 'Hoog' },
+      { label: 'B2B bereik', value: '1M+' },
+    ],
+    unsplash: 'https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=800&q=80',
+    unsplashAlt: 'LinkedIn advertising B2B marketing',
+  },
 ];
 
 export const cases = [
