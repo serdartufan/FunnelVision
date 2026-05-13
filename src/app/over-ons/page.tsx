@@ -4,9 +4,10 @@ import Link from 'next/link';
 import { team } from '@/data/content';
 
 export const metadata: Metadata = {
-  title: 'Over Ons — Marketing Bureau Den Haag | FunnelVision',
+  title: 'Over Ons — Marketing Bureau Groningen | FunnelVision',
   description:
     'Maak kennis met Serdar en Dogukan, de drijvende krachten achter FunnelVision. Resultaatgericht, persoonlijk en transparant.',
+  alternates: { canonical: 'https://funnelvisionagency.com/over-ons' },
 };
 
 const milestones = [
@@ -16,12 +17,56 @@ const milestones = [
   { year: '2026', event: 'Uitbreiding naar e-mailmarketing en websitebouw diensten.' },
 ];
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://funnelvisionagency.com' },
+    { '@type': 'ListItem', position: 2, name: 'Over ons', item: 'https://funnelvisionagency.com/over-ons' },
+  ],
+};
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Person',
+      name: 'Serdar Tufan',
+      jobTitle: 'Oprichter & Meta Ads Specialist',
+      worksFor: { '@type': 'Organization', name: 'FunnelVision' },
+      sameAs: ['https://www.linkedin.com/in/serdartufan'],
+    },
+    {
+      '@type': 'Person',
+      name: 'Dogukan',
+      jobTitle: 'Google Ads Specialist',
+      worksFor: { '@type': 'Organization', name: 'FunnelVision' },
+    },
+  ],
+};
+
 export default function OverOnsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+
       {/* Hero */}
       <section className="bg-[#1A1A1A] pt-36 pb-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <nav aria-label="Breadcrumb" className="mb-6">
+            <ol className="flex items-center gap-2 text-xs text-gray-500">
+              <li><Link href="/" className="hover:text-[#F5A623] transition-colors">Home</Link></li>
+              <li><span>/</span></li>
+              <li className="text-gray-400">Over ons</li>
+            </ol>
+          </nav>
           <span className="text-xs font-semibold text-[#F5A623] uppercase tracking-widest block mb-4">Over ons</span>
           <h1
             className="text-4xl lg:text-6xl font-bold text-white leading-tight"
@@ -47,6 +92,8 @@ export default function OverOnsPage() {
                     src={member.unsplash}
                     alt={member.unsplashAlt}
                     fill
+                    loading="lazy"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover object-top"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />

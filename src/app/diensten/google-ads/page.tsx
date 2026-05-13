@@ -7,15 +7,80 @@ export const metadata: Metadata = {
   title: 'Google Ads Bureau voor MKB — FunnelVision',
   description:
     'Word gevonden door koopklare klanten via Google Ads. FunnelVision bouwt gerichte Search en Shopping campagnes voor het MKB.',
+  alternates: { canonical: 'https://funnelvisionagency.com/diensten/google-ads' },
 };
 
 const service = services[1];
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://funnelvisionagency.com' },
+    { '@type': 'ListItem', position: 2, name: 'Diensten', item: 'https://funnelvisionagency.com/diensten' },
+    { '@type': 'ListItem', position: 3, name: 'Google Ads', item: 'https://funnelvisionagency.com/diensten/google-ads' },
+  ],
+};
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Google Ads',
+  description: service.description,
+  provider: { '@type': 'Organization', name: 'FunnelVision', url: 'https://funnelvisionagency.com' },
+  areaServed: 'NL',
+  url: 'https://funnelvisionagency.com/diensten/google-ads',
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Wat zijn Google Ads?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Google Ads zijn betaalde advertenties die verschijnen bovenaan de Google zoekresultaten. Wanneer iemand zoekt naar jouw product of dienst, verschijnt jouw advertentie op het juiste moment.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Wat is het verschil tussen Google Ads en SEO?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Google Ads levert direct resultaat: zodra je campagne live is, verschijn je bovenaan. SEO is organisch en duurt maanden. Google Ads is ideaal als je snel zichtbaar wilt zijn voor koopklare zoekopdrachten.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Hoeveel kost Google Ads?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'De kosten bestaan uit het advertentiebudget (dat jij bepaalt) plus onze beheervergoeding. We raden een minimum advertentiebudget van €500 per maand aan, afhankelijk van de branche.',
+      },
+    },
+  ],
+};
+
 export default function GoogleAdsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+
       <section className="bg-[#1A1A1A] pt-36 pb-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <nav aria-label="Breadcrumb" className="mb-6">
+            <ol className="flex items-center gap-2 text-xs text-gray-500">
+              <li><Link href="/" className="hover:text-[#F5A623] transition-colors">Home</Link></li>
+              <li><span>/</span></li>
+              <li><Link href="/diensten" className="hover:text-[#F5A623] transition-colors">Diensten</Link></li>
+              <li><span>/</span></li>
+              <li className="text-gray-400">Google Ads</li>
+            </ol>
+          </nav>
           <span className="text-xs font-semibold text-[#F5A623] uppercase tracking-widest block mb-4">
             {service.number} · {service.subtitle}
           </span>
@@ -33,7 +98,14 @@ export default function GoogleAdsPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative h-80 rounded-2xl overflow-hidden lg:order-last">
-              <Image src={service.unsplash} alt={service.unsplashAlt} fill className="object-cover" />
+              <Image
+                src={service.unsplash}
+                alt={service.unsplashAlt}
+                fill
+                loading="lazy"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
             </div>
             <div>
               <h2
@@ -62,10 +134,7 @@ export default function GoogleAdsPage() {
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-2xl">
-            <h2
-              className="text-2xl lg:text-3xl font-bold text-[#3D3D3D] mb-4"
-              style={{ fontFamily: 'var(--font-playfair)' }}
-            >
+            <h2 className="text-2xl lg:text-3xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
               Voor wie is dit?
             </h2>
             <p className="text-gray-500 leading-relaxed">{service.target}</p>
@@ -78,13 +147,26 @@ export default function GoogleAdsPage() {
           <div className="grid grid-cols-2 gap-8 max-w-lg">
             {service.stats.map((stat) => (
               <div key={stat.label}>
-                <p
-                  className="text-4xl lg:text-5xl font-bold text-[#F5A623]"
-                  style={{ fontFamily: 'var(--font-playfair)' }}
-                >
+                <p className="text-4xl lg:text-5xl font-bold text-[#F5A623]" style={{ fontFamily: 'var(--font-playfair)' }}>
                   {stat.value}
                 </p>
                 <p className="text-gray-400 text-sm mt-2">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-20">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+          <h2 className="text-2xl lg:text-3xl font-bold text-[#3D3D3D] mb-8" style={{ fontFamily: 'var(--font-playfair)' }}>
+            Veelgestelde vragen
+          </h2>
+          <div className="space-y-6">
+            {faqSchema.mainEntity.map((faq) => (
+              <div key={faq.name} className="border-b border-[#F5F2EB] pb-6">
+                <h3 className="font-bold text-[#3D3D3D] mb-2">{faq.name}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{faq.acceptedAnswer.text}</p>
               </div>
             ))}
           </div>

@@ -106,6 +106,10 @@ export default function Footer() {
                   {siteConfig.email}
                 </a>
               </li>
+              <li className="text-sm text-gray-400 leading-relaxed">
+                Maluslaan 48<br />
+                9741 LM Groningen
+              </li>
               <li>
                 <Link
                   href="/contact"
@@ -119,7 +123,12 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-gray-500">© 2026 FunnelVision. Alle rechten voorbehouden.</p>
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <p className="text-sm text-gray-500">© 2026 FunnelVision. Alle rechten voorbehouden.</p>
+            <p className="text-xs text-gray-600">
+              Maluslaan 48, 9741 LM Groningen · KVK: 73815462 · serdar@funnelvisionagency.com
+            </p>
+          </div>
           <div className="flex gap-6">
             <Link href="/privacy-policy" className="text-sm text-gray-500 hover:text-[#F5A623] transition-colors">
               Privacybeleid

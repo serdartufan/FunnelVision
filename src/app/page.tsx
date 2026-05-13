@@ -7,11 +7,86 @@ export const metadata: Metadata = {
   title: 'FunnelVision — Marketing Bureau voor het MKB',
   description:
     'Meer klanten en omzet via Meta advertenties, Google Ads en e-mailmarketing. FunnelVision is jouw resultaatgerichte marketing partner.',
+  alternates: { canonical: 'https://funnelvisionagency.com' },
+  openGraph: {
+    url: 'https://funnelvisionagency.com',
+    title: 'FunnelVision — Marketing Bureau voor het MKB',
+    description: 'Meer klanten en omzet via Meta advertenties, Google Ads en e-mailmarketing.',
+  },
+};
+
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'FunnelVision — Marketing Bureau voor het MKB',
+  url: 'https://funnelvisionagency.com',
+  description:
+    'Meer klanten en omzet via Meta advertenties, Google Ads en e-mailmarketing. FunnelVision is jouw resultaatgerichte marketing partner.',
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', '.speakable'],
+  },
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Wat doet FunnelVision?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'FunnelVision is een marketing bureau dat kleine en middelgrote bedrijven helpt groeien via betaalde advertenties. We beheren Meta Advertenties (Facebook & Instagram), Google Ads, LinkedIn Advertising, e-mailmarketing en bouwen conversiegerichte websites.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Hoeveel kost het samenwerken met FunnelVision?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We werken op basis van een maandelijkse vergoeding zonder langlopende contracten. Je betaalt per maand vooraf en kan maandelijks opzeggen. De kosten zijn afhankelijk van welke diensten je afneemt. Plan een gratis kennismaking voor een persoonlijk voorstel.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Werkt FunnelVision ook met kleine bedrijven?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Ja, absoluut. We zijn gespecialiseerd in het MKB. Of je nu een eenmanszaak bent of een bedrijf met 50 medewerkers, we passen onze aanpak aan op jouw situatie en budget.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Waar is FunnelVision gevestigd en welk gebied bedienen jullie?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'FunnelVision is gevestigd in Groningen (Maluslaan 48, 9741 LM), maar we werken voor klanten door heel Nederland. Online marketing kent geen geografische grenzen, dus onze locatie maakt voor de resultaten geen verschil.',
+      },
+    },
+  ],
 };
 
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      {/* Speakable / screen-reader intro voor zoekmachines */}
+      <p className="sr-only speakable">
+        FunnelVision is een resultaatgericht marketing bureau voor het Nederlandse MKB, gespecialiseerd in
+        Meta advertenties, Google Ads, LinkedIn Advertising en e-mailmarketing. Wij helpen ondernemers meer
+        klanten en omzet te genereren via betaalde advertenties en slimme digitale marketing. Gevestigd in
+        Groningen, werkzaam door heel Nederland.
+      </p>
+
       {/* Hero */}
       <section className="bg-[#1A1A1A] relative overflow-hidden">
         <div
@@ -122,6 +197,8 @@ export default function HomePage() {
                     src={c.unsplash}
                     alt={c.unsplashAlt}
                     fill
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -161,7 +238,14 @@ export default function HomePage() {
               <div key={member.name} className="bg-white rounded-2xl p-8 flex flex-col gap-6">
                 <div className="flex items-start gap-5">
                   <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0">
-                    <Image src={member.unsplash} alt={member.unsplashAlt} fill className="object-cover" />
+                    <Image
+                      src={member.unsplash}
+                      alt={member.unsplashAlt}
+                      fill
+                      loading="lazy"
+                      sizes="80px"
+                      className="object-cover"
+                    />
                   </div>
                   <div>
                     <h3 className="font-bold text-xl text-[#3D3D3D]" style={{ fontFamily: 'var(--font-playfair)' }}>
@@ -225,16 +309,55 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* FAQ — zichtbaar voor AEO */}
+      <section className="bg-[#F5F2EB] py-24">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+          <h2
+            className="text-3xl lg:text-4xl font-bold text-[#3D3D3D] mb-12 text-center"
+            style={{ fontFamily: 'var(--font-playfair)' }}
+          >
+            Veelgestelde <em className="italic text-[#F5A623]">vragen.</em>
+          </h2>
+          <div className="space-y-6">
+            {[
+              {
+                q: 'Wat doet FunnelVision?',
+                a: 'FunnelVision is een marketing bureau dat MKB-bedrijven helpt groeien via Meta advertenties, Google Ads, LinkedIn Advertising, e-mailmarketing en websitebouw.',
+              },
+              {
+                q: 'Hoeveel kost het samenwerken met FunnelVision?',
+                a: 'We werken op basis van een maandelijkse vergoeding zonder langlopende contracten. Maandelijks opzegbaar. Plan een gratis kennismaking voor een persoonlijk voorstel.',
+              },
+              {
+                q: 'Werkt FunnelVision ook met kleine bedrijven?',
+                a: 'Ja, absoluut. We zijn gespecialiseerd in het MKB. Of je nu een eenmanszaak of een groeiend bedrijf bent — we passen onze aanpak aan op jouw situatie.',
+              },
+              {
+                q: 'Waar is FunnelVision gevestigd?',
+                a: 'We zijn gevestigd in Groningen (Maluslaan 48, 9741 LM), maar werken voor klanten door heel Nederland.',
+              },
+            ].map((item) => (
+              <div key={item.q} className="bg-white rounded-2xl p-6">
+                <h3 className="font-bold text-[#3D3D3D] mb-3" style={{ fontFamily: 'var(--font-playfair)' }}>
+                  {item.q}
+                </h3>
+                <p className="text-gray-500 leading-relaxed text-sm">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="bg-[#F5F2EB] py-24 lg:py-32">
+      <section className="bg-[#1A1A1A] py-24 lg:py-32">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <h2
-            className="text-4xl lg:text-5xl font-bold text-[#3D3D3D] mb-6"
+            className="text-4xl lg:text-5xl font-bold text-white mb-6"
             style={{ fontFamily: 'var(--font-playfair)' }}
           >
             Klaar om te <em className="italic text-[#F5A623]">groeien?</em>
           </h2>
-          <p className="text-lg text-gray-500 mb-10 leading-relaxed">
+          <p className="text-lg text-gray-400 mb-10 leading-relaxed">
             Plan een vrijblijvend kennismakingsgesprek en ontdek wat FunnelVision voor jouw bedrijf kan betekenen.
           </p>
           <Link
