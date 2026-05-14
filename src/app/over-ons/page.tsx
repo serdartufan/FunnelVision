@@ -31,7 +31,7 @@ const personSchema = {
   '@graph': [
     {
       '@type': 'Person',
-      name: 'Serdar Tufan',
+      name: 'Serdar',
       jobTitle: 'Copywriter & Meta Ads Specialist',
       worksFor: { '@type': 'Organization', name: 'FunnelVision' },
       sameAs: ['https://www.linkedin.com/in/serdartufan'],

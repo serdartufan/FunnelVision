@@ -127,7 +127,7 @@ export default function HomePage() {
 
           <div className="mt-20 pt-10 border-t border-white/10 grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { value: '€2M+', label: 'Beheerd budget' },
+              { value: '€6M+', label: 'Beheerd budget' },
               { value: '50+', label: 'Klanten geholpen' },
               { value: '340%', label: 'Gem. ROAS' },
               { value: 'Sinds 2019', label: 'Opgericht' },

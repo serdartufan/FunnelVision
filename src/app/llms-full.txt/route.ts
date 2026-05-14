@@ -6,7 +6,7 @@ export async function GET() {
 
 ## Over FunnelVision
 
-FunnelVision is opgericht in 2019 door Serdar Tufan en Dogukan. Twee online marketing specialisten met een passie voor meetbare resultaten. Het bureau richt zich uitsluitend op het MKB en helpt ondernemers door heel Nederland groeien via betaalde advertenties, digitale marketing en AI oplossingen.
+FunnelVision is opgericht in 2019 door Serdar en Dogukan. Twee online marketing specialisten met een passie voor meetbare resultaten. Het bureau richt zich uitsluitend op het MKB en helpt ondernemers door heel Nederland groeien via betaalde advertenties, digitale marketing en AI oplossingen.
 
 FunnelVision werkt volledig remote. Geen duur kantoor, die kosten betaal jij als klant niet. We werken vanuit heel Nederland voor klanten door het hele land.
 
@@ -14,8 +14,8 @@ Werkwijze: We werken in sprints van 3 maanden. Na de eerste sprint is de samenwe
 
 ## Team
 
-### Serdar Tufan, Copywriter & Meta Ads Specialist
-Serdar is verantwoordelijk voor alle Meta campagnes (Facebook & Instagram) en de algehele strategie van FunnelVision. Met jarenlange ervaring in het beheren van advertentiebudgetten boven de €2M heeft hij een bewezen aanpak ontwikkeld voor het MKB.
+### Serdar, Copywriter & Meta Ads Specialist
+Serdar is verantwoordelijk voor alle Meta campagnes (Facebook & Instagram) en de algehele strategie van FunnelVision. Met jarenlange ervaring in het beheren van advertentiebudgetten boven de €6M heeft hij een bewezen aanpak ontwikkeld voor het MKB.
 - Expertise: Meta Ads, Salesfunnels, Strategie, Copywriting, AI Oplossingen
 - LinkedIn: https://www.linkedin.com/in/serdartufan
 
@@ -37,7 +37,7 @@ Wat is inbegrepen:
 
 Voor wie: Webshops, lokale dienstverleners en coaches die meer leads of verkopen willen via social media.
 
-Resultaten: Gemiddelde ROAS van 340%, meer dan €2M beheerd advertentiebudget.
+Resultaten: Gemiddelde ROAS van 340%, meer dan €6M beheerd advertentiebudget.
 
 ### 2. Google Ads (Search Engine Advertising)
 Gerichte Google Ads campagnes die het bedrijf bovenaan zetten bij koopklare zoekopdrachten.

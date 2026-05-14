@@ -27,7 +27,7 @@ export const services = [
     target: 'Webshops, lokale dienstverleners en coaches die meer leads of verkopen willen via social media.',
     stats: [
       { label: 'Gem. ROAS', value: '340%' },
-      { label: 'Beheerd budget', value: '€2M+' },
+      { label: 'Beheerd budget', value: '€6M+' },
     ],
     unsplash: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80',
     unsplashAlt: 'Social media advertenties op smartphone',
@@ -222,13 +222,13 @@ export const cases = [
 
 export const team = [
   {
-    name: 'Serdar Tufan',
+    name: 'Serdar',
     role: 'Copywriter & Meta Ads Specialist',
     description:
       "Serdar is de drijvende kracht achter FunnelVision's Meta campagnes en salesfunnels. Met jarenlange ervaring in Facebook en Instagram advertenties weet hij precies hoe hij jouw doelgroep bereikt en converteert.",
     expertise: ['Meta Ads', 'Salesfunnels', 'Strategie', 'Copywriting', 'AI Oplossingen'],
     unsplash: '/Serdar.jpeg',
-    unsplashAlt: 'Serdar Tufan, FunnelVision',
+    unsplashAlt: 'Serdar, FunnelVision',
   },
   {
     name: 'Dogukan',

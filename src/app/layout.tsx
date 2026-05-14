@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     'linkedin advertising',
     'emailmarketing bureau nederland',
   ],
-  authors: [{ name: 'Serdar Tufan', url: 'https://funnelvisionagency.com/over-ons' }],
+  authors: [{ name: 'Serdar', url: 'https://funnelvisionagency.com/over-ons' }],
   creator: 'FunnelVision',
   publisher: 'FunnelVision',
   robots: {
