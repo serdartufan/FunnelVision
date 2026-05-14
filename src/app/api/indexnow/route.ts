@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { pingIndexNow } from '@/lib/indexnow';
 
-export async function GET() {
+async function handlePing() {
   try {
     await pingIndexNow();
     return NextResponse.json({ success: true });
@@ -10,3 +10,6 @@ export async function GET() {
     return NextResponse.json({ success: false, error: message }, { status: 500 });
   }
 }
+
+export const GET = handlePing;
+export const POST = handlePing;
