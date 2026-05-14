@@ -4,17 +4,17 @@ import Link from 'next/link';
 import { team } from '@/data/content';
 
 export const metadata: Metadata = {
-  title: 'Over Ons — Marketing Bureau Groningen | FunnelVision',
+  title: 'Over Ons | Marketing Bureau Groningen | FunnelVision',
   description:
     'Maak kennis met Serdar en Dogukan, de drijvende krachten achter FunnelVision. Resultaatgericht, persoonlijk en transparant.',
   alternates: { canonical: 'https://funnelvisionagency.com/over-ons' },
 };
 
 const milestones = [
-  { year: '2023', event: 'FunnelVision opgericht. Eerste klanten via Meta Ads.' },
-  { year: '2024', event: 'Team uitgebreid met Google Ads expertise. 25+ actieve klanten.' },
-  { year: '2025', event: '€2M+ beheerd advertentiebudget. 50+ bedrijven geholpen.' },
-  { year: '2026', event: 'Uitbreiding naar e-mailmarketing en websitebouw diensten.' },
+  { year: '2019', event: 'Opgericht met focus op Meta Advertenties.' },
+  { year: '2022', event: 'Uitbreiding naar LinkedIn Ads en Google Ads.' },
+  { year: '2023', event: 'E-mailmarketing toegevoegd en meer dan 3 miljoen euro budget beheerd.' },
+  { year: '2026', event: 'AI oplossingen toegevoegd na 2 jaar intern gebruik.' },
 ];
 
 const breadcrumbSchema = {
@@ -32,14 +32,14 @@ const personSchema = {
     {
       '@type': 'Person',
       name: 'Serdar Tufan',
-      jobTitle: 'Oprichter & Meta Ads Specialist',
+      jobTitle: 'Copywriter & Meta Ads Specialist',
       worksFor: { '@type': 'Organization', name: 'FunnelVision' },
       sameAs: ['https://www.linkedin.com/in/serdartufan'],
     },
     {
       '@type': 'Person',
       name: 'Dogukan',
-      jobTitle: 'Google Ads Specialist',
+      jobTitle: 'Google Ads & LinkedIn Ads Specialist',
       worksFor: { '@type': 'Organization', name: 'FunnelVision' },
     },
   ],
@@ -75,8 +75,8 @@ export default function OverOnsPage() {
             Twee broers. <em className="italic text-[#F5A623]">Één missie.</em>
           </h1>
           <p className="mt-6 text-lg text-gray-400 max-w-xl leading-relaxed">
-            FunnelVision is opgericht door Serdar en Dogukan — twee specialisten die geloven dat marketing meetbaar,
-            transparant en eerlijk moet zijn.
+            FunnelVision is opgericht door Serdar en Dogukan. Twee specialisten die geloven dat marketing
+            meetbaar, transparant en eerlijk moet zijn.
           </p>
         </div>
       </section>
@@ -85,7 +85,7 @@ export default function OverOnsPage() {
       <section className="bg-[#F5F2EB] py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {team.map((member, i) => (
+            {team.map((member) => (
               <article key={member.name} className="bg-white rounded-2xl overflow-hidden">
                 <div className="relative h-72">
                   <Image
@@ -103,11 +103,6 @@ export default function OverOnsPage() {
                     </h2>
                     <p className="text-[#F5A623] font-medium text-sm mt-1">{member.role}</p>
                   </div>
-                  {i === 0 && (
-                    <div className="absolute top-4 right-4 bg-[#F5A623] text-white text-xs font-bold px-3 py-1 rounded-full">
-                      Oprichter
-                    </div>
-                  )}
                 </div>
                 <div className="p-8">
                   <p className="text-gray-500 leading-relaxed mb-6">{member.description}</p>
@@ -142,7 +137,7 @@ export default function OverOnsPage() {
               {[
                 {
                   title: 'Persoonlijk',
-                  desc: 'Geen accountmanager die je doorschuift. Je werkt direct met Serdar of Dogukan — de specialist die jouw campagnes bouwt en beheert.',
+                  desc: 'Geen accountmanager die je doorschuift. Je werkt direct met Serdar of Dogukan, de specialist die jouw campagnes bouwt en beheert.',
                 },
                 {
                   title: 'Transparant',

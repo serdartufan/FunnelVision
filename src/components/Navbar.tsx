@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
@@ -9,6 +10,7 @@ const serviceLinks = [
   { href: '/diensten/emailmarketing', label: 'E-mailmarketing' },
   { href: '/diensten/website-bouwen', label: 'Website Bouwen' },
   { href: '/diensten/linkedin-advertising', label: 'LinkedIn Advertising' },
+  { href: '/diensten/ai-oplossingen', label: 'AI Oplossingen' },
 ];
 
 export default function Navbar() {
@@ -29,14 +31,8 @@ export default function Navbar() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between py-4">
-        <Link href="/" className="flex items-center gap-1">
-          <span className="text-[#F5A623] text-lg leading-none">▼</span>
-          <span className="font-bold text-xl text-[#3D3D3D]" style={{ fontFamily: 'var(--font-inter)' }}>
-            Funnel
-          </span>
-          <span className="text-xl italic text-[#3D3D3D]" style={{ fontFamily: 'var(--font-playfair)' }}>
-            Vision
-          </span>
+        <Link href="/" className="flex items-center">
+          <Image src="/Logo 2.png" alt="FunnelVision logo" height={40} width={160} className="h-10 w-auto" />
         </Link>
 
         <div className="hidden lg:flex items-center gap-8">

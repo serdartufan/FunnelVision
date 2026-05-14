@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { services } from '@/data/content';
 
 export const metadata: Metadata = {
-  title: 'E-mailmarketing Bureau Nederland — FunnelVision',
+  title: 'E-mailmarketing Bureau Nederland | FunnelVision',
   description:
     'Genereer meer omzet met slimme e-mailflows en campagnes. FunnelVision bouwt geautomatiseerde e-mailmarketing die 24/7 voor je werkt.',
   alternates: { canonical: 'https://funnelvisionagency.com/diensten/emailmarketing' },

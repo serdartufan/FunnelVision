@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { services } from '@/data/content';
 
 export const metadata: Metadata = {
-  title: 'LinkedIn Advertising Bureau | B2B Lead Generatie — FunnelVision',
+  title: 'LinkedIn Advertising Bureau | B2B Lead Generatie | FunnelVision',
   description:
     'Bereik beslissers en professionals via LinkedIn Advertising. FunnelVision bouwt gerichte B2B campagnes die leads opleveren.',
   alternates: { canonical: 'https://funnelvisionagency.com/diensten/linkedin-advertising' },

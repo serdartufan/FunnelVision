@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacybeleid — FunnelVision',
+  title: 'Privacybeleid | FunnelVision',
   description: 'Lees hoe FunnelVision omgaat met jouw persoonsgegevens conform de AVG.',
 };
 

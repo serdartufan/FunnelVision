@@ -4,7 +4,7 @@ import { siteConfig } from '@/data/content';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Contact — FunnelVision Marketing Bureau',
+  title: 'Contact | FunnelVision Marketing Bureau',
   description:
     'Plan een gratis kennismakingsgesprek met FunnelVision. We kijken samen wat Meta ads, Google Ads of e-mailmarketing voor jouw bedrijf kan betekenen.',
   alternates: { canonical: 'https://funnelvisionagency.com/contact' },
@@ -106,14 +106,6 @@ export default function ContactPage() {
                   >
                     {siteConfig.email}
                   </a>
-                </div>
-                <div>
-                  <p className="text-xs font-semibold text-[#F5A623] uppercase tracking-wider mb-2">Adres</p>
-                  <address className="not-italic text-[#3D3D3D] text-sm leading-relaxed">
-                    Maluslaan 48<br />
-                    9741 LM Groningen<br />
-                    Nederland
-                  </address>
                 </div>
                 <div>
                   <p className="text-xs font-semibold text-[#F5A623] uppercase tracking-wider mb-2">Openingstijden</p>

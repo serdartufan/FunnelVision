@@ -16,7 +16,7 @@ export const services = [
     subtitle: 'Facebook & Instagram Ads',
     short: 'Bereik jouw ideale klant op Facebook en Instagram met advertenties die écht converteren.',
     description:
-      'We bouwen winstgevende Meta campagnes die jouw doelgroep raken op het juiste moment — van awareness tot aankoop. Geen verspild budget, alleen resultaat.',
+      'We bouwen winstgevende Meta campagnes die jouw doelgroep raken op het juiste moment, van awareness tot aankoop. Geen verspild budget, alleen resultaat.',
     bullets: [
       'Campagnestrategie op maat',
       'Doelgroep research en targeting',
@@ -62,7 +62,7 @@ export const services = [
     subtitle: 'Automatisering & Campagnes',
     short: 'Bouw een relatie met je klanten en genereer omzet op autopilot via slimme e-mailflows.',
     description:
-      'We bouwen geautomatiseerde e-mailsequenties die leads opwarmen, klanten terugbrengen en jouw omzet verhogen — zonder dat jij er dagelijks naar hoeft te kijken.',
+      'We bouwen geautomatiseerde e-mailsequenties die leads opwarmen, klanten terugbrengen en jouw omzet verhogen, zonder dat jij er dagelijks naar hoeft te kijken.',
     bullets: [
       'Welkomstsequenties en nurture flows',
       'Winkelwagen verlaten e-mails',
@@ -83,7 +83,7 @@ export const services = [
     number: '04',
     title: 'Website Bouwen',
     subtitle: 'Conversiegericht & Snel',
-    short: 'Een snelle, professionele website die bezoekers omzet in klanten — gebouwd om te scoren.',
+    short: 'Een snelle, professionele website die bezoekers omzet in klanten. Gebouwd om te scoren.',
     description:
       'We bouwen strakke websites die niet alleen mooi zijn, maar ook converteren. Gebouwd op moderne technologie, geoptimaliseerd voor zoekmachines en volledig op maat.',
     bullets: [
@@ -109,7 +109,7 @@ export const services = [
     subtitle: 'B2B Lead Generatie',
     short: 'Bereik beslissers en professionals via het meest effectieve B2B advertentieplatform.',
     description:
-      'LinkedIn is hét platform voor B2B marketing. We bouwen gerichte campagnes die beslissers bereiken op het moment dat ze openstaan voor jouw aanbod — van awareness tot directe leadgeneratie.',
+      'LinkedIn is hét platform voor B2B marketing. We bouwen gerichte campagnes die beslissers bereiken op het moment dat ze openstaan voor jouw aanbod, van awareness tot directe leadgeneratie.',
     bullets: [
       'Doelgroep op functietitel, bedrijfsgrootte en branche',
       'Sponsored Content en Message Ads',
@@ -124,6 +124,29 @@ export const services = [
     ],
     unsplash: 'https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=800&q=80',
     unsplashAlt: 'LinkedIn advertising B2B marketing',
+  },
+  {
+    slug: 'ai-oplossingen',
+    number: '06',
+    title: 'AI Oplossingen',
+    subtitle: 'Slimmer Werken, Meer Tijd',
+    short: 'Van bedrijfsapplicaties tot geautomatiseerde processen. Wij bouwen AI oplossingen die je team tijd teruggeven voor wat echt belangrijk is.',
+    description:
+      'Na twee jaar intern te werken met AI weten we wat werkt en wat niet. We bouwen praktische AI oplossingen voor bedrijven: van slimme applicaties tot geautomatiseerde workflows die FTEs besparen en processen versimpelen.',
+    bullets: [
+      'Maatwerk bedrijfsapplicaties op basis van AI',
+      'Automatisering van repetitieve processen',
+      'AI-gestuurde klantcommunicatie',
+      'Integratie met bestaande systemen',
+      'Training en implementatie voor je team',
+    ],
+    target: 'Bedrijven die tijd willen besparen en interne processen willen moderniseren met AI.',
+    stats: [
+      { label: 'Jaar intern ervaring', value: '2+' },
+      { label: 'Tijdsbesparing', value: 'Tot 40%' },
+    ],
+    unsplash: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80',
+    unsplashAlt: 'AI oplossingen voor bedrijven',
   },
 ];
 
@@ -200,20 +223,20 @@ export const cases = [
 export const team = [
   {
     name: 'Serdar Tufan',
-    role: 'Oprichter & Meta Ads Specialist',
+    role: 'Copywriter & Meta Ads Specialist',
     description:
       "Serdar is de drijvende kracht achter FunnelVision's Meta campagnes en salesfunnels. Met jarenlange ervaring in Facebook en Instagram advertenties weet hij precies hoe hij jouw doelgroep bereikt en converteert.",
-    expertise: ['Meta Ads', 'Salesfunnels', 'Strategie', 'Copywriting'],
-    unsplash: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
-    unsplashAlt: 'Professioneel portretfoto man',
+    expertise: ['Meta Ads', 'Salesfunnels', 'Strategie', 'Copywriting', 'AI Oplossingen'],
+    unsplash: '/Serdar.jpeg',
+    unsplashAlt: 'Serdar Tufan, FunnelVision',
   },
   {
     name: 'Dogukan',
-    role: 'Google Ads Specialist',
+    role: 'Google Ads & LinkedIn Ads Specialist',
     description:
       'Dogukan is de Google Ads expert van het duo. Hij heeft een scherp oog voor zoekintentie en weet precies hoe hij campagnes inricht die zowel klikken als conversies opleveren voor een minimale investering.',
-    expertise: ['Google Ads', 'SEA', 'Analytics', 'Conversiemeting'],
-    unsplash: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80',
-    unsplashAlt: 'Professioneel portretfoto man',
+    expertise: ['Google Ads', 'LinkedIn Ads', 'SEA', 'Analytics', 'Conversiemeting', 'AI Oplossingen'],
+    unsplash: '/Dogukan.jpeg',
+    unsplashAlt: 'Dogukan, FunnelVision',
   },
 ];

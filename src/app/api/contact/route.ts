@@ -8,7 +8,7 @@ export async function POST(req: NextRequest) {
   const { error } = await resend.emails.send({
     from: 'FunnelVision <noreply@funnelvisionagency.com>',
     to: 'serdar@funnelvisionagency.com',
-    subject: `Nieuwe aanvraag via FunnelVision — ${naam}`,
+    subject: `Nieuwe aanvraag via FunnelVision: ${naam}`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #F5F2EB; padding: 32px; border-radius: 12px;">
         <div style="background: #1A1A1A; padding: 24px 32px; border-radius: 8px; margin-bottom: 24px;">

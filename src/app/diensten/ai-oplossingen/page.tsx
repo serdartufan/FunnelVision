@@ -4,13 +4,13 @@ import Link from 'next/link';
 import { services } from '@/data/content';
 
 export const metadata: Metadata = {
-  title: 'Meta Advertenties Bureau | Facebook & Instagram Ads | FunnelVision',
+  title: 'AI Oplossingen voor Bedrijven | Automatisering en Applicaties | FunnelVision',
   description:
-    'Meer leads en omzet via Facebook en Instagram advertenties. FunnelVision bouwt winstgevende Meta campagnes voor het MKB.',
-  alternates: { canonical: 'https://funnelvisionagency.com/diensten/meta-advertenties' },
+    'Bespaar tijd en moderniseer je processen met praktische AI oplossingen. FunnelVision bouwt maatwerk AI applicaties en automatiseringen voor het MKB.',
+  alternates: { canonical: 'https://funnelvisionagency.com/diensten/ai-oplossingen' },
 };
 
-const service = services[0];
+const service = services[5];
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -18,18 +18,18 @@ const breadcrumbSchema = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://funnelvisionagency.com' },
     { '@type': 'ListItem', position: 2, name: 'Diensten', item: 'https://funnelvisionagency.com/diensten' },
-    { '@type': 'ListItem', position: 3, name: 'Meta Advertenties', item: 'https://funnelvisionagency.com/diensten/meta-advertenties' },
+    { '@type': 'ListItem', position: 3, name: 'AI Oplossingen', item: 'https://funnelvisionagency.com/diensten/ai-oplossingen' },
   ],
 };
 
 const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  name: 'Meta Advertenties',
+  name: 'AI Oplossingen',
   description: service.description,
   provider: { '@type': 'Organization', name: 'FunnelVision', url: 'https://funnelvisionagency.com' },
   areaServed: 'NL',
-  url: 'https://funnelvisionagency.com/diensten/meta-advertenties',
+  url: 'https://funnelvisionagency.com/diensten/ai-oplossingen',
 };
 
 const faqSchema = {
@@ -38,32 +38,32 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Wat zijn Meta Advertenties?',
+      name: 'Wat zijn AI oplossingen voor bedrijven?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Meta Advertenties zijn betaalde advertenties op Facebook en Instagram. Met Meta Ads kun je jouw doelgroep heel specifiek bereiken op basis van demografische gegevens, interesses en gedrag.',
+        text: 'AI oplossingen voor bedrijven zijn op maat gemaakte applicaties en geautomatiseerde workflows die gebruik maken van kunstmatige intelligentie om processen te versnellen, kosten te verlagen en betere beslissingen mogelijk te maken.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Hoeveel budget heb ik nodig voor Meta Advertenties?',
+      name: 'Hoeveel tijd bespaar ik met AI automatisering?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We raden aan minimaal €500 per maand advertentiebudget te reserveren om voldoende data te verzamelen en te optimaliseren. Onze beheervergoeding staat hier los van.',
+        text: 'Afhankelijk van het proces kan AI automatisering 20 tot 40% tijdsbesparing opleveren. Repetitieve taken zoals dataverwerking, klantvragen beantwoorden en rapportages kunnen grotendeels geautomatiseerd worden.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Hoe snel zie ik resultaten met Meta Advertenties?',
+      name: 'Werkt AI ook voor kleine bedrijven?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Binnen 2 tot 4 weken zie je de eerste resultaten. De campagnes worden continu geoptimaliseerd, waarna de resultaten in de tweede en derde maand doorgaans aanzienlijk verbeteren.',
+        text: 'Ja, zeker. AI hoeft niet complex of duur te zijn. We bouwen praktische oplossingen die direct waarde toevoegen, ook voor kleine teams. We starten altijd met een analyse van welke processen het meest geschikt zijn voor automatisering.',
       },
     },
   ],
 };
 
-export default function MetaAdvertentiesPage() {
+export default function AiOplossingenPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -79,7 +79,7 @@ export default function MetaAdvertentiesPage() {
               <li><span>/</span></li>
               <li><Link href="/diensten" className="hover:text-[#F5A623] transition-colors">Diensten</Link></li>
               <li><span>/</span></li>
-              <li className="text-gray-400">Meta Advertenties</li>
+              <li className="text-gray-400">AI Oplossingen</li>
             </ol>
           </nav>
           <span className="text-xs font-semibold text-[#F5A623] uppercase tracking-widest block mb-4">
@@ -89,7 +89,7 @@ export default function MetaAdvertentiesPage() {
             className="text-4xl lg:text-6xl font-bold text-white leading-tight max-w-3xl"
             style={{ fontFamily: 'var(--font-playfair)' }}
           >
-            <em className="italic text-[#F5A623]">Meta Advertenties</em> die écht converteren.
+            <em className="italic text-[#F5A623]">AI Oplossingen</em> die écht tijd besparen.
           </h1>
           <p className="mt-6 text-lg text-gray-400 max-w-xl leading-relaxed">{service.description}</p>
         </div>
@@ -188,10 +188,10 @@ export default function MetaAdvertentiesPage() {
             className="text-3xl lg:text-4xl font-bold text-[#3D3D3D] mb-6"
             style={{ fontFamily: 'var(--font-playfair)' }}
           >
-            Klaar voor <em className="italic text-[#F5A623]">meer leads?</em>
+            Klaar voor meer <em className="italic text-[#F5A623]">efficiëntie?</em>
           </h2>
           <p className="text-gray-500 mb-8">
-            Plan een gratis gesprek en ontdek hoe Meta advertenties jouw bedrijf kunnen laten groeien.
+            Plan een gratis gesprek en ontdek welke processen in jouw bedrijf klaar zijn voor AI.
           </p>
           <Link
             href="/contact"

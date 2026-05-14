@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { services } from '@/data/content';
 
 export const metadata: Metadata = {
-  title: 'Onze Diensten — FunnelVision Marketing Bureau',
+  title: 'Onze Diensten | FunnelVision Marketing Bureau',
   description:
     'Meta advertenties, Google Ads, e-mailmarketing en website bouwen. Ontdek hoe FunnelVision jouw bedrijf laat groeien.',
 };
@@ -23,7 +23,7 @@ export default function DienstenPage() {
             Wat we <em className="italic text-[#F5A623]">voor je doen.</em>
           </h1>
           <p className="mt-6 text-lg text-gray-400 max-w-xl leading-relaxed">
-            Van advertenties tot websites — alles gericht op één doel: meer omzet voor jouw bedrijf.
+            Van advertenties tot websites, alles gericht op één doel: meer omzet voor jouw bedrijf.
           </p>
         </div>
       </section>

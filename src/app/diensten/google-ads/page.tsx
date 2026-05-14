@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { services } from '@/data/content';
 
 export const metadata: Metadata = {
-  title: 'Google Ads Bureau voor MKB — FunnelVision',
+  title: 'Google Ads Bureau voor MKB | FunnelVision',
   description:
     'Word gevonden door koopklare klanten via Google Ads. FunnelVision bouwt gerichte Search en Shopping campagnes voor het MKB.',
   alternates: { canonical: 'https://funnelvisionagency.com/diensten/google-ads' },

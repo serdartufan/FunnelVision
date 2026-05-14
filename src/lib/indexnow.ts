@@ -14,6 +14,7 @@ const urlList = [
   '/contact',
   '/privacy-policy',
   '/algemene-voorwaarden',
+  '/diensten/ai-oplossingen',
 ].map((path) => `https://${HOST}${path}`);
 
 export async function pingIndexNow(): Promise<void> {

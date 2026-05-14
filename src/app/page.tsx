@@ -4,13 +4,13 @@ import Image from 'next/image';
 import { services, cases, team } from '@/data/content';
 
 export const metadata: Metadata = {
-  title: 'FunnelVision — Marketing Bureau voor het MKB',
+  title: 'FunnelVision | Marketing Bureau voor het MKB',
   description:
     'Meer klanten en omzet via Meta advertenties, Google Ads en e-mailmarketing. FunnelVision is jouw resultaatgerichte marketing partner.',
   alternates: { canonical: 'https://funnelvisionagency.com' },
   openGraph: {
     url: 'https://funnelvisionagency.com',
-    title: 'FunnelVision — Marketing Bureau voor het MKB',
+    title: 'FunnelVision | Marketing Bureau voor het MKB',
     description: 'Meer klanten en omzet via Meta advertenties, Google Ads en e-mailmarketing.',
   },
 };
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const webPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'FunnelVision — Marketing Bureau voor het MKB',
+  name: 'FunnelVision | Marketing Bureau voor het MKB',
   url: 'https://funnelvisionagency.com',
   description:
     'Meer klanten en omzet via Meta advertenties, Google Ads en e-mailmarketing. FunnelVision is jouw resultaatgerichte marketing partner.',
@@ -45,7 +45,7 @@ const faqSchema = {
       name: 'Hoeveel kost het samenwerken met FunnelVision?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We werken op basis van een maandelijkse vergoeding zonder langlopende contracten. Je betaalt per maand vooraf en kan maandelijks opzeggen. De kosten zijn afhankelijk van welke diensten je afneemt. Plan een gratis kennismaking voor een persoonlijk voorstel.',
+        text: 'We werken in sprints van 3 maanden. Na de eerste sprint is de samenwerking maandelijks opzegbaar. De kosten zijn afhankelijk van welke diensten je afneemt. Plan een gratis kennismaking voor een persoonlijk voorstel.',
       },
     },
     {
@@ -58,10 +58,10 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Waar is FunnelVision gevestigd en welk gebied bedienen jullie?',
+      name: 'Waar is FunnelVision gevestigd?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'FunnelVision is gevestigd in Groningen (Maluslaan 48, 9741 LM), maar we werken voor klanten door heel Nederland. Online marketing kent geen geografische grenzen, dus onze locatie maakt voor de resultaten geen verschil.',
+        text: 'FunnelVision werkt volledig remote. Geen duur kantoor met pooltafel, die kosten betaal jij als klant niet. We werken vanuit heel Nederland voor klanten door het hele land.',
       },
     },
   ],
@@ -83,8 +83,8 @@ export default function HomePage() {
       <p className="sr-only speakable">
         FunnelVision is een resultaatgericht marketing bureau voor het Nederlandse MKB, gespecialiseerd in
         Meta advertenties, Google Ads, LinkedIn Advertising en e-mailmarketing. Wij helpen ondernemers meer
-        klanten en omzet te genereren via betaalde advertenties en slimme digitale marketing. Gevestigd in
-        Groningen, werkzaam door heel Nederland.
+        klanten en omzet te genereren via betaalde advertenties en slimme digitale marketing. Actief sinds
+        2019, werkzaam door heel Nederland.
       </p>
 
       {/* Hero */}
@@ -130,7 +130,7 @@ export default function HomePage() {
               { value: '€2M+', label: 'Beheerd budget' },
               { value: '50+', label: 'Klanten geholpen' },
               { value: '340%', label: 'Gem. ROAS' },
-              { value: 'Sinds 2023', label: 'Opgericht' },
+              { value: 'Sinds 2019', label: 'Opgericht' },
             ].map((stat) => (
               <div key={stat.label}>
                 <p
@@ -285,8 +285,8 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {[
               {
-                title: 'Geen contracten',
-                desc: 'Geen lange bindingen. Je werkt met ons omdat de resultaten spreken, niet omdat je vastzit.',
+                title: 'Sprints van 3 maanden',
+                desc: 'We werken in sprints van 3 maanden. Na de eerste sprint is de samenwerking maandelijks opzegbaar.',
               },
               {
                 title: 'Transparante rapportage',
@@ -309,7 +309,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FAQ — zichtbaar voor AEO */}
+      {/* FAQ */}
       <section className="bg-[#F5F2EB] py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <h2
@@ -326,15 +326,15 @@ export default function HomePage() {
               },
               {
                 q: 'Hoeveel kost het samenwerken met FunnelVision?',
-                a: 'We werken op basis van een maandelijkse vergoeding zonder langlopende contracten. Maandelijks opzegbaar. Plan een gratis kennismaking voor een persoonlijk voorstel.',
+                a: 'We werken in sprints van 3 maanden. Na de eerste sprint is de samenwerking maandelijks opzegbaar. Plan een gratis kennismaking voor een persoonlijk voorstel.',
               },
               {
                 q: 'Werkt FunnelVision ook met kleine bedrijven?',
-                a: 'Ja, absoluut. We zijn gespecialiseerd in het MKB. Of je nu een eenmanszaak of een groeiend bedrijf bent — we passen onze aanpak aan op jouw situatie.',
+                a: 'Ja, absoluut. We zijn gespecialiseerd in het MKB. Of je nu een eenmanszaak of een groeiend bedrijf bent, we passen onze aanpak aan op jouw situatie.',
               },
               {
                 q: 'Waar is FunnelVision gevestigd?',
-                a: 'We zijn gevestigd in Groningen (Maluslaan 48, 9741 LM), maar werken voor klanten door heel Nederland.',
+                a: 'FunnelVision werkt volledig remote. Geen duur kantoor met pooltafel, die kosten betaal jij als klant niet. We werken vanuit heel Nederland voor klanten door het hele land.',
               },
             ].map((item) => (
               <div key={item.q} className="bg-white rounded-2xl p-6">

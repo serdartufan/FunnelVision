@@ -10,7 +10,7 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 export const metadata: Metadata = {
   metadataBase: new URL('https://funnelvisionagency.com'),
   title: {
-    default: 'FunnelVision — Marketing Bureau voor het MKB',
+    default: 'FunnelVision | Marketing Bureau voor het MKB',
     template: '%s | FunnelVision',
   },
   description:
@@ -36,12 +36,12 @@ export const metadata: Metadata = {
     locale: 'nl_NL',
     url: 'https://funnelvisionagency.com',
     siteName: 'FunnelVision',
-    title: 'FunnelVision — Marketing Bureau voor het MKB',
+    title: 'FunnelVision | Marketing Bureau voor het MKB',
     description: 'Meer klanten en omzet via Meta advertenties, Google Ads en e-mailmarketing.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FunnelVision — Marketing Bureau voor het MKB',
+    title: 'FunnelVision | Marketing Bureau voor het MKB',
     description: 'Meer klanten en omzet via Meta advertenties, Google Ads en e-mailmarketing.',
   },
   alternates: {
@@ -71,7 +71,7 @@ const organizationSchema = {
   areaServed: 'NL',
   description:
     'Resultaatgericht marketing bureau voor het Nederlandse MKB. Specialist in Meta advertenties, Google Ads, LinkedIn Advertising en e-mailmarketing.',
-  foundingDate: '2023',
+  foundingDate: '2019',
   numberOfEmployees: { '@type': 'QuantitativeValue', value: 2 },
   sameAs: [
     'https://www.linkedin.com/company/funnelvision',
@@ -87,6 +87,7 @@ const organizationSchema = {
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'LinkedIn Advertising' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'E-mailmarketing' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Website Bouwen' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI Oplossingen' } },
     ],
   },
 };

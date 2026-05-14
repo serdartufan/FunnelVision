@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { services } from '@/data/content';
 
 export const metadata: Metadata = {
-  title: 'Website Laten Bouwen voor MKB — FunnelVision',
+  title: 'Website Laten Bouwen voor MKB | FunnelVision',
   description:
     'Een snelle, professionele website die bezoekers omzet in klanten. FunnelVision bouwt conversiegerichte websites voor het MKB.',
   alternates: { canonical: 'https://funnelvisionagency.com/diensten/website-bouwen' },

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Algemene Voorwaarden — FunnelVision',
+  title: 'Algemene Voorwaarden | FunnelVision',
   description: 'De algemene voorwaarden van FunnelVision voor al onze marketing- en advertentiediensten.',
 };
 

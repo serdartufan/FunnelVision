@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { siteConfig } from '@/data/content';
 
@@ -8,14 +9,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-1 mb-3">
-              <span className="text-[#F5A623] text-lg leading-none">▼</span>
-              <span className="font-bold text-xl text-white" style={{ fontFamily: 'var(--font-inter)' }}>
-                Funnel
-              </span>
-              <span className="text-xl italic text-white" style={{ fontFamily: 'var(--font-playfair)' }}>
-                Vision
-              </span>
+            <div className="mb-3">
+              <Image src="/Logo 2.png" alt="FunnelVision logo" height={48} width={192} className="h-12 w-auto" />
             </div>
             <p className="text-sm text-gray-400 mb-6">{siteConfig.tagline}</p>
             <div className="flex gap-4">
@@ -65,6 +60,7 @@ export default function Footer() {
                 { href: '/diensten/emailmarketing', label: 'E-mailmarketing' },
                 { href: '/diensten/website-bouwen', label: 'Website Bouwen' },
                 { href: '/diensten/linkedin-advertising', label: 'LinkedIn Advertising' },
+                { href: '/diensten/ai-oplossingen', label: 'AI Oplossingen' },
               ].map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} className="text-sm text-gray-400 hover:text-[#F5A623] transition-colors">
