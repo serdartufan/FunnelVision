@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/admin/'],
+        disallow: ['/api/'],
       },
       {
         userAgent: 'GPTBot',
@@ -19,10 +19,6 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: 'PerplexityBot',
         allow: '/',
-      },
-      {
-        userAgent: 'Google-Extended',
-        disallow: '/',
       },
     ],
     sitemap: 'https://funnelvisionagency.com/sitemap.xml',

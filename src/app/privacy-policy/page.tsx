@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
           </span>
           <h1
             className="text-4xl lg:text-6xl font-bold text-white leading-tight max-w-3xl"
-            style={{ fontFamily: 'var(--font-playfair)' }}
+            style={{ fontFamily: 'var(--font-serif)' }}
           >
             <em className="italic text-[#F5A623]">Privacybeleid</em>
           </h1>
@@ -29,7 +29,7 @@ export default function PrivacyPolicyPage() {
         <div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-12">
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               1. Wie zijn wij?
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -45,7 +45,7 @@ export default function PrivacyPolicyPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               2. Welke gegevens verzamelen wij?
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
@@ -68,7 +68,7 @@ export default function PrivacyPolicyPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               3. Waarvoor gebruiken wij jouw gegevens?
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -79,7 +79,7 @@ export default function PrivacyPolicyPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               4. Bewaartermijn
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -89,7 +89,7 @@ export default function PrivacyPolicyPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               5. Delen met derden
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -100,7 +100,7 @@ export default function PrivacyPolicyPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               6. Cookies en tracking
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -110,7 +110,7 @@ export default function PrivacyPolicyPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               7. Jouw rechten
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
@@ -141,7 +141,7 @@ export default function PrivacyPolicyPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               8. Klacht indienen
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -155,7 +155,7 @@ export default function PrivacyPolicyPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               9. Wijzigingen
             </h2>
             <p className="text-gray-600 leading-relaxed">

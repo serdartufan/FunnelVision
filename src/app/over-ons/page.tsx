@@ -70,7 +70,7 @@ export default function OverOnsPage() {
           <span className="text-xs font-semibold text-[#F5A623] uppercase tracking-widest block mb-4">Over ons</span>
           <h1
             className="text-4xl lg:text-6xl font-bold text-white leading-tight"
-            style={{ fontFamily: 'var(--font-playfair)' }}
+            style={{ fontFamily: 'var(--font-serif)' }}
           >
             Twee broers. <em className="italic text-[#F5A623]">Één missie.</em>
           </h1>
@@ -98,7 +98,7 @@ export default function OverOnsPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   <div className="absolute bottom-6 left-6">
-                    <h2 className="text-2xl font-bold text-white" style={{ fontFamily: 'var(--font-playfair)' }}>
+                    <h2 className="text-2xl font-bold text-white" style={{ fontFamily: 'var(--font-serif)' }}>
                       {member.name}
                     </h2>
                     <p className="text-[#F5A623] font-medium text-sm mt-1">{member.role}</p>
@@ -129,7 +129,7 @@ export default function OverOnsPage() {
           <div className="max-w-3xl">
             <h2
               className="text-3xl lg:text-4xl font-bold text-[#3D3D3D] mb-8"
-              style={{ fontFamily: 'var(--font-playfair)' }}
+              style={{ fontFamily: 'var(--font-serif)' }}
             >
               Onze <em className="italic text-[#F5A623]">aanpak.</em>
             </h2>
@@ -153,7 +153,7 @@ export default function OverOnsPage() {
                     <div className="w-2 h-2 rounded-full bg-white" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg text-[#3D3D3D] mb-2" style={{ fontFamily: 'var(--font-playfair)' }}>
+                    <h3 className="font-bold text-lg text-[#3D3D3D] mb-2" style={{ fontFamily: 'var(--font-serif)' }}>
                       {item.title}
                     </h3>
                     <p className="text-gray-500 leading-relaxed">{item.desc}</p>
@@ -170,7 +170,7 @@ export default function OverOnsPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2
             className="text-3xl lg:text-4xl font-bold text-[#3D3D3D] mb-16"
-            style={{ fontFamily: 'var(--font-playfair)' }}
+            style={{ fontFamily: 'var(--font-serif)' }}
           >
             Onze <em className="italic text-[#F5A623]">mijlpalen.</em>
           </h2>
@@ -200,7 +200,7 @@ export default function OverOnsPage() {
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <h2
             className="text-3xl lg:text-4xl font-bold text-white mb-6"
-            style={{ fontFamily: 'var(--font-playfair)' }}
+            style={{ fontFamily: 'var(--font-serif)' }}
           >
             Klaar om samen te <em className="italic text-[#F5A623]">groeien?</em>
           </h2>

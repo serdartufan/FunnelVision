@@ -97,7 +97,7 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <h1
               className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6"
-              style={{ fontFamily: 'var(--font-playfair)' }}
+              style={{ fontFamily: 'var(--font-serif)' }}
             >
               Meer klanten.
               <br />
@@ -135,7 +135,7 @@ export default function HomePage() {
               <div key={stat.label}>
                 <p
                   className="text-3xl lg:text-4xl font-bold text-[#F5A623]"
-                  style={{ fontFamily: 'var(--font-playfair)' }}
+                  style={{ fontFamily: 'var(--font-serif)' }}
                 >
                   {stat.value}
                 </p>
@@ -151,7 +151,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2
             className="text-4xl lg:text-5xl font-bold text-[#3D3D3D] mb-16"
-            style={{ fontFamily: 'var(--font-playfair)' }}
+            style={{ fontFamily: 'var(--font-serif)' }}
           >
             Wat we <em className="italic text-[#F5A623]">voor je doen.</em>
           </h2>
@@ -163,7 +163,7 @@ export default function HomePage() {
                 </span>
                 <h3
                   className="text-2xl lg:text-3xl font-bold text-[#3D3D3D] mb-4"
-                  style={{ fontFamily: 'var(--font-playfair)' }}
+                  style={{ fontFamily: 'var(--font-serif)' }}
                 >
                   {service.title}
                 </h3>
@@ -185,7 +185,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2
             className="text-4xl lg:text-5xl font-bold text-[#3D3D3D] mb-16"
-            style={{ fontFamily: 'var(--font-playfair)' }}
+            style={{ fontFamily: 'var(--font-serif)' }}
           >
             Resultaten die <em className="italic text-[#F5A623]">spreken.</em>
           </h2>
@@ -206,7 +206,7 @@ export default function HomePage() {
                   <span className="text-xs font-semibold text-[#F5A623] uppercase tracking-wider">{c.branch}</span>
                   <p
                     className="text-5xl font-bold text-[#3D3D3D] my-3"
-                    style={{ fontFamily: 'var(--font-playfair)' }}
+                    style={{ fontFamily: 'var(--font-serif)' }}
                   >
                     {c.result}
                   </p>
@@ -229,7 +229,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2
             className="text-4xl lg:text-5xl font-bold text-[#3D3D3D] mb-16"
-            style={{ fontFamily: 'var(--font-playfair)' }}
+            style={{ fontFamily: 'var(--font-serif)' }}
           >
             Twee broers. <em className="italic text-[#F5A623]">Één missie.</em>
           </h2>
@@ -248,7 +248,7 @@ export default function HomePage() {
                     />
                   </div>
                   <div>
-                    <h3 className="font-bold text-xl text-[#3D3D3D]" style={{ fontFamily: 'var(--font-playfair)' }}>
+                    <h3 className="font-bold text-xl text-[#3D3D3D]" style={{ fontFamily: 'var(--font-serif)' }}>
                       {member.name}
                     </h3>
                     <p className="text-sm text-[#F5A623] font-medium mt-1">{member.role}</p>
@@ -278,7 +278,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2
             className="text-4xl lg:text-5xl font-bold text-white mb-16 text-center"
-            style={{ fontFamily: 'var(--font-playfair)' }}
+            style={{ fontFamily: 'var(--font-serif)' }}
           >
             Waarom <em className="italic text-[#F5A623]">FunnelVision?</em>
           </h2>
@@ -299,7 +299,7 @@ export default function HomePage() {
             ].map((item) => (
               <div key={item.title} className="flex flex-col gap-5">
                 <div className="w-3 h-3 rounded-full bg-[#F5A623]" />
-                <h3 className="text-xl font-bold text-white" style={{ fontFamily: 'var(--font-playfair)' }}>
+                <h3 className="text-xl font-bold text-white" style={{ fontFamily: 'var(--font-serif)' }}>
                   {item.title}
                 </h3>
                 <p className="text-gray-400 leading-relaxed text-sm">{item.desc}</p>
@@ -314,7 +314,7 @@ export default function HomePage() {
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <h2
             className="text-3xl lg:text-4xl font-bold text-[#3D3D3D] mb-12 text-center"
-            style={{ fontFamily: 'var(--font-playfair)' }}
+            style={{ fontFamily: 'var(--font-serif)' }}
           >
             Veelgestelde <em className="italic text-[#F5A623]">vragen.</em>
           </h2>
@@ -338,7 +338,7 @@ export default function HomePage() {
               },
             ].map((item) => (
               <div key={item.q} className="bg-white rounded-2xl p-6">
-                <h3 className="font-bold text-[#3D3D3D] mb-3" style={{ fontFamily: 'var(--font-playfair)' }}>
+                <h3 className="font-bold text-[#3D3D3D] mb-3" style={{ fontFamily: 'var(--font-serif)' }}>
                   {item.q}
                 </h3>
                 <p className="text-gray-500 leading-relaxed text-sm">{item.a}</p>
@@ -353,7 +353,7 @@ export default function HomePage() {
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <h2
             className="text-4xl lg:text-5xl font-bold text-white mb-6"
-            style={{ fontFamily: 'var(--font-playfair)' }}
+            style={{ fontFamily: 'var(--font-serif)' }}
           >
             Klaar om te <em className="italic text-[#F5A623]">groeien?</em>
           </h2>

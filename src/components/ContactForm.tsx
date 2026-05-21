@@ -50,7 +50,7 @@ export default function ContactForm() {
         </div>
         <h2
           className="text-2xl font-bold text-[#3D3D3D] mb-4"
-          style={{ fontFamily: 'var(--font-playfair)' }}
+          style={{ fontFamily: 'var(--font-serif)' }}
         >
           Bedankt, {form.naam}!
         </h2>

@@ -16,7 +16,7 @@ export default function AlgemeneVoorwaardenPage() {
           </span>
           <h1
             className="text-4xl lg:text-6xl font-bold text-white leading-tight max-w-3xl"
-            style={{ fontFamily: 'var(--font-playfair)' }}
+            style={{ fontFamily: 'var(--font-serif)' }}
           >
             <em className="italic text-[#F5A623]">Algemene Voorwaarden</em>
           </h1>
@@ -29,7 +29,7 @@ export default function AlgemeneVoorwaardenPage() {
         <div className="max-w-3xl mx-auto px-6 lg:px-8 space-y-12">
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               1. Identiteit
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -44,7 +44,7 @@ export default function AlgemeneVoorwaardenPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               2. Diensten
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
@@ -70,7 +70,7 @@ export default function AlgemeneVoorwaardenPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               3. Betaling
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -83,7 +83,7 @@ export default function AlgemeneVoorwaardenPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               4. Looptijd en opzegging
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -95,7 +95,7 @@ export default function AlgemeneVoorwaardenPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               5. Aansprakelijkheid
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -108,7 +108,7 @@ export default function AlgemeneVoorwaardenPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               6. Verplichtingen opdrachtgever
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -120,7 +120,7 @@ export default function AlgemeneVoorwaardenPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               7. Intellectueel eigendom
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -132,7 +132,7 @@ export default function AlgemeneVoorwaardenPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               8. Geheimhouding
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -143,7 +143,7 @@ export default function AlgemeneVoorwaardenPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               9. Toepasselijk recht en geschillen
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -154,7 +154,7 @@ export default function AlgemeneVoorwaardenPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-playfair)' }}>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
               10. Wijzigingen
             </h2>
             <p className="text-gray-600 leading-relaxed">

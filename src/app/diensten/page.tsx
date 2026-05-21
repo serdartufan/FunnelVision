@@ -18,7 +18,7 @@ export default function DienstenPage() {
           <span className="text-xs font-semibold text-[#F5A623] uppercase tracking-widest block mb-4">Diensten</span>
           <h1
             className="text-4xl lg:text-6xl font-bold text-white leading-tight"
-            style={{ fontFamily: 'var(--font-playfair)' }}
+            style={{ fontFamily: 'var(--font-serif)' }}
           >
             Wat we <em className="italic text-[#F5A623]">voor je doen.</em>
           </h1>
@@ -44,7 +44,7 @@ export default function DienstenPage() {
                 </span>
                 <h2
                   className="text-3xl lg:text-4xl font-bold text-[#3D3D3D] mb-5"
-                  style={{ fontFamily: 'var(--font-playfair)' }}
+                  style={{ fontFamily: 'var(--font-serif)' }}
                 >
                   {service.title}
                 </h2>
@@ -77,7 +77,7 @@ export default function DienstenPage() {
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <h2
             className="text-3xl lg:text-4xl font-bold text-white mb-6"
-            style={{ fontFamily: 'var(--font-playfair)' }}
+            style={{ fontFamily: 'var(--font-serif)' }}
           >
             Niet zeker welke dienst <em className="italic text-[#F5A623]">bij jou past?</em>
           </h2>

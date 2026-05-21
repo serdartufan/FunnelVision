@@ -74,7 +74,7 @@ export default function ContactPage() {
           <span className="text-xs font-semibold text-[#F5A623] uppercase tracking-widest block mb-4">Contact</span>
           <h1
             className="text-4xl lg:text-6xl font-bold text-white leading-tight"
-            style={{ fontFamily: 'var(--font-playfair)' }}
+            style={{ fontFamily: 'var(--font-serif)' }}
           >
             Laten we <em className="italic text-[#F5A623]">kennismaken.</em>
           </h1>
@@ -93,7 +93,7 @@ export default function ContactPage() {
             <div>
               <h2
                 className="text-2xl font-bold text-[#3D3D3D] mb-8"
-                style={{ fontFamily: 'var(--font-playfair)' }}
+                style={{ fontFamily: 'var(--font-serif)' }}
               >
                 Direct contact
               </h2>

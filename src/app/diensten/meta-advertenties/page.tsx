@@ -87,7 +87,7 @@ export default function MetaAdvertentiesPage() {
           </span>
           <h1
             className="text-4xl lg:text-6xl font-bold text-white leading-tight max-w-3xl"
-            style={{ fontFamily: 'var(--font-playfair)' }}
+            style={{ fontFamily: 'var(--font-serif)' }}
           >
             <em className="italic text-[#F5A623]">Meta Advertenties</em> die écht converteren.
           </h1>
@@ -102,7 +102,7 @@ export default function MetaAdvertentiesPage() {
             <div>
               <h2
                 className="text-3xl lg:text-4xl font-bold text-[#3D3D3D] mb-6"
-                style={{ fontFamily: 'var(--font-playfair)' }}
+                style={{ fontFamily: 'var(--font-serif)' }}
               >
                 Wat krijg je?
               </h2>
@@ -139,7 +139,7 @@ export default function MetaAdvertentiesPage() {
           <div className="max-w-2xl">
             <h2
               className="text-2xl lg:text-3xl font-bold text-[#3D3D3D] mb-4"
-              style={{ fontFamily: 'var(--font-playfair)' }}
+              style={{ fontFamily: 'var(--font-serif)' }}
             >
               Voor wie is dit?
             </h2>
@@ -154,7 +154,7 @@ export default function MetaAdvertentiesPage() {
           <div className="grid grid-cols-2 gap-8 max-w-lg">
             {service.stats.map((stat) => (
               <div key={stat.label}>
-                <p className="text-4xl lg:text-5xl font-bold text-[#F5A623]" style={{ fontFamily: 'var(--font-playfair)' }}>
+                <p className="text-4xl lg:text-5xl font-bold text-[#F5A623]" style={{ fontFamily: 'var(--font-serif)' }}>
                   {stat.value}
                 </p>
                 <p className="text-gray-400 text-sm mt-2">{stat.label}</p>
@@ -167,7 +167,7 @@ export default function MetaAdvertentiesPage() {
       {/* FAQ */}
       <section className="bg-white py-20">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
-          <h2 className="text-2xl lg:text-3xl font-bold text-[#3D3D3D] mb-8" style={{ fontFamily: 'var(--font-playfair)' }}>
+          <h2 className="text-2xl lg:text-3xl font-bold text-[#3D3D3D] mb-8" style={{ fontFamily: 'var(--font-serif)' }}>
             Veelgestelde vragen
           </h2>
           <div className="space-y-6">
@@ -186,7 +186,7 @@ export default function MetaAdvertentiesPage() {
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <h2
             className="text-3xl lg:text-4xl font-bold text-[#3D3D3D] mb-6"
-            style={{ fontFamily: 'var(--font-playfair)' }}
+            style={{ fontFamily: 'var(--font-serif)' }}
           >
             Klaar voor <em className="italic text-[#F5A623]">meer leads?</em>
           </h2>
