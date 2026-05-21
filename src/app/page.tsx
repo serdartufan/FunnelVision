@@ -1,7 +1,96 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { services, cases, team } from '@/data/content';
+import {
+  IconDeviceMobile,
+  IconSearch,
+  IconMail,
+  IconBrandLinkedin,
+  IconCode,
+  IconBrain,
+} from '@tabler/icons-react';
+import { cases, team } from '@/data/content';
+
+const dienstenCards = [
+  {
+    slug: 'meta-advertenties',
+    number: '01',
+    label: 'FACEBOOK & INSTAGRAM',
+    title: 'Meta Advertenties',
+    short: 'Bereik jouw ideale klant op Facebook en Instagram met advertenties die écht converteren.',
+    gradient: 'linear-gradient(135deg, #2a2010 0%, #1A1A1A 100%)',
+    Icon: IconDeviceMobile,
+    stats: [
+      { value: '340%', label: 'Gem. ROAS' },
+      { value: '50+', label: 'Klanten' },
+    ],
+  },
+  {
+    slug: 'google-ads',
+    number: '02',
+    label: 'SEARCH ENGINE ADVERTISING',
+    title: 'Google Ads',
+    short: 'Word gevonden door mensen die nu actief zoeken naar jouw dienst of product.',
+    gradient: 'linear-gradient(135deg, #0d1f1a 0%, #1A1A1A 100%)',
+    Icon: IconSearch,
+    stats: [
+      { value: '€0,80', label: 'Cost per lead' },
+      { value: '+280%', label: 'Meer leads' },
+    ],
+  },
+  {
+    slug: 'emailmarketing',
+    number: '03',
+    label: 'AUTOMATISERING & CAMPAGNES',
+    title: 'E-mailmarketing',
+    short: 'Bouw een relatie met je klanten en genereer omzet op autopilot via slimme e-mailflows.',
+    gradient: 'linear-gradient(135deg, #1a0d1f 0%, #1A1A1A 100%)',
+    Icon: IconMail,
+    stats: [
+      { value: '45%', label: 'Open rate' },
+      { value: '3x', label: 'Meer omzet' },
+    ],
+  },
+  {
+    slug: 'linkedin-advertising',
+    number: '04',
+    label: 'B2B LEAD GENERATIE',
+    title: 'LinkedIn Advertising',
+    short: 'Bereik beslissers en professionals via het meest effectieve B2B advertentieplatform.',
+    gradient: 'linear-gradient(135deg, #0d1526 0%, #1A1A1A 100%)',
+    Icon: IconBrandLinkedin,
+    stats: [
+      { value: 'Hoog', label: 'Leadkwaliteit' },
+      { value: '1M+', label: 'B2B bereik' },
+    ],
+  },
+  {
+    slug: 'website-bouwen',
+    number: '05',
+    label: 'CONVERSIEGERICHT & SNEL',
+    title: 'Website Bouwen',
+    short: 'Een snelle, professionele website die bezoekers omzet in klanten. Gebouwd om te scoren.',
+    gradient: 'linear-gradient(135deg, #0d1a0d 0%, #1A1A1A 100%)',
+    Icon: IconCode,
+    stats: [
+      { value: '100%', label: 'Conversiegericht' },
+      { value: 'Snel', label: '& SEO-proof' },
+    ],
+  },
+  {
+    slug: 'ai-oplossingen',
+    number: '06',
+    label: 'SLIMMER WERKEN, MEER TIJD',
+    title: 'AI Oplossingen',
+    short: 'Van bedrijfsapplicaties tot geautomatiseerde processen die je team tijd teruggeven.',
+    gradient: 'linear-gradient(135deg, #1a1020 0%, #1A1A1A 100%)',
+    Icon: IconBrain,
+    stats: [
+      { value: '2+', label: 'Jaar ervaring' },
+      { value: 'Tot 40%', label: 'Tijdsbesparing' },
+    ],
+  },
+];
 
 export const metadata: Metadata = {
   title: 'FunnelVision | Marketing Bureau voor het MKB',
@@ -156,24 +245,86 @@ export default function HomePage() {
             Wat we <em className="italic text-[#F5A623]">voor je doen.</em>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {services.map((service) => (
-              <article key={service.slug} className="bg-white rounded-2xl p-8 hover:shadow-md transition-shadow group">
-                <span className="text-xs font-semibold text-[#F5A623] tracking-widest uppercase block mb-6">
-                  {service.number} · {service.subtitle}
-                </span>
+            {dienstenCards.map((card) => (
+              <article
+                key={card.slug}
+                className="flex flex-col"
+                style={{
+                  background: card.gradient,
+                  borderRadius: '16px',
+                  padding: '24px',
+                  minHeight: '280px',
+                }}
+              >
+                <div className="flex items-start justify-between mb-5">
+                  <span
+                    style={{
+                      color: '#F5A623',
+                      fontSize: '11px',
+                      letterSpacing: '0.12em',
+                      textTransform: 'uppercase',
+                      fontFamily: 'var(--font-sans)',
+                    }}
+                  >
+                    {card.number} · {card.label}
+                  </span>
+                  <card.Icon size={20} style={{ color: '#F5A623', opacity: 0.2, flexShrink: 0 }} />
+                </div>
                 <h3
-                  className="text-2xl lg:text-3xl font-bold text-[#3D3D3D] mb-4"
-                  style={{ fontFamily: 'var(--font-serif)' }}
+                  className="font-bold text-white mb-3"
+                  style={{ fontFamily: 'var(--font-serif)', fontSize: '30px', lineHeight: '1.1' }}
                 >
-                  {service.title}
+                  {card.title}
                 </h3>
-                <p className="text-gray-500 mb-8 leading-relaxed">{service.short}</p>
-                <Link
-                  href={`/diensten/${service.slug}`}
-                  className="inline-flex items-center gap-2 text-[#F5A623] font-semibold text-sm group-hover:gap-3 transition-all"
+                <p
+                  className="leading-relaxed mb-6 flex-1"
+                  style={{
+                    fontFamily: 'var(--font-sans)',
+                    fontSize: '13px',
+                    color: 'rgba(255,255,255,0.65)',
+                  }}
                 >
-                  Meer lezen →
-                </Link>
+                  {card.short}
+                </p>
+                <div className="flex items-end justify-between">
+                  <div className="flex gap-6">
+                    {card.stats.map((stat) => (
+                      <div key={stat.label}>
+                        <p
+                          className="font-bold"
+                          style={{
+                            fontFamily: 'var(--font-serif)',
+                            color: '#F5A623',
+                            fontSize: '20px',
+                            lineHeight: '1.1',
+                          }}
+                        >
+                          {stat.value}
+                        </p>
+                        <p
+                          style={{
+                            fontFamily: 'var(--font-sans)',
+                            fontSize: '11px',
+                            color: 'rgba(255,255,255,0.5)',
+                          }}
+                        >
+                          {stat.label}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                  <Link
+                    href={`/diensten/${card.slug}`}
+                    style={{
+                      color: '#F5A623',
+                      fontFamily: 'var(--font-sans)',
+                      fontSize: '13px',
+                      fontWeight: 600,
+                    }}
+                  >
+                    Meer lezen →
+                  </Link>
+                </div>
               </article>
             ))}
           </div>
