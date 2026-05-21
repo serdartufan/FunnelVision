@@ -51,3 +51,59 @@ body {
   animation: drift 20s linear infinite;
   will-change: transform;
 }
+
+/* Navbar link underline slide-in */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #F5A623;
+  transition: width 250ms ease;
+}
+.nav-link:hover::after,
+.nav-link[data-active]::after {
+  width: 100%;
+}
+
+/* Logo hover glow */
+.logo-link {
+  transition: filter 200ms ease;
+}
+.logo-link:hover {
+  filter: drop-shadow(0 0 6px rgba(245, 166, 35, 0.45));
+}
+
+/* Button scale micro-interaction */
+.btn-scale {
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+.btn-scale:hover {
+  transform: scale(1.02);
+}
+.btn-scale:active {
+  transform: scale(0.97);
+  transition-duration: 100ms;
+}
+
+/* Reduced motion: disable all animations */
+@media (prefers-reduced-motion: reduce) {
+  .hero-animate {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .drift-animate {
+    animation: none !important;
+  }
+  .btn-scale:hover,
+  .btn-scale:active {
+    transform: none !important;
+  }
+}

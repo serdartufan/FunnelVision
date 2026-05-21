@@ -75,7 +75,7 @@ export default function ContactForm() {
             required
             value={form.naam}
             onChange={handleChange}
-            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-[#3D3D3D] focus:outline-none focus:border-[#F5A623] transition-colors"
+            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-[#3D3D3D] focus:outline-none focus:border-[#F5A623] focus:shadow-[0_0_0_3px_rgba(245,166,35,0.15)] transition-[border-color,box-shadow] duration-200"
             placeholder="Jouw naam"
           />
         </div>
@@ -89,7 +89,7 @@ export default function ContactForm() {
             type="text"
             value={form.bedrijf}
             onChange={handleChange}
-            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-[#3D3D3D] focus:outline-none focus:border-[#F5A623] transition-colors"
+            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-[#3D3D3D] focus:outline-none focus:border-[#F5A623] focus:shadow-[0_0_0_3px_rgba(245,166,35,0.15)] transition-[border-color,box-shadow] duration-200"
             placeholder="Naam van je bedrijf"
           />
         </div>
@@ -104,7 +104,7 @@ export default function ContactForm() {
             required
             value={form.email}
             onChange={handleChange}
-            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-[#3D3D3D] focus:outline-none focus:border-[#F5A623] transition-colors"
+            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-[#3D3D3D] focus:outline-none focus:border-[#F5A623] focus:shadow-[0_0_0_3px_rgba(245,166,35,0.15)] transition-[border-color,box-shadow] duration-200"
             placeholder="jij@bedrijf.nl"
           />
         </div>
@@ -118,7 +118,7 @@ export default function ContactForm() {
             type="tel"
             value={form.telefoon}
             onChange={handleChange}
-            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-[#3D3D3D] focus:outline-none focus:border-[#F5A623] transition-colors"
+            className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-[#3D3D3D] focus:outline-none focus:border-[#F5A623] focus:shadow-[0_0_0_3px_rgba(245,166,35,0.15)] transition-[border-color,box-shadow] duration-200"
             placeholder="+31 6 12345678"
           />
         </div>
@@ -132,7 +132,7 @@ export default function ContactForm() {
           name="dienst"
           value={form.dienst}
           onChange={handleChange}
-          className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-[#3D3D3D] focus:outline-none focus:border-[#F5A623] transition-colors bg-white"
+          className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-[#3D3D3D] focus:outline-none focus:border-[#F5A623] focus:shadow-[0_0_0_3px_rgba(245,166,35,0.15)] transition-[border-color,box-shadow] duration-200 bg-white"
         >
           <option value="">Selecteer een dienst</option>
           <option value="meta">Meta Advertenties (Facebook & Instagram)</option>
@@ -154,7 +154,7 @@ export default function ContactForm() {
           rows={5}
           value={form.bericht}
           onChange={handleChange}
-          className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-[#3D3D3D] focus:outline-none focus:border-[#F5A623] transition-colors resize-none"
+          className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-[#3D3D3D] focus:outline-none focus:border-[#F5A623] focus:shadow-[0_0_0_3px_rgba(245,166,35,0.15)] transition-[border-color,box-shadow] duration-200 resize-none"
           placeholder="Wat doe je, wat is je doel, en wat loopt er nu nog niet zoals je wilt?"
         />
       </div>
@@ -169,7 +169,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={loading}
-        className="w-full bg-[#F5A623] text-white font-bold py-4 rounded-full hover:bg-[#e09520] transition-colors text-lg disabled:opacity-60 disabled:cursor-not-allowed"
+        className="w-full bg-[#F5A623] text-white font-bold py-4 rounded-full hover:bg-[#F0A020] text-lg disabled:opacity-60 disabled:cursor-not-allowed btn-scale transition-[background-color,transform] duration-200"
       >
         {loading ? 'Bezig met verzenden…' : 'Verstuur bericht'}
       </button>

@@ -10,6 +10,8 @@ import {
   IconBrain,
 } from '@tabler/icons-react';
 import { cases, team } from '@/data/content';
+import ScrollAnimation from '@/components/ScrollAnimation';
+import CountUp from '@/components/CountUp';
 
 const dienstenCards = [
   {
@@ -176,7 +178,6 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* Speakable / screen-reader intro voor zoekmachines */}
       <p className="sr-only speakable">
         FunnelVision is een resultaatgericht marketing bureau voor het Nederlandse MKB, gespecialiseerd in
         Meta advertenties, Google Ads, LinkedIn Advertising en e-mailmarketing. Wij helpen ondernemers meer
@@ -189,54 +190,27 @@ export default function HomePage() {
         className="relative overflow-hidden flex flex-col"
         style={{ background: '#111111', minHeight: '100vh' }}
       >
-        {/* Decorative circle top-right */}
         <div
           className="absolute pointer-events-none"
-          style={{
-            top: '-80px',
-            right: '-80px',
-            width: '400px',
-            height: '400px',
-            borderRadius: '50%',
-            background: '#F5A62306',
-          }}
+          style={{ top: '-80px', right: '-80px', width: '400px', height: '400px', borderRadius: '50%', background: '#F5A62306' }}
         />
-        {/* Decorative vertical line */}
         <div
           className="absolute top-0 bottom-0 hidden lg:block pointer-events-none"
-          style={{
-            left: '58%',
-            width: '2px',
-            background: 'linear-gradient(to bottom, transparent, #F5A62325 50%, transparent)',
-          }}
+          style={{ left: '58%', width: '2px', background: 'linear-gradient(to bottom, transparent, #F5A62325 50%, transparent)' }}
         />
 
-        {/* Main content */}
         <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-8 pt-36 pb-16">
           <div className="hero-animate" style={{ maxWidth: '560px' }}>
-            {/* Label */}
             <p
               className="mb-7"
-              style={{
-                fontFamily: 'var(--font-sans)',
-                fontSize: '11px',
-                textTransform: 'uppercase',
-                letterSpacing: '0.16em',
-                color: '#F5A623',
-              }}
+              style={{ fontFamily: 'var(--font-sans)', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.16em', color: '#F5A623' }}
             >
               Marketing bureau · Nederland
             </p>
 
-            {/* Headline */}
             <h1
               className="text-white font-bold mb-6"
-              style={{
-                fontFamily: 'var(--font-serif)',
-                fontSize: 'clamp(44px, 5.5vw, 72px)',
-                lineHeight: 1.05,
-                fontWeight: 700,
-              }}
+              style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(44px, 5.5vw, 72px)', lineHeight: 1.05, fontWeight: 700 }}
             >
               Meer klanten.
               <br />
@@ -245,45 +219,26 @@ export default function HomePage() {
               <em className="italic">Meer groei.</em>
             </h1>
 
-            {/* Subtext */}
             <p
               className="mb-10"
-              style={{
-                fontFamily: 'var(--font-sans)',
-                fontSize: '15px',
-                color: 'rgba(255,255,255,0.6)',
-                lineHeight: 1.6,
-                maxWidth: '480px',
-              }}
+              style={{ fontFamily: 'var(--font-sans)', fontSize: '15px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.6, maxWidth: '480px' }}
             >
               FunnelVision helpt Nederlandse ondernemers groeien via resultaatgerichte Meta ads, Google Ads en
               e-mailmarketing.
             </p>
 
-            {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/cases"
-                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full transition-colors hover:bg-[#e09520]"
-                style={{
-                  background: '#F5A623',
-                  color: '#1A1A1A',
-                  fontFamily: 'var(--font-sans)',
-                  fontWeight: 600,
-                }}
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#F5A623] text-[#1A1A1A] font-semibold transition-[background-color,transform] duration-200 hover:bg-[#F0A020] btn-scale"
+                style={{ fontFamily: 'var(--font-sans)' }}
               >
                 Bekijk onze cases →
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full transition-colors hover:border-[#F5A623] hover:text-[#F5A623]"
-                style={{
-                  background: 'transparent',
-                  border: '1px solid rgba(255,255,255,0.3)',
-                  color: 'white',
-                  fontFamily: 'var(--font-sans)',
-                  fontWeight: 600,
-                }}
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full border border-white/30 text-white font-semibold transition-[background-color,border-color,color,transform] duration-200 hover:bg-white/10 btn-scale"
+                style={{ fontFamily: 'var(--font-sans)' }}
               >
                 Gratis kennismaken
               </Link>
@@ -301,12 +256,7 @@ export default function HomePage() {
               <span
                 key={i}
                 className="inline-flex items-center"
-                style={{
-                  fontFamily: 'var(--font-sans)',
-                  fontSize: '13px',
-                  color: 'rgba(255,255,255,0.4)',
-                  paddingRight: '20px',
-                }}
+                style={{ fontFamily: 'var(--font-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.4)', paddingRight: '20px' }}
               >
                 {item}
                 <span style={{ color: '#F5A623', margin: '0 20px' }}>◆</span>
@@ -319,94 +269,64 @@ export default function HomePage() {
       {/* Diensten preview */}
       <section className="bg-[#F5F2EB] py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2
-            className="text-4xl lg:text-5xl font-bold text-[#3D3D3D] mb-16"
-            style={{ fontFamily: 'var(--font-serif)' }}
-          >
-            Wat we <em className="italic text-[#F5A623]">voor je doen.</em>
-          </h2>
+          <ScrollAnimation>
+            <h2
+              className="text-4xl lg:text-5xl font-bold text-[#3D3D3D] mb-16"
+              style={{ fontFamily: 'var(--font-serif)' }}
+            >
+              Wat we <em className="italic text-[#F5A623]">voor je doen.</em>
+            </h2>
+          </ScrollAnimation>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {dienstenCards.map((card) => (
-              <article
-                key={card.slug}
-                className="flex flex-col"
-                style={{
-                  background: card.gradient,
-                  borderRadius: '16px',
-                  padding: '24px',
-                  minHeight: '280px',
-                }}
-              >
-                <div className="flex items-start justify-between mb-5">
-                  <span
-                    style={{
-                      color: '#F5A623',
-                      fontSize: '11px',
-                      letterSpacing: '0.12em',
-                      textTransform: 'uppercase',
-                      fontFamily: 'var(--font-sans)',
-                    }}
-                  >
-                    {card.number} · {card.label}
-                  </span>
-                  <card.Icon size={20} style={{ color: '#F5A623', opacity: 0.2, flexShrink: 0 }} />
-                </div>
-                <h3
-                  className="font-bold text-white mb-3"
-                  style={{ fontFamily: 'var(--font-serif)', fontSize: '30px', lineHeight: '1.1' }}
+            {dienstenCards.map((card, i) => (
+              <ScrollAnimation key={card.slug} delay={i * 100}>
+                <article
+                  className="flex flex-col group transition-[transform,box-shadow] duration-300 ease-out hover:-translate-y-[6px] hover:shadow-[0_8px_30px_rgba(245,166,35,0.15)]"
+                  style={{ background: card.gradient, borderRadius: '16px', padding: '24px', minHeight: '280px' }}
                 >
-                  {card.title}
-                </h3>
-                <p
-                  className="leading-relaxed mb-6 flex-1"
-                  style={{
-                    fontFamily: 'var(--font-sans)',
-                    fontSize: '13px',
-                    color: 'rgba(255,255,255,0.65)',
-                  }}
-                >
-                  {card.short}
-                </p>
-                <div className="flex items-end justify-between">
-                  <div className="flex gap-6">
-                    {card.stats.map((stat) => (
-                      <div key={stat.label}>
-                        <p
-                          className="font-bold"
-                          style={{
-                            fontFamily: 'var(--font-serif)',
-                            color: '#F5A623',
-                            fontSize: '20px',
-                            lineHeight: '1.1',
-                          }}
-                        >
-                          {stat.value}
-                        </p>
-                        <p
-                          style={{
-                            fontFamily: 'var(--font-sans)',
-                            fontSize: '11px',
-                            color: 'rgba(255,255,255,0.5)',
-                          }}
-                        >
-                          {stat.label}
-                        </p>
-                      </div>
-                    ))}
+                  <div className="flex items-start justify-between mb-5">
+                    <span
+                      style={{ color: '#F5A623', fontSize: '11px', letterSpacing: '0.12em', textTransform: 'uppercase', fontFamily: 'var(--font-sans)' }}
+                    >
+                      {card.number} · {card.label}
+                    </span>
+                    <card.Icon size={20} style={{ color: '#F5A623', opacity: 0.2, flexShrink: 0 }} />
                   </div>
-                  <Link
-                    href={`/diensten/${card.slug}`}
-                    style={{
-                      color: '#F5A623',
-                      fontFamily: 'var(--font-sans)',
-                      fontSize: '13px',
-                      fontWeight: 600,
-                    }}
+                  <h3
+                    className="font-bold text-white mb-3"
+                    style={{ fontFamily: 'var(--font-serif)', fontSize: '30px', lineHeight: '1.1' }}
                   >
-                    Meer lezen →
-                  </Link>
-                </div>
-              </article>
+                    {card.title}
+                  </h3>
+                  <p
+                    className="leading-relaxed mb-6 flex-1"
+                    style={{ fontFamily: 'var(--font-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.65)' }}
+                  >
+                    {card.short}
+                  </p>
+                  <div className="flex items-end justify-between">
+                    <div className="flex gap-6">
+                      {card.stats.map((stat) => (
+                        <div key={stat.label}>
+                          <p className="font-bold" style={{ fontFamily: 'var(--font-serif)', color: '#F5A623', fontSize: '20px', lineHeight: '1.1' }}>
+                            <CountUp value={stat.value} />
+                          </p>
+                          <p style={{ fontFamily: 'var(--font-sans)', fontSize: '11px', color: 'rgba(255,255,255,0.5)' }}>
+                            {stat.label}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                    <Link
+                      href={`/diensten/${card.slug}`}
+                      className="transition-transform duration-300 group-hover:translate-x-1 inline-block"
+                      style={{ color: '#F5A623', fontFamily: 'var(--font-sans)', fontSize: '13px', fontWeight: 600 }}
+                    >
+                      Meer lezen →
+                    </Link>
+                  </div>
+                </article>
+              </ScrollAnimation>
             ))}
           </div>
         </div>
@@ -415,41 +335,56 @@ export default function HomePage() {
       {/* Cases preview */}
       <section className="bg-white py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2
-            className="text-4xl lg:text-5xl font-bold text-[#3D3D3D] mb-16"
-            style={{ fontFamily: 'var(--font-serif)' }}
-          >
-            Resultaten die <em className="italic text-[#F5A623]">spreken.</em>
-          </h2>
+          <ScrollAnimation>
+            <h2
+              className="text-4xl lg:text-5xl font-bold text-[#3D3D3D] mb-16"
+              style={{ fontFamily: 'var(--font-serif)' }}
+            >
+              Resultaten die <em className="italic text-[#F5A623]">spreken.</em>
+            </h2>
+          </ScrollAnimation>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {cases.slice(0, 3).map((c) => (
-              <article key={c.id} className="group rounded-2xl overflow-hidden bg-[#F5F2EB]">
-                <div className="relative h-48 overflow-hidden">
-                  <Image
-                    src={c.unsplash}
-                    alt={c.unsplashAlt}
-                    fill
-                    loading="lazy"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-6">
-                  <span className="text-xs font-semibold text-[#F5A623] uppercase tracking-wider">{c.branch}</span>
-                  <p
-                    className="text-5xl font-bold text-[#3D3D3D] my-3"
-                    style={{ fontFamily: 'var(--font-serif)' }}
-                  >
-                    {c.result}
-                  </p>
-                  <p className="text-sm font-medium text-[#3D3D3D] mb-2">{c.metric}</p>
-                  <p className="text-sm text-gray-500">{c.description}</p>
-                </div>
-              </article>
+            {cases.slice(0, 3).map((c, i) => (
+              <ScrollAnimation key={c.id} delay={i * 100}>
+                <article className="group rounded-2xl overflow-hidden bg-[#F5F2EB] transition-transform duration-300 hover:scale-[1.02] cursor-pointer">
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src={c.unsplash}
+                      alt={c.unsplashAlt}
+                      fill
+                      loading="lazy"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    {/* Dark overlay */}
+                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    {/* CTA from bottom */}
+                    <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                      <span
+                        className="text-white font-semibold text-sm"
+                        style={{ fontFamily: 'var(--font-sans)' }}
+                      >
+                        Bekijk case →
+                      </span>
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs font-semibold text-[#F5A623] uppercase tracking-wider">{c.branch}</span>
+                    <p
+                      className="text-5xl font-bold text-[#3D3D3D] my-3"
+                      style={{ fontFamily: 'var(--font-serif)' }}
+                    >
+                      <CountUp value={c.result} />
+                    </p>
+                    <p className="text-sm font-medium text-[#3D3D3D] mb-2">{c.metric}</p>
+                    <p className="text-sm text-gray-500">{c.description}</p>
+                  </div>
+                </article>
+              </ScrollAnimation>
             ))}
           </div>
           <div className="mt-10 text-center">
-            <Link href="/cases" className="inline-flex items-center gap-2 text-[#F5A623] font-semibold">
+            <Link href="/cases" className="inline-flex items-center gap-2 text-[#F5A623] font-semibold transition-[gap] duration-200 hover:gap-3">
               Alle cases bekijken →
             </Link>
           </div>
@@ -459,46 +394,50 @@ export default function HomePage() {
       {/* Over ons preview */}
       <section className="bg-[#F5F2EB] py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2
-            className="text-4xl lg:text-5xl font-bold text-[#3D3D3D] mb-16"
-            style={{ fontFamily: 'var(--font-serif)' }}
-          >
-            Twee broers. <em className="italic text-[#F5A623]">Één missie.</em>
-          </h2>
+          <ScrollAnimation>
+            <h2
+              className="text-4xl lg:text-5xl font-bold text-[#3D3D3D] mb-16"
+              style={{ fontFamily: 'var(--font-serif)' }}
+            >
+              Twee broers. <em className="italic text-[#F5A623]">Één missie.</em>
+            </h2>
+          </ScrollAnimation>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {team.map((member) => (
-              <div key={member.name} className="bg-white rounded-2xl p-8 flex flex-col gap-6">
-                <div className="flex items-start gap-5">
-                  <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0">
-                    <Image
-                      src={member.unsplash}
-                      alt={member.unsplashAlt}
-                      fill
-                      loading="lazy"
-                      sizes="80px"
-                      className="object-cover"
-                    />
+            {team.map((member, i) => (
+              <ScrollAnimation key={member.name} delay={i * 100}>
+                <div className="bg-white rounded-2xl p-8 flex flex-col gap-6">
+                  <div className="flex items-start gap-5">
+                    <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0">
+                      <Image
+                        src={member.unsplash}
+                        alt={member.unsplashAlt}
+                        fill
+                        loading="lazy"
+                        sizes="80px"
+                        className="object-cover"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-xl text-[#3D3D3D]" style={{ fontFamily: 'var(--font-serif)' }}>
+                        {member.name}
+                      </h3>
+                      <p className="text-sm text-[#F5A623] font-medium mt-1">{member.role}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-bold text-xl text-[#3D3D3D]" style={{ fontFamily: 'var(--font-serif)' }}>
-                      {member.name}
-                    </h3>
-                    <p className="text-sm text-[#F5A623] font-medium mt-1">{member.role}</p>
+                  <p className="text-gray-500 leading-relaxed text-sm">{member.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {member.expertise.map((tag) => (
+                      <span key={tag} className="text-xs bg-[#F5F2EB] text-[#3D3D3D] px-3 py-1 rounded-full font-medium">
+                        {tag}
+                      </span>
+                    ))}
                   </div>
                 </div>
-                <p className="text-gray-500 leading-relaxed text-sm">{member.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {member.expertise.map((tag) => (
-                    <span key={tag} className="text-xs bg-[#F5F2EB] text-[#3D3D3D] px-3 py-1 rounded-full font-medium">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
+              </ScrollAnimation>
             ))}
           </div>
           <div className="mt-10 text-center">
-            <Link href="/over-ons" className="inline-flex items-center gap-2 text-[#F5A623] font-semibold">
+            <Link href="/over-ons" className="inline-flex items-center gap-2 text-[#F5A623] font-semibold transition-[gap] duration-200 hover:gap-3">
               Leer ons kennen →
             </Link>
           </div>
@@ -508,12 +447,14 @@ export default function HomePage() {
       {/* Waarom FunnelVision */}
       <section className="bg-[#1A1A1A] py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2
-            className="text-4xl lg:text-5xl font-bold text-white mb-16 text-center"
-            style={{ fontFamily: 'var(--font-serif)' }}
-          >
-            Waarom <em className="italic text-[#F5A623]">FunnelVision?</em>
-          </h2>
+          <ScrollAnimation>
+            <h2
+              className="text-4xl lg:text-5xl font-bold text-white mb-16 text-center"
+              style={{ fontFamily: 'var(--font-serif)' }}
+            >
+              Waarom <em className="italic text-[#F5A623]">FunnelVision?</em>
+            </h2>
+          </ScrollAnimation>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {[
               {
@@ -528,14 +469,16 @@ export default function HomePage() {
                 title: 'Resultaat staat centraal',
                 desc: 'We meten alles. Elke euro die je uitgeeft aan advertenties wordt gevolgd en geoptimaliseerd op rendement.',
               },
-            ].map((item) => (
-              <div key={item.title} className="flex flex-col gap-5">
-                <div className="w-3 h-3 rounded-full bg-[#F5A623]" />
-                <h3 className="text-xl font-bold text-white" style={{ fontFamily: 'var(--font-serif)' }}>
-                  {item.title}
-                </h3>
-                <p className="text-gray-400 leading-relaxed text-sm">{item.desc}</p>
-              </div>
+            ].map((item, i) => (
+              <ScrollAnimation key={item.title} delay={i * 100}>
+                <div className="flex flex-col gap-5">
+                  <div className="w-3 h-3 rounded-full bg-[#F5A623]" />
+                  <h3 className="text-xl font-bold text-white" style={{ fontFamily: 'var(--font-serif)' }}>
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-400 leading-relaxed text-sm">{item.desc}</p>
+                </div>
+              </ScrollAnimation>
             ))}
           </div>
         </div>
@@ -544,12 +487,14 @@ export default function HomePage() {
       {/* FAQ */}
       <section className="bg-[#F5F2EB] py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
-          <h2
-            className="text-3xl lg:text-4xl font-bold text-[#3D3D3D] mb-12 text-center"
-            style={{ fontFamily: 'var(--font-serif)' }}
-          >
-            Veelgestelde <em className="italic text-[#F5A623]">vragen.</em>
-          </h2>
+          <ScrollAnimation>
+            <h2
+              className="text-3xl lg:text-4xl font-bold text-[#3D3D3D] mb-12 text-center"
+              style={{ fontFamily: 'var(--font-serif)' }}
+            >
+              Veelgestelde <em className="italic text-[#F5A623]">vragen.</em>
+            </h2>
+          </ScrollAnimation>
           <div className="space-y-6">
             {[
               {
@@ -568,13 +513,15 @@ export default function HomePage() {
                 q: 'Waar is FunnelVision gevestigd?',
                 a: 'FunnelVision werkt volledig remote. Geen duur kantoor met pooltafel, die kosten betaal jij als klant niet. We werken vanuit heel Nederland voor klanten door het hele land.',
               },
-            ].map((item) => (
-              <div key={item.q} className="bg-white rounded-2xl p-6">
-                <h3 className="font-bold text-[#3D3D3D] mb-3" style={{ fontFamily: 'var(--font-serif)' }}>
-                  {item.q}
-                </h3>
-                <p className="text-gray-500 leading-relaxed text-sm">{item.a}</p>
-              </div>
+            ].map((item, i) => (
+              <ScrollAnimation key={item.q} delay={i * 80}>
+                <div className="bg-white rounded-2xl p-6">
+                  <h3 className="font-bold text-[#3D3D3D] mb-3" style={{ fontFamily: 'var(--font-serif)' }}>
+                    {item.q}
+                  </h3>
+                  <p className="text-gray-500 leading-relaxed text-sm">{item.a}</p>
+                </div>
+              </ScrollAnimation>
             ))}
           </div>
         </div>
@@ -583,21 +530,23 @@ export default function HomePage() {
       {/* CTA */}
       <section className="bg-[#1A1A1A] py-24 lg:py-32">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
-          <h2
-            className="text-4xl lg:text-5xl font-bold text-white mb-6"
-            style={{ fontFamily: 'var(--font-serif)' }}
-          >
-            Klaar om te <em className="italic text-[#F5A623]">groeien?</em>
-          </h2>
-          <p className="text-lg text-gray-400 mb-10 leading-relaxed">
-            Plan een vrijblijvend kennismakingsgesprek en ontdek wat FunnelVision voor jouw bedrijf kan betekenen.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 bg-[#F5A623] text-white font-bold text-lg px-10 py-5 rounded-full hover:bg-[#e09520] transition-colors"
-          >
-            Gratis kennismaken
-          </Link>
+          <ScrollAnimation>
+            <h2
+              className="text-4xl lg:text-5xl font-bold text-white mb-6"
+              style={{ fontFamily: 'var(--font-serif)' }}
+            >
+              Klaar om te <em className="italic text-[#F5A623]">groeien?</em>
+            </h2>
+            <p className="text-lg text-gray-400 mb-10 leading-relaxed">
+              Plan een vrijblijvend kennismakingsgesprek en ontdek wat FunnelVision voor jouw bedrijf kan betekenen.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-[#F5A623] text-white font-bold text-lg px-10 py-5 rounded-full transition-[background-color,transform] duration-200 hover:bg-[#F0A020] btn-scale"
+            >
+              Gratis kennismaken
+            </Link>
+          </ScrollAnimation>
         </div>
       </section>
     </>

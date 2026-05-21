@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 const serviceLinks = [
   { href: '/diensten/meta-advertenties', label: 'Meta Advertenties' },
@@ -14,6 +15,7 @@ const serviceLinks = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -31,7 +33,7 @@ export default function Navbar() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between py-4">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="logo-link flex items-center">
           <Image src="/Logo 2.png" alt="FunnelVision logo" height={40} width={160} className="h-10 w-auto" />
         </Link>
 
@@ -41,7 +43,10 @@ export default function Navbar() {
             onMouseEnter={() => setServicesOpen(true)}
             onMouseLeave={() => setServicesOpen(false)}
           >
-            <button className="text-[#3D3D3D] hover:text-[#F5A623] transition-colors text-sm font-medium flex items-center gap-1">
+            <button
+              className="nav-link text-[#3D3D3D] hover:text-[#F5A623] transition-colors text-sm font-medium flex items-center gap-1"
+              data-active={pathname.startsWith('/diensten') ? '' : undefined}
+            >
               Diensten
               <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
@@ -62,13 +67,25 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link href="/cases" className="text-[#3D3D3D] hover:text-[#F5A623] transition-colors text-sm font-medium">
+          <Link
+            href="/cases"
+            className="nav-link text-[#3D3D3D] hover:text-[#F5A623] transition-colors text-sm font-medium"
+            data-active={pathname === '/cases' ? '' : undefined}
+          >
             Cases
           </Link>
-          <Link href="/over-ons" className="text-[#3D3D3D] hover:text-[#F5A623] transition-colors text-sm font-medium">
+          <Link
+            href="/over-ons"
+            className="nav-link text-[#3D3D3D] hover:text-[#F5A623] transition-colors text-sm font-medium"
+            data-active={pathname === '/over-ons' ? '' : undefined}
+          >
             Over ons
           </Link>
-          <Link href="/contact" className="text-[#3D3D3D] hover:text-[#F5A623] transition-colors text-sm font-medium">
+          <Link
+            href="/contact"
+            className="nav-link text-[#3D3D3D] hover:text-[#F5A623] transition-colors text-sm font-medium"
+            data-active={pathname === '/contact' ? '' : undefined}
+          >
             Contact
           </Link>
 
