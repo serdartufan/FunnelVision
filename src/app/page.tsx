@@ -92,6 +92,14 @@ const dienstenCards = [
   },
 ];
 
+const bannerItems = [
+  '€6M+ beheerd budget',
+  '50+ tevreden klanten',
+  'Gem. 340% ROAS',
+  'Geen langdurige contracten',
+  'Sinds 2019',
+];
+
 export const metadata: Metadata = {
   title: 'FunnelVision | Marketing Bureau voor het MKB',
   description:
@@ -177,59 +185,132 @@ export default function HomePage() {
       </p>
 
       {/* Hero */}
-      <section className="bg-[#1A1A1A] relative overflow-hidden">
+      <section
+        className="relative overflow-hidden flex flex-col"
+        style={{ background: '#111111', minHeight: '100vh' }}
+      >
+        {/* Decorative circle top-right */}
         <div
-          className="absolute inset-0 opacity-20"
-          style={{ background: 'radial-gradient(ellipse at 70% 50%, #F5A623 0%, transparent 60%)' }}
+          className="absolute pointer-events-none"
+          style={{
+            top: '-80px',
+            right: '-80px',
+            width: '400px',
+            height: '400px',
+            borderRadius: '50%',
+            background: '#F5A62306',
+          }}
         />
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-40 pb-24 lg:pt-52 lg:pb-32">
-          <div className="max-w-3xl">
+        {/* Decorative vertical line */}
+        <div
+          className="absolute top-0 bottom-0 hidden lg:block pointer-events-none"
+          style={{
+            left: '58%',
+            width: '2px',
+            background: 'linear-gradient(to bottom, transparent, #F5A62325 50%, transparent)',
+          }}
+        />
+
+        {/* Main content */}
+        <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-8 pt-36 pb-16">
+          <div className="hero-animate" style={{ maxWidth: '560px' }}>
+            {/* Label */}
+            <p
+              className="mb-7"
+              style={{
+                fontFamily: 'var(--font-sans)',
+                fontSize: '11px',
+                textTransform: 'uppercase',
+                letterSpacing: '0.16em',
+                color: '#F5A623',
+              }}
+            >
+              Marketing bureau · Nederland
+            </p>
+
+            {/* Headline */}
             <h1
-              className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6"
-              style={{ fontFamily: 'var(--font-serif)' }}
+              className="text-white font-bold mb-6"
+              style={{
+                fontFamily: 'var(--font-serif)',
+                fontSize: 'clamp(44px, 5.5vw, 72px)',
+                lineHeight: 1.05,
+                fontWeight: 700,
+              }}
             >
               Meer klanten.
               <br />
               Meer omzet.
               <br />
-              <em className="italic text-[#F5A623]">Meer groei.</em>
+              <em className="italic">Meer groei.</em>
             </h1>
-            <p className="text-lg text-gray-300 mb-10 max-w-xl leading-relaxed">
+
+            {/* Subtext */}
+            <p
+              className="mb-10"
+              style={{
+                fontFamily: 'var(--font-sans)',
+                fontSize: '15px',
+                color: 'rgba(255,255,255,0.6)',
+                lineHeight: 1.6,
+                maxWidth: '480px',
+              }}
+            >
               FunnelVision helpt Nederlandse ondernemers groeien via resultaatgerichte Meta ads, Google Ads en
               e-mailmarketing.
             </p>
+
+            {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/cases"
-                className="inline-flex items-center gap-2 bg-[#F5A623] text-white font-semibold px-7 py-4 rounded-full hover:bg-[#e09520] transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full transition-colors hover:bg-[#e09520]"
+                style={{
+                  background: '#F5A623',
+                  color: '#1A1A1A',
+                  fontFamily: 'var(--font-sans)',
+                  fontWeight: 600,
+                }}
               >
                 Bekijk onze cases →
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 border border-white/30 text-white font-semibold px-7 py-4 rounded-full hover:border-[#F5A623] hover:text-[#F5A623] transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full transition-colors hover:border-[#F5A623] hover:text-[#F5A623]"
+                style={{
+                  background: 'transparent',
+                  border: '1px solid rgba(255,255,255,0.3)',
+                  color: 'white',
+                  fontFamily: 'var(--font-sans)',
+                  fontWeight: 600,
+                }}
               >
                 Gratis kennismaken
               </Link>
             </div>
           </div>
+        </div>
 
-          <div className="mt-20 pt-10 border-t border-white/10 grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { value: '€6M+', label: 'Beheerd budget' },
-              { value: '50+', label: 'Klanten geholpen' },
-              { value: '340%', label: 'Gem. ROAS' },
-              { value: 'Sinds 2019', label: 'Opgericht' },
-            ].map((stat) => (
-              <div key={stat.label}>
-                <p
-                  className="text-3xl lg:text-4xl font-bold text-[#F5A623]"
-                  style={{ fontFamily: 'var(--font-serif)' }}
-                >
-                  {stat.value}
-                </p>
-                <p className="text-sm text-gray-400 mt-1">{stat.label}</p>
-              </div>
+        {/* Infinite scroll stats banner */}
+        <div
+          className="relative overflow-hidden py-5"
+          style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}
+        >
+          <div className="drift-animate flex whitespace-nowrap">
+            {[...bannerItems, ...bannerItems].map((item, i) => (
+              <span
+                key={i}
+                className="inline-flex items-center"
+                style={{
+                  fontFamily: 'var(--font-sans)',
+                  fontSize: '13px',
+                  color: 'rgba(255,255,255,0.4)',
+                  paddingRight: '20px',
+                }}
+              >
+                {item}
+                <span style={{ color: '#F5A623', margin: '0 20px' }}>◆</span>
+              </span>
             ))}
           </div>
         </div>
