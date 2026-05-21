@@ -94,6 +94,21 @@ const dienstenCards = [
   },
 ];
 
+const row1Logos = [
+  'thefightcompany.png',
+  'cagedfight.png',
+  'dreamfit.png',
+  'verpoorten-vitality.png',
+  'mymiracle.png',
+];
+const row2Logos = [
+  'devideovakvrouw.png',
+  'channelorange.png',
+  'regeljelease.png',
+  'maximizd.png',
+  'redmarketing.png',
+];
+
 const bannerItems = [
   '€6M+ beheerd budget',
   '50+ tevreden klanten',
@@ -261,6 +276,61 @@ export default function HomePage() {
                 {item}
                 <span style={{ color: '#F5A623', margin: '0 20px' }}>◆</span>
               </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Logo wall */}
+      <section
+        className="py-[60px]"
+        style={{ background: '#111111', borderTop: '1px solid rgba(255,255,255,0.08)' }}
+      >
+        <p
+          className="text-center mb-8"
+          style={{
+            fontFamily: 'var(--font-sans)',
+            fontSize: '12px',
+            textTransform: 'uppercase',
+            letterSpacing: '0.1em',
+            color: 'rgba(255,255,255,0.35)',
+          }}
+        >
+          Bedrijven die ons vertrouwen
+        </p>
+
+        {/* Rij 1 — scrolt naar links */}
+        <div className="logo-row overflow-hidden mb-8">
+          <div className="logo-track-left flex items-center" style={{ gap: '56px' }}>
+            {[...row1Logos, ...row1Logos].map((logo, i) => (
+              <Image
+                key={i}
+                src={`/logos/${logo}`}
+                alt=""
+                width={160}
+                height={36}
+                unoptimized
+                className="logo-img"
+                style={{ height: '36px', width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1)' }}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Rij 2 — scrolt naar rechts */}
+        <div className="logo-row overflow-hidden">
+          <div className="logo-track-right flex items-center" style={{ gap: '56px' }}>
+            {[...row2Logos, ...row2Logos].map((logo, i) => (
+              <Image
+                key={i}
+                src={`/logos/${logo}`}
+                alt=""
+                width={160}
+                height={36}
+                unoptimized
+                className="logo-img"
+                style={{ height: '36px', width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1)' }}
+              />
             ))}
           </div>
         </div>
