@@ -99,12 +99,12 @@ const row1Logos = [
   'cagedfight.png',
   'dreamfit.png',
   'verpoorten-vitality.png',
-  'mymiracle.png',
+  'mymiracle.svg',
 ];
 const row2Logos = [
   'devideovakvrouw.png',
   'channelorange.png',
-  'regeljelease.png',
+  'regeljelease.svg',
   'maximizd.png',
   'redmarketing.png',
 ];
