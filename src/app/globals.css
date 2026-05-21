@@ -92,6 +92,26 @@ body {
   transition-duration: 100ms;
 }
 
+/* Secondary / outline button */
+.btn-secondary {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  cursor: pointer;
+  transition: background-color 250ms ease, border-color 250ms ease, color 250ms ease, box-shadow 250ms ease, transform 200ms ease;
+}
+.btn-secondary:hover {
+  background: rgba(245, 166, 35, 0.12);
+  border-color: #F5A623;
+  color: #F5A623;
+  box-shadow: 0 0 20px rgba(245, 166, 35, 0.25);
+  transform: scale(1.02);
+}
+.btn-secondary:active {
+  transform: scale(0.97);
+  transition-duration: 100ms;
+}
+
 /* Reduced motion: disable all animations */
 @media (prefers-reduced-motion: reduce) {
   .hero-animate {
@@ -103,7 +123,9 @@ body {
     animation: none !important;
   }
   .btn-scale:hover,
-  .btn-scale:active {
+  .btn-scale:active,
+  .btn-secondary:hover,
+  .btn-secondary:active {
     transform: none !important;
   }
 }

@@ -237,7 +237,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full border border-white/30 text-white font-semibold transition-[background-color,border-color,color,transform] duration-200 hover:bg-white/10 btn-scale"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full font-semibold btn-secondary"
                 style={{ fontFamily: 'var(--font-sans)' }}
               >
                 Gratis kennismaken
