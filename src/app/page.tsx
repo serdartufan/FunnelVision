@@ -303,15 +303,14 @@ export default function HomePage() {
         <div className="logo-row overflow-hidden mb-8">
           <div className="logo-track-left flex items-center" style={{ gap: '56px' }}>
             {[...row1Logos, ...row1Logos].map((logo, i) => (
-              <Image
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
                 key={i}
                 src={`/logos/${logo}`}
                 alt=""
-                width={160}
-                height={36}
-                unoptimized
+                height="36"
                 className="logo-img"
-                style={{ height: '36px', width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1)' }}
+                style={{ height: '36px', width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1)', display: 'block' }}
               />
             ))}
           </div>
@@ -321,15 +320,14 @@ export default function HomePage() {
         <div className="logo-row overflow-hidden">
           <div className="logo-track-right flex items-center" style={{ gap: '56px' }}>
             {[...row2Logos, ...row2Logos].map((logo, i) => (
-              <Image
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
                 key={i}
                 src={`/logos/${logo}`}
                 alt=""
-                width={160}
-                height={36}
-                unoptimized
+                height="36"
                 className="logo-img"
-                style={{ height: '36px', width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1)' }}
+                style={{ height: '36px', width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1)', display: 'block' }}
               />
             ))}
           </div>
