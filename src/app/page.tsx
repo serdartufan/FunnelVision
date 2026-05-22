@@ -311,7 +311,7 @@ export default function HomePage() {
                 alt=""
                 height="36"
                 className="logo-img"
-                style={{ height: '36px', width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1)', display: 'block' }}
+                style={{ height: '36px', width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1) opacity(0.7)', display: 'block' }}
               />
             ))}
           </div>
@@ -328,7 +328,7 @@ export default function HomePage() {
                 alt=""
                 height="36"
                 className="logo-img"
-                style={{ height: '36px', width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1)', display: 'block' }}
+                style={{ height: '36px', width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1) opacity(0.7)', display: 'block' }}
               />
             ))}
           </div>
