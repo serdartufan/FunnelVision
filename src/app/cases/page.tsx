@@ -58,7 +58,7 @@ export default function CasesPage() {
                 {c.imageType === 'logo' ? (
                   <div
                     className="h-52 flex items-center justify-center"
-                    style={{ background: '#F5F2EB' }}
+                    style={{ background: '#FFFFFF' }}
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
@@ -75,7 +75,7 @@ export default function CasesPage() {
                       src={c.imageSrc}
                       alt={c.company}
                       loading="lazy"
-                      style={{ width: '100%', height: '208px', objectFit: 'cover' }}
+                      style={{ width: '100%', height: '208px', objectFit: 'cover', objectPosition: 'top' }}
                       className="group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>

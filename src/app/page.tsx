@@ -421,7 +421,7 @@ export default function HomePage() {
                   {c.imageType === 'logo' ? (
                     <div
                       className="h-48 flex items-center justify-center"
-                      style={{ background: '#F5F2EB' }}
+                      style={{ background: '#FFFFFF' }}
                     >
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
@@ -438,7 +438,7 @@ export default function HomePage() {
                         src={c.imageSrc}
                         alt={c.company}
                         loading="lazy"
-                        style={{ width: '100%', height: '192px', objectFit: 'cover' }}
+                        style={{ width: '100%', height: '192px', objectFit: 'cover', objectPosition: 'top' }}
                         className="group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
