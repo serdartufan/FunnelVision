@@ -421,27 +421,25 @@ export default function HomePage() {
                   {c.imageType === 'logo' ? (
                     <div
                       className="h-48 flex items-center justify-center"
-                      style={{ background: '#1A1A1A' }}
+                      style={{ background: '#F5F2EB' }}
                     >
-                      <Image
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
                         src={c.imageSrc}
                         alt={c.company}
-                        width={200}
-                        height={80}
                         loading="lazy"
-                        className="object-contain"
-                        style={{ maxHeight: '80px', maxWidth: '200px', width: 'auto', height: 'auto' }}
+                        style={{ maxHeight: '80px', maxWidth: '200px', objectFit: 'contain' }}
                       />
                     </div>
                   ) : (
                     <div className="relative h-48 overflow-hidden">
-                      <Image
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
                         src={c.imageSrc}
                         alt={c.company}
-                        fill
                         loading="lazy"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
-                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        style={{ width: '100%', height: '192px', objectFit: 'cover' }}
+                        className="group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">

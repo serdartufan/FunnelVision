@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import { cases } from '@/data/content';
 
@@ -56,20 +55,34 @@ export default function CasesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {cases.map((c) => (
               <article key={c.id} className="group rounded-2xl overflow-hidden bg-white">
-                <div className="relative h-52 overflow-hidden">
-                  <Image
-                    src={c.unsplash}
-                    alt={c.unsplashAlt}
-                    fill
-                    loading="lazy"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
+                {c.imageType === 'logo' ? (
+                  <div
+                    className="h-52 flex items-center justify-center"
+                    style={{ background: '#F5F2EB' }}
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={c.imageSrc}
+                      alt={c.company}
+                      loading="lazy"
+                      style={{ maxHeight: '80px', maxWidth: '200px', objectFit: 'contain' }}
+                    />
+                  </div>
+                ) : (
+                  <div className="relative h-52 overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={c.imageSrc}
+                      alt={c.company}
+                      loading="lazy"
+                      style={{ width: '100%', height: '208px', objectFit: 'cover' }}
+                      className="group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                )}
                 <div className="p-7">
-                  <div className="flex items-center justify-between mb-4">
+                  <div className="mb-4">
                     <span className="text-xs font-semibold text-[#F5A623] uppercase tracking-wider">{c.branch}</span>
-                    <span className="text-xs text-gray-400 bg-[#F5F2EB] px-2 py-1 rounded-full">{c.service}</span>
                   </div>
                   <h2 className="font-bold text-lg text-[#3D3D3D] mb-3" style={{ fontFamily: 'var(--font-serif)' }}>
                     {c.company}
