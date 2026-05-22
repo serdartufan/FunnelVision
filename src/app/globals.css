@@ -39,8 +39,8 @@ body {
 }
 
 @keyframes drift {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-25%); }
+  from { transform: translateX(0) translateZ(0); }
+  to   { transform: translateX(-25%) translateZ(0); }
 }
 
 .hero-animate {
@@ -52,7 +52,6 @@ body {
   will-change: transform;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  transform: translateZ(0);
   width: max-content;
 }
 
@@ -70,8 +69,8 @@ body {
 
 /* Logo wall scroll animations */
 @keyframes scrollLeft {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-25%); }
+  from { transform: translateX(0) translateZ(0); }
+  to   { transform: translateX(-25%) translateZ(0); }
 }
 @keyframes scrollRight {
   from { transform: translateX(-25%); }
@@ -82,7 +81,6 @@ body {
   will-change: transform;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  transform: translateZ(0);
   width: max-content;
 }
 .logo-track-right {
