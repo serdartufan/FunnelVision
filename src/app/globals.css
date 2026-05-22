@@ -74,12 +74,12 @@ body {
   animation-play-state: paused;
 }
 .logo-img {
-  opacity: 0.5;
-  transition: opacity 200ms ease;
   flex-shrink: 0;
+  transition: opacity 250ms ease, filter 250ms ease;
 }
 .logo-img:hover {
-  opacity: 1;
+  opacity: 1 !important;
+  filter: grayscale(0%) brightness(1) !important;
 }
 
 /* Navbar link underline slide-in */

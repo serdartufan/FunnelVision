@@ -285,7 +285,7 @@ export default function HomePage() {
       {/* Logo wall */}
       <section
         className="py-[60px]"
-        style={{ background: '#111111', borderTop: '1px solid rgba(255,255,255,0.08)' }}
+        style={{ background: '#1A1A1A', borderTop: '1px solid rgba(255,255,255,0.08)' }}
       >
         <p
           className="text-center mb-8"
@@ -311,7 +311,7 @@ export default function HomePage() {
                 alt=""
                 height="36"
                 className="logo-img"
-                style={{ height: '36px', width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1) opacity(0.7)', display: 'block' }}
+                style={{ height: '36px', width: 'auto', objectFit: 'contain', display: 'block', opacity: 0.6, filter: 'grayscale(100%) brightness(2)' }}
               />
             ))}
           </div>
@@ -328,7 +328,7 @@ export default function HomePage() {
                 alt=""
                 height="36"
                 className="logo-img"
-                style={{ height: '36px', width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1) opacity(0.7)', display: 'block' }}
+                style={{ height: '36px', width: 'auto', objectFit: 'contain', display: 'block', opacity: 0.6, filter: 'grayscale(100%) brightness(2)' }}
               />
             ))}
           </div>
