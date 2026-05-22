@@ -302,27 +302,9 @@ export default function HomePage() {
           Bedrijven die ons vertrouwen
         </p>
 
-        {/* Rij 1 — scrolt naar links */}
-        <div className="logo-row overflow-hidden mb-8">
-          <div className="logo-track-left flex items-center" style={{ gap: '56px' }}>
-            {[...row1Logos, ...row1Logos].map((logo, i) => (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                key={i}
-                src={`/logos/${logo}`}
-                alt=""
-                height="36"
-                className="logo-img"
-                style={{ height: '36px', width: 'auto', objectFit: 'contain', display: 'block', opacity: 0.65 }}
-              />
-            ))}
-          </div>
-        </div>
-
-        {/* Rij 2 — scrolt naar rechts */}
         <div className="logo-row overflow-hidden">
-          <div className="logo-track-right flex items-center" style={{ gap: '56px' }}>
-            {[...row2Logos, ...row2Logos].map((logo, i) => (
+          <div className="logo-track-left flex items-center" style={{ gap: '56px' }}>
+            {[...row1Logos, ...row2Logos, ...row1Logos, ...row2Logos].map((logo, i) => (
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 key={i}

@@ -153,6 +153,15 @@ body {
   transition-duration: 100ms;
 }
 
+@media (max-width: 768px) {
+  .logo-track-left {
+    animation-duration: 15s;
+  }
+  .drift-animate {
+    animation-duration: 8s;
+  }
+}
+
 /* Reduced motion: disable all animations */
 @media (prefers-reduced-motion: reduce) {
   .hero-animate {
