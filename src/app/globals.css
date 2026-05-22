@@ -50,6 +50,9 @@ body {
 .drift-animate {
   animation: drift 12s linear infinite;
   will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 /* Fluid hero headline */
@@ -76,6 +79,9 @@ body {
 .logo-track-left {
   animation: scrollLeft 20s linear infinite;
   will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
 }
 .logo-track-right {
   animation: scrollRight 25s linear infinite;
@@ -155,10 +161,10 @@ body {
 
 @media (max-width: 768px) {
   .logo-track-left {
-    animation-duration: 10s;
+    animation-duration: 8s;
   }
   .drift-animate {
-    animation-duration: 6s;
+    animation-duration: 8s;
   }
 }
 

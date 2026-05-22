@@ -269,12 +269,12 @@ export default function HomePage() {
           className="relative overflow-hidden py-5"
           style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}
         >
-          <div className="drift-animate flex whitespace-nowrap" style={{ paddingLeft: '20px' }}>
+          <div className="drift-animate flex whitespace-nowrap">
             {[...bannerItems, ...bannerItems, ...bannerItems, ...bannerItems].map((item, i) => (
               <span
                 key={i}
                 className="inline-flex items-center"
-                style={{ fontFamily: 'var(--font-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.4)', paddingRight: '20px' }}
+                style={{ fontFamily: 'var(--font-sans)', fontSize: '13px', color: 'rgba(255,255,255,0.4)', paddingRight: '40px' }}
               >
                 {item}
                 <span style={{ color: '#F5A623', margin: '0 20px' }}>◆</span>
@@ -303,7 +303,7 @@ export default function HomePage() {
         </p>
 
         <div className="logo-row overflow-hidden">
-          <div className="logo-track-left flex items-center" style={{ gap: '56px' }}>
+          <div className="logo-track-left flex items-center">
             {[...row1Logos, ...row2Logos, ...row1Logos, ...row2Logos, ...row1Logos, ...row2Logos, ...row1Logos, ...row2Logos].map((logo, i) => (
               // eslint-disable-next-line @next/next/no-img-element
               <img
@@ -312,7 +312,7 @@ export default function HomePage() {
                 alt=""
                 height="36"
                 className="logo-img"
-                style={{ height: '36px', width: 'auto', objectFit: 'contain', display: 'block', opacity: 0.65 }}
+                style={{ height: '36px', width: 'auto', objectFit: 'contain', display: 'block', opacity: 0.65, paddingRight: '56px' }}
               />
             ))}
           </div>
