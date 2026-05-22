@@ -417,7 +417,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {cases.map((c, i) => (
               <ScrollAnimation key={c.id} delay={i * 100}>
-                <article className="group rounded-2xl overflow-hidden bg-[#F5F2EB] transition-transform duration-300 hover:scale-[1.02] cursor-pointer">
+                <article className="group rounded-2xl overflow-hidden bg-[#F5F2EB] cursor-pointer transition-[transform,box-shadow] duration-300 ease-out hover:-translate-y-[6px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(245,166,35,0.20)]">
                   {c.imageType === 'logo' ? (
                     <div
                       className="h-48 flex items-center justify-center"
