@@ -415,30 +415,45 @@ export default function HomePage() {
             </h2>
           </ScrollAnimation>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {cases.slice(0, 3).map((c, i) => (
+            {cases.map((c, i) => (
               <ScrollAnimation key={c.id} delay={i * 100}>
                 <article className="group rounded-2xl overflow-hidden bg-[#F5F2EB] transition-transform duration-300 hover:scale-[1.02] cursor-pointer">
-                  <div className="relative h-48 overflow-hidden">
-                    <Image
-                      src={c.unsplash}
-                      alt={c.unsplashAlt}
-                      fill
-                      loading="lazy"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    {/* Dark overlay */}
-                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    {/* CTA from bottom */}
-                    <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                      <span
-                        className="text-white font-semibold text-sm"
-                        style={{ fontFamily: 'var(--font-sans)' }}
-                      >
-                        Bekijk case →
-                      </span>
+                  {c.imageType === 'logo' ? (
+                    <div
+                      className="h-48 flex items-center justify-center"
+                      style={{ background: '#1A1A1A' }}
+                    >
+                      <Image
+                        src={c.imageSrc}
+                        alt={c.company}
+                        width={200}
+                        height={80}
+                        loading="lazy"
+                        className="object-contain"
+                        style={{ maxHeight: '80px', maxWidth: '200px', width: 'auto', height: 'auto' }}
+                      />
                     </div>
-                  </div>
+                  ) : (
+                    <div className="relative h-48 overflow-hidden">
+                      <Image
+                        src={c.imageSrc}
+                        alt={c.company}
+                        fill
+                        loading="lazy"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <span
+                          className="text-white font-semibold text-sm"
+                          style={{ fontFamily: 'var(--font-sans)' }}
+                        >
+                          Bekijk case →
+                        </span>
+                      </div>
+                    </div>
+                  )}
                   <div className="p-6">
                     <span className="text-xs font-semibold text-[#F5A623] uppercase tracking-wider">{c.branch}</span>
                     <p
