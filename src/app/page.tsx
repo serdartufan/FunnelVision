@@ -270,7 +270,7 @@ export default function HomePage() {
           style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}
         >
           <div className="drift-animate flex whitespace-nowrap" style={{ paddingLeft: '20px' }}>
-            {[...bannerItems, ...bannerItems].map((item, i) => (
+            {[...bannerItems, ...bannerItems, ...bannerItems, ...bannerItems].map((item, i) => (
               <span
                 key={i}
                 className="inline-flex items-center"
@@ -304,7 +304,7 @@ export default function HomePage() {
 
         <div className="logo-row overflow-hidden">
           <div className="logo-track-left flex items-center" style={{ gap: '56px' }}>
-            {[...row1Logos, ...row2Logos, ...row1Logos, ...row2Logos].map((logo, i) => (
+            {[...row1Logos, ...row2Logos, ...row1Logos, ...row2Logos, ...row1Logos, ...row2Logos, ...row1Logos, ...row2Logos].map((logo, i) => (
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 key={i}
