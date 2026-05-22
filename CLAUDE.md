@@ -122,9 +122,14 @@
 - ✅ Cases visuals: logo containers (wit #FFFFFF) voor cases 1-4, Playwright screenshots voor My Miracle en Just Harry
 - ✅ Navbar dropdown: sluit pas na 300ms delay zodat gebruiker kan klikken
 - ✅ Playwright geïnstalleerd voor screenshots van klantwebsites
+- ✅ Logowall en stats banner animaties definitief gefixed:
+  - width: max-content toegevoegd aan tracks zodat translateX(-25%) correct berekent over contentbreedte
+  - transform: translateZ(0) verplaatst van statische CSS naar keyframes om GPU layer clipping op mobile op te lossen
+  - Hover pause verwijderd (bevroor animatie permanent na tap op touchscreen)
+  - Snelheid: 25s desktop, 18s mobile voor beide tracks
 
 ## To do
-- [ ] Logowall animatie naadloze loop definitief testen op mobile
+- [ ] LinkedIn bedrijfspagina aanmaken (voor sameAs links in schema)
 - [ ] LinkedIn bedrijfspagina aanmaken (voor sameAs links in schema)
 - [ ] SEO onderzoek en kennisbank opzetten met artikelen
 - [ ] Over ons teksten personaliseren
