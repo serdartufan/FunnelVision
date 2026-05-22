@@ -33,8 +33,8 @@
 - Primaire tekst: antraciet #3D3D3D
 - Accent: warm goud/oranje #F5A623
 - Donkere secties: #1A1A1A
-- Headlines: Playfair Display (bold + italic cursief accenten)
-- Body: Inter
+- Headlines: Cormorant (bold + italic cursief accenten)
+- Body: Plus Jakarta Sans
 - Stijl: grote bold typografie, premium, veel witruimte, strakke kaarten
 - Taal: Nederlands
 
@@ -47,7 +47,7 @@
 - /diensten/website-bouwen
 - /diensten/linkedin-advertising
 - /diensten/ai-oplossingen
-- /cases — 6 placeholder cases in grid
+- /cases — 6 echte cases met logo's en screenshots
 - /over-ons — team, aanpak, tijdlijn
 - /contact — formulier → Resend API → serdar@funnelvisionagency.com
 - /privacy-policy — AVG-compliant privacybeleid
@@ -74,18 +74,22 @@
 - Geo meta tags in layout.tsx (geo.region, geo.placename, ICBM)
 
 ## Componenten
-- src/components/Navbar.tsx — sticky, scroll-effect, dropdown diensten (6 items), hamburger mobile, logo via next/image
+- src/components/Navbar.tsx — sticky, scroll-effect, dropdown diensten (6 items), hamburger mobile, logo via next/image, 300ms hover-delay fix
 - src/components/Footer.tsx — 4 kolommen, socials, NAP-regel, copyright, logo via next/image
 - src/components/ContactForm.tsx — 'use client', POST naar /api/contact, loading state, foutmelding
+- src/components/ScrollAnimation.tsx — IntersectionObserver scroll-in animaties
+- src/components/CountUp.tsx — animerende cijfers bij scroll
 - src/app/api/contact/route.ts — Resend API route (RESEND_API_KEY via env var)
 - src/app/api/indexnow/route.ts — POST/GET endpoint dat alle 13 pagina's aanmeldt bij IndexNow
 - src/lib/indexnow.ts — pingIndexNow() functie (POST naar api.indexnow.org)
-- src/data/content.ts — centrale databron: services[], cases[], team[], siteConfig
+- src/data/content.ts — centrale databron: services[], cases[] (met imageType/imageSrc), team[], siteConfig
+- public/logos/ — 10 klantenlogos (PNG/SVG)
+- public/cases/ — screenshots mymiracle.nl en justharry.co
 
 ## Environment variables (Vercel)
 - RESEND_API_KEY — vereist voor werkend contactformulier
 
-## Status (2026-05-14)
+## Status (2026-05-22)
 - ✅ Volledig nieuw design gebouwd van scratch
 - ✅ LinkedIn Advertising toegevoegd als 5e dienst
 - ✅ AI Oplossingen toegevoegd als 6e dienst (pagina, navbar, footer, sitemap, ContactForm, IndexNow)
@@ -108,14 +112,26 @@
 - ✅ Mijlpalen bijgewerkt: 2019, 2022, 2023, 2026
 - ✅ Budget aangepast naar €6M+
 - ✅ Alle em dashes vervangen door komma, punt of pipe
-- Cases zijn placeholders (Unsplash), worden later vervangen door echte content
+- ✅ Robots.txt gefixed zodat alle gewenste crawlers de site bereiken
+- ✅ Fonts vervangen: Cormorant (headlines) + Plus Jakarta Sans (body)
+- ✅ Premium dark card design voor diensten sectie (gradients, Tabler icons, stats per dienst)
+- ✅ Nieuwe hero: fluid layout, clamp font-size, scrollende stats banner
+- ✅ Microinteracties: hover effects knoppen, cards, navbar underline, scroll animaties (ScrollAnimation, CountUp)
+- ✅ Logowall: 10 klantenlogos, crème achtergrond, eigen kleuren, 1 rij, naadloze infinite loop (4x duplicatie, -25% keyframe)
+- ✅ Cases bijgewerkt met echte klantdata: The Fight Company, OrganicLink, Dreamfit, Verpoorten Vitality, My Miracle, Just Harry
+- ✅ Cases visuals: logo containers (wit #FFFFFF) voor cases 1-4, Playwright screenshots voor My Miracle en Just Harry
+- ✅ Navbar dropdown: sluit pas na 300ms delay zodat gebruiker kan klikken
+- ✅ Playwright geïnstalleerd voor screenshots van klantwebsites
 
 ## To do
-- [ ] Cases updaten met echte cases en klantenlogos
+- [ ] Logowall animatie naadloze loop definitief testen op mobile
 - [ ] LinkedIn bedrijfspagina aanmaken (voor sameAs links in schema)
 - [ ] SEO onderzoek en kennisbank opzetten met artikelen
 - [ ] Over ons teksten personaliseren
 - [ ] GEO citatiemonitoring opzetten (Otterly.ai of Semrush)
+- [ ] Schema markup uitbreiden: telephone, priceRange, image toevoegen
+- [ ] Logo FunnelVision vernieuwen
+- [ ] Cases foto's vervangen zodra beschikbaar
 
 ## Workflow
 - Claude.ai chat voor planning en instructies
