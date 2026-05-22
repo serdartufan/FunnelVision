@@ -48,8 +48,20 @@ body {
 }
 
 .drift-animate {
-  animation: drift 20s linear infinite;
+  animation: drift 12s linear infinite;
   will-change: transform;
+}
+
+/* Fluid hero headline */
+.hero-h1 {
+  font-size: clamp(52px, 7vw, 140px);
+  line-height: 1.0;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .hero-h1 {
+    font-size: clamp(44px, 10vw, 72px);
+  }
 }
 
 /* Logo wall scroll animations */

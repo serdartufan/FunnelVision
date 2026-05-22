@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 
 const serviceLinks = [
@@ -19,6 +19,15 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  function openServices() {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    setServicesOpen(true);
+  }
+  function scheduleClose() {
+    closeTimer.current = setTimeout(() => setServicesOpen(false), 300);
+  }
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -40,8 +49,8 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-8">
           <div
             className="relative"
-            onMouseEnter={() => setServicesOpen(true)}
-            onMouseLeave={() => setServicesOpen(false)}
+            onMouseEnter={openServices}
+            onMouseLeave={scheduleClose}
           >
             <button
               className="nav-link text-[#3D3D3D] hover:text-[#F5A623] transition-colors text-sm font-medium flex items-center gap-1"
@@ -53,7 +62,11 @@ export default function Navbar() {
               </svg>
             </button>
             {servicesOpen && (
-              <div className="absolute top-full left-0 mt-2 w-52 bg-white rounded-xl shadow-lg border border-[#F5F2EB] py-2">
+              <div
+                className="absolute top-full left-0 mt-2 w-52 bg-white rounded-xl shadow-lg border border-[#F5F2EB] py-2"
+                onMouseEnter={openServices}
+                onMouseLeave={scheduleClose}
+              >
                 {serviceLinks.map((s) => (
                   <Link
                     key={s.href}

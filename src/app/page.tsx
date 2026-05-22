@@ -216,7 +216,7 @@ export default function HomePage() {
         />
 
         <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-8 pt-36 pb-16">
-          <div className="hero-animate" style={{ maxWidth: '560px' }}>
+          <div className="hero-animate w-full">
             <p
               className="mb-7"
               style={{ fontFamily: 'var(--font-sans)', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.16em', color: '#F5A623' }}
@@ -225,8 +225,8 @@ export default function HomePage() {
             </p>
 
             <h1
-              className="text-white font-bold mb-6"
-              style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(44px, 5.5vw, 72px)', lineHeight: 1.05, fontWeight: 700 }}
+              className="hero-h1 text-white font-bold mb-8"
+              style={{ fontFamily: 'var(--font-serif)' }}
             >
               Meer klanten.
               <br />
@@ -235,29 +235,31 @@ export default function HomePage() {
               <em className="italic">Meer groei.</em>
             </h1>
 
-            <p
-              className="mb-10"
-              style={{ fontFamily: 'var(--font-sans)', fontSize: '15px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.6, maxWidth: '480px' }}
-            >
-              FunnelVision helpt Nederlandse ondernemers groeien via resultaatgerichte Meta ads, Google Ads en
-              e-mailmarketing.
-            </p>
+            <div style={{ maxWidth: '560px' }}>
+              <p
+                className="mb-10"
+                style={{ fontFamily: 'var(--font-sans)', fontSize: '15px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.6 }}
+              >
+                FunnelVision helpt Nederlandse ondernemers groeien via resultaatgerichte Meta ads, Google Ads en
+                e-mailmarketing.
+              </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/cases"
-                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#F5A623] text-[#1A1A1A] font-semibold transition-[background-color,transform] duration-200 hover:bg-[#F0A020] btn-scale"
-                style={{ fontFamily: 'var(--font-sans)' }}
-              >
-                Bekijk onze cases →
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full font-semibold btn-secondary"
-                style={{ fontFamily: 'var(--font-sans)' }}
-              >
-                Gratis kennismaken
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/cases"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#F5A623] text-[#1A1A1A] font-semibold transition-[background-color,transform] duration-200 hover:bg-[#F0A020] btn-scale"
+                  style={{ fontFamily: 'var(--font-sans)' }}
+                >
+                  Bekijk onze cases →
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full font-semibold btn-secondary"
+                  style={{ fontFamily: 'var(--font-sans)' }}
+                >
+                  Gratis kennismaken
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -267,7 +269,7 @@ export default function HomePage() {
           className="relative overflow-hidden py-5"
           style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}
         >
-          <div className="drift-animate flex whitespace-nowrap">
+          <div className="drift-animate flex whitespace-nowrap" style={{ paddingLeft: '20px' }}>
             {[...bannerItems, ...bannerItems].map((item, i) => (
               <span
                 key={i}
