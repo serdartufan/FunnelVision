@@ -53,6 +53,7 @@ body {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   transform: translateZ(0);
+  width: max-content;
 }
 
 /* Fluid hero headline */
@@ -77,19 +78,16 @@ body {
   to   { transform: translateX(0); }
 }
 .logo-track-left {
-  animation: scrollLeft 20s linear infinite;
+  animation: scrollLeft 12s linear infinite;
   will-change: transform;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   transform: translateZ(0);
+  width: max-content;
 }
 .logo-track-right {
   animation: scrollRight 25s linear infinite;
   will-change: transform;
-}
-.logo-row:hover .logo-track-left,
-.logo-row:hover .logo-track-right {
-  animation-play-state: paused;
 }
 .logo-img {
   flex-shrink: 0;
