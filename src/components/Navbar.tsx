@@ -53,7 +53,7 @@ export default function Navbar() {
             onMouseLeave={scheduleClose}
           >
             <button
-              className="nav-link text-[#3D3D3D] hover:text-[#F5A623] transition-colors text-sm font-medium flex items-center gap-1"
+              className={`nav-link transition-colors text-sm font-medium flex items-center gap-1 ${scrolled ? 'text-[#3D3D3D] hover:text-[#F5A623]' : 'text-[#F5A623]'}`}
               data-active={pathname.startsWith('/diensten') ? '' : undefined}
             >
               Diensten
@@ -82,21 +82,21 @@ export default function Navbar() {
 
           <Link
             href="/cases"
-            className="nav-link text-[#3D3D3D] hover:text-[#F5A623] transition-colors text-sm font-medium"
+            className={`nav-link transition-colors text-sm font-medium ${scrolled ? 'text-[#3D3D3D] hover:text-[#F5A623]' : 'text-[#F5A623]'}`}
             data-active={pathname === '/cases' ? '' : undefined}
           >
             Cases
           </Link>
           <Link
             href="/over-ons"
-            className="nav-link text-[#3D3D3D] hover:text-[#F5A623] transition-colors text-sm font-medium"
+            className={`nav-link transition-colors text-sm font-medium ${scrolled ? 'text-[#3D3D3D] hover:text-[#F5A623]' : 'text-[#F5A623]'}`}
             data-active={pathname === '/over-ons' ? '' : undefined}
           >
             Over ons
           </Link>
           <Link
             href="/contact"
-            className="nav-link text-[#3D3D3D] hover:text-[#F5A623] transition-colors text-sm font-medium"
+            className={`nav-link transition-colors text-sm font-medium ${scrolled ? 'text-[#3D3D3D] hover:text-[#F5A623]' : 'text-[#F5A623]'}`}
             data-active={pathname === '/contact' ? '' : undefined}
           >
             Contact
@@ -111,7 +111,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className="lg:hidden p-2 text-[#3D3D3D]"
+          className={`lg:hidden p-2 ${scrolled ? 'text-[#3D3D3D]' : 'text-[#F5A623]'}`}
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Menu openen"
         >
