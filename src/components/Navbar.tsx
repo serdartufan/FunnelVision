@@ -88,6 +88,13 @@ export default function Navbar() {
             Cases
           </Link>
           <Link
+            href="/kennisbank"
+            className={`nav-link transition-colors text-sm font-medium ${scrolled ? 'text-[#3D3D3D] hover:text-[#F5A623]' : 'text-[#F5A623]'}`}
+            data-active={pathname.startsWith('/kennisbank') ? '' : undefined}
+          >
+            Kennisbank
+          </Link>
+          <Link
             href="/over-ons"
             className={`nav-link transition-colors text-sm font-medium ${scrolled ? 'text-[#3D3D3D] hover:text-[#F5A623]' : 'text-[#F5A623]'}`}
             data-active={pathname === '/over-ons' ? '' : undefined}
@@ -143,6 +150,7 @@ export default function Navbar() {
           <hr className="border-[#F5F2EB]" />
           {[
             { href: '/cases', label: 'Cases' },
+            { href: '/kennisbank', label: 'Kennisbank' },
             { href: '/over-ons', label: 'Over ons' },
             { href: '/contact', label: 'Contact' },
           ].map((l) => (

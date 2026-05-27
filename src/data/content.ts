@@ -231,6 +231,54 @@ export const cases = [
   },
 ];
 
+export const kennisbank = [
+  {
+    id: 'website-laten-bouwen-kosten',
+    title: 'Website laten bouwen: wat kost het in 2026?',
+    slug: 'website-laten-bouwen-kosten',
+    category: 'Website',
+    excerpt: 'De kosten voor een nieuwe website lopen sterk uiteen. Wij zetten de factoren op een rij zodat je een weloverwogen keuze maakt.',
+    readTime: '5 min',
+    publishDate: '2026-05-27',
+  },
+  {
+    id: 'ai-consultant-inhuren',
+    title: 'AI consultant inhuren: wat doet hij en wat kost het?',
+    slug: 'ai-consultant-inhuren',
+    category: 'AI',
+    excerpt: 'Een AI consultant helpt je bedrijf slimmer werken met kunstmatige intelligentie. Maar wat doet hij precies en wat mag je verwachten?',
+    readTime: '6 min',
+    publishDate: '2026-05-27',
+  },
+  {
+    id: 'google-ads-bureau-vergelijken',
+    title: 'Google Ads bureau vergelijken: waar moet je op letten?',
+    slug: 'google-ads-bureau-vergelijken',
+    category: 'Google Ads',
+    excerpt: 'Niet elk Google Ads bureau levert wat het belooft. Met deze checklist kies je een partner die écht resultaat boekt.',
+    readTime: '5 min',
+    publishDate: '2026-05-27',
+  },
+  {
+    id: 'meer-leads-genereren',
+    title: 'Meer leads genereren voor je bedrijf: 7 bewezen methodes',
+    slug: 'meer-leads-genereren',
+    category: 'Leadgeneratie',
+    excerpt: 'Meer leads zonder meer budget? Het kan. Ontdek 7 methodes die wij zelf toepassen voor onze klanten.',
+    readTime: '7 min',
+    publishDate: '2026-05-27',
+  },
+  {
+    id: 'marketing-bureau-groningen',
+    title: 'Marketing bureau Groningen: wat kun je verwachten?',
+    slug: 'marketing-bureau-groningen',
+    category: 'Marketing',
+    excerpt: 'Op zoek naar een marketing bureau in Groningen? Wij leggen uit wat je mag verwachten en waar je op moet letten.',
+    readTime: '4 min',
+    publishDate: '2026-05-27',
+  },
+];
+
 export const team = [
   {
     name: 'Serdar',
