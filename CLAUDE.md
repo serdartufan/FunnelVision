@@ -74,13 +74,13 @@
 - Geo meta tags in layout.tsx (geo.region, geo.placename, ICBM)
 
 ## Componenten
-- src/components/Navbar.tsx — sticky, scroll-effect, dropdown diensten (6 items), hamburger mobile, logo via next/image, 300ms hover-delay fix
+- src/components/Navbar.tsx — sticky, scroll-effect, dropdown diensten (6 items), hamburger mobile, logo via next/image, 300ms hover-delay fix; menu-items en hamburger goud (#F5A623) bij transparante staat, donker (#3D3D3D) na scrollen
 - src/components/Footer.tsx — 4 kolommen, socials, NAP-regel, copyright, logo via next/image
-- src/components/ContactForm.tsx — 'use client', POST naar /api/contact, loading state, foutmelding
+- src/components/ContactForm.tsx — 'use client', POST naar /api/contact, loading state, foutmelding; bevat honeypot veld 'website' (display:none), bericht verplicht + minLength=10
 - src/components/ScrollAnimation.tsx — IntersectionObserver scroll-in animaties
 - src/components/CountUp.tsx — animerende cijfers bij scroll
-- src/app/api/contact/route.ts — Resend API route (RESEND_API_KEY via env var)
-- src/app/api/indexnow/route.ts — POST/GET endpoint dat alle 13 pagina's aanmeldt bij IndexNow
+- src/app/api/contact/route.ts — Resend API route (RESEND_API_KEY via env var); escHtml() op alle user input, rate limiter (5 req/uur/IP), server-side validatie, honeypot check
+- src/app/api/indexnow/route.ts — POST/GET endpoint dat alle 13 pagina's aanmeldt bij IndexNow; beveiligd met x-indexnow-secret header (INDEXNOW_SECRET env var)
 - src/lib/indexnow.ts — pingIndexNow() functie (POST naar api.indexnow.org)
 - src/data/content.ts — centrale databron: services[], cases[] (met imageType/imageSrc), team[], siteConfig
 - public/logos/ — 10 klantenlogos (PNG/SVG)
@@ -88,6 +88,7 @@
 
 ## Environment variables (Vercel)
 - RESEND_API_KEY — vereist voor werkend contactformulier
+- INDEXNOW_SECRET — vereist voor /api/indexnow (waarde: 32c8e6e5d347c820f31ceac4a10ff3e1)
 
 ## Status (2026-05-22)
 - ✅ Volledig nieuw design gebouwd van scratch
@@ -128,8 +129,20 @@
   - Hover pause verwijderd (bevroor animatie permanent na tap op touchscreen)
   - Snelheid: 25s desktop, 18s mobile voor beide tracks
 
+## Status (2026-05-27)
+- ✅ Navbar: menu-items en hamburger goud (#F5A623) bij transparante staat, donker (#3D3D3D) na scrollen
+- ✅ Homepage cases preview: gefilterd op 3 cases (The Fight Company, Verpoorten Vitality, Just Harry) via filter op c.company in page.tsx; /cases toont nog alle 6
+- ✅ Cases pagina: kaartachtergrond bg-[#1A1A1A], tekst wit/gray-400, gold accenten behouden
+- ✅ Security audit uitgevoerd en verbeteringen doorgevoerd:
+  - escHtml() functie op alle gebruikersinput in /api/contact/route.ts (voorkomt HTML-injectie in e-mail)
+  - In-memory rate limiter: 5 requests per uur per IP, 429 bij overschrijding
+  - Server-side inputvalidatie: naam (2-100 tekens), email (regex + max 254), bericht (10-5000, verplicht), overige velden max 200 tekens
+  - Honeypot veld 'website' in ContactForm.tsx — server stuurt nep-200 zodat bot denkt dat het gelukt is
+  - /api/indexnow beveiligd met x-indexnow-secret header (INDEXNOW_SECRET env var)
+  - Content-Security-Policy header toegevoegd in next.config.ts (self-hosted fonts, unsafe-inline voor JSON-LD)
+  - poweredByHeader: false in next.config.ts (verbergt Next.js versie uit response headers)
+
 ## To do
-- [ ] LinkedIn bedrijfspagina aanmaken (voor sameAs links in schema)
 - [ ] LinkedIn bedrijfspagina aanmaken (voor sameAs links in schema)
 - [ ] SEO onderzoek en kennisbank opzetten met artikelen
 - [ ] Over ons teksten personaliseren
