@@ -734,9 +734,9 @@ export const articleContent: Record<string, ArticleContentData> = {
     body: (
       <>
         <p className={p}>
-          Ben je op zoek naar een marketing bureau in Groningen? Dan wil je weten wat je kunt verwachten,
+          Ben je op zoek naar een marketing bureau? Dan wil je weten wat je kunt verwachten,
           wat het kost en hoe je een bureau kiest dat bij jou past. In dit artikel leggen we het uit,
-          ook vanuit onze eigen ervaring als marketing bureau in Groningen.
+          zodat je straks een weloverwogen keuze maakt.
         </p>
 
         <h2 style={{ fontFamily: 'var(--font-serif)' }} className={h2}>
@@ -760,7 +760,7 @@ export const articleContent: Record<string, ArticleContentData> = {
         </p>
 
         <h2 style={{ fontFamily: 'var(--font-serif)' }} className={h2}>
-          Waarom kiezen voor een lokaal bureau in Groningen?
+          Waarom kiezen voor een lokaal bureau?
         </h2>
         <p className={p}>
           Korte lijnen zijn een groot voordeel van een lokaal bureau. Als je snel iets wil bespreken, spreek
@@ -768,12 +768,12 @@ export const articleContent: Record<string, ArticleContentData> = {
           maar direct contact met degene die het werk doet.
         </p>
         <p className={p}>
-          Een bureau in Groningen kent ook de lokale markt. Ze weten welke bedrijven actief zijn in de regio,
-          welke doelgroepen relevant zijn voor lokale targeting en hoe de markt in het noorden van Nederland
-          werkt. Dat is waardevolle context die je bij een bureau in een andere stad mist.
+          Een kleinschalig bureau werkt persoonlijker dan een groot, anoniem bureau. Je bent geen nummer
+          in een systeem, maar een klant waarbij iedereen in het team weet wat er speelt. Dat maakt
+          sneller schakelen mogelijk en zorgt dat er echt meegedacht wordt met jouw situatie.
         </p>
         <p className={p}>
-          Tegelijk hoeft een lokaal bureau je niet te beperken tot de regio. Bij FunnelVision werken we voor
+          Tegelijk hoeft een lokaal bureau je niet te beperken tot de eigen regio. Bij FunnelVision werken we voor
           bedrijven door heel Nederland. De meeste samenwerking verloopt via video calls en online tools.
           Locatie is geen belemmering voor goede resultaten.
         </p>
@@ -814,7 +814,7 @@ export const articleContent: Record<string, ArticleContentData> = {
         </p>
 
         <h2 style={{ fontFamily: 'var(--font-serif)' }} className={h2}>
-          Wat kost een marketing bureau in Groningen?
+          Wat kost een marketing bureau?
         </h2>
         <p className={p}>
           De kosten hangen sterk af van welke dienst je afneemt en wat de scope is. Een Google Ads campagne
