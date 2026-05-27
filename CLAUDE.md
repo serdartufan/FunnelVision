@@ -54,6 +54,12 @@
 - /algemene-voorwaarden — volledige AV
 - /llms.txt — beknopt overzicht voor AI-crawlers
 - /llms-full.txt — uitgebreide Markdown voor AI-crawlers
+- /kennisbank — overzicht van alle artikelen (3-koloms grid)
+- /kennisbank/website-laten-bouwen-kosten
+- /kennisbank/ai-consultant-inhuren
+- /kennisbank/google-ads-bureau-vergelijken
+- /kennisbank/meer-leads-genereren
+- /kennisbank/marketing-bureau-groningen
 - /sitemap.xml — automatisch via src/app/sitemap.ts
 - /robots.txt — automatisch via src/app/robots.ts
 - /fv-indexnow-2026.txt — IndexNow verificatiesleutel
@@ -82,7 +88,10 @@
 - src/app/api/contact/route.ts — Resend API route (RESEND_API_KEY via env var); escHtml() op alle user input, rate limiter (5 req/uur/IP), server-side validatie, honeypot check
 - src/app/api/indexnow/route.ts — POST/GET endpoint dat alle 13 pagina's aanmeldt bij IndexNow; beveiligd met x-indexnow-secret header (INDEXNOW_SECRET env var)
 - src/lib/indexnow.ts — pingIndexNow() functie (POST naar api.indexnow.org)
-- src/data/content.ts — centrale databron: services[], cases[] (met imageType/imageSrc), team[], siteConfig
+- src/data/content.ts — centrale databron: services[], cases[] (met imageType/imageSrc), team[], kennisbank[], siteConfig
+- src/data/article-content.tsx — volledige JSX-content voor alle kennisbank artikelen; exporteert articleContent: Record<slug, { quickAnswer, faqs, body }>
+- src/app/kennisbank/page.tsx — overzichtspagina: donkere hero, 3-koloms artikelgrid, CTA
+- src/app/kennisbank/[slug]/page.tsx — artikeltemplate: snel antwoord, body, FAQ accordion, gerelateerde artikelen, Article + FAQPage + BreadcrumbList JSON-LD
 - public/logos/ — 10 klantenlogos (PNG/SVG)
 - public/cases/ — screenshots mymiracle.nl en justharry.co
 
@@ -142,9 +151,20 @@
   - Content-Security-Policy header toegevoegd in next.config.ts (self-hosted fonts, unsafe-inline voor JSON-LD)
   - poweredByHeader: false in next.config.ts (verbergt Next.js versie uit response headers)
 
+## Status (2026-05-27 — kennisbank)
+- ✅ Kennisbank sectie gebouwd: /kennisbank overzicht + 5 artikelpagina's
+- ✅ src/data/content.ts uitgebreid met kennisbank[] array (5 items: slug, title, category, excerpt, readTime, publishDate)
+- ✅ src/data/article-content.tsx aangemaakt met volledige Nederlandse tekst (1000-1500 woorden per artikel), snel antwoord, en 3 FAQ's per artikel
+- ✅ Artikel template: snel antwoord blok (crème), artikel body (wit), FAQ accordion (crème, <details>/<summary>), gerelateerde artikelen grid, auteur "Serdar Tufan"
+- ✅ JSON-LD schemas per artikel: Article (Person author: Serdar Tufan, datePublished, dateModified), FAQPage (3 vragen), BreadcrumbList
+- ✅ Navbar uitgebreid: Kennisbank link toegevoegd desktop + mobiel menu
+- ✅ Sitemap uitgebreid: /kennisbank + 5 artikel-slugs (29 routes totaal)
+- ✅ Build clean: 29/29 routes zonder errors
+
 ## To do
 - [ ] LinkedIn bedrijfspagina aanmaken (voor sameAs links in schema)
-- [ ] SEO onderzoek en kennisbank opzetten met artikelen
+- [ ] SEO onderzoek kennisbank: sitemap indienen na publicatie, rankings monitoren
+- [ ] Externe bronlinks toevoegen aan kennisbank artikelen (autoriteitsbronnen zoals kvk.nl, rijksoverheid.nl) voor E-E-A-T signalering
 - [ ] Over ons teksten personaliseren
 - [ ] GEO citatiemonitoring opzetten (Otterly.ai of Semrush)
 - [ ] Schema markup uitbreiden: telephone, priceRange, image toevoegen
