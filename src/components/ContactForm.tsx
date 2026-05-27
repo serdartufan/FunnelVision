@@ -13,6 +13,7 @@ export default function ContactForm() {
     telefoon: '',
     dienst: '',
     bericht: '',
+    website: '',
   });
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
@@ -144,14 +145,26 @@ export default function ContactForm() {
           <option value="anders">Ik weet het nog niet</option>
         </select>
       </div>
+      {/* honeypot — verborgen voor echte gebruikers, aantrekkelijk voor bots */}
+      <input
+        type="text"
+        name="website"
+        value={form.website}
+        onChange={handleChange}
+        tabIndex={-1}
+        autoComplete="off"
+        style={{ display: 'none' }}
+      />
       <div>
         <label className="block text-sm font-medium text-[#3D3D3D] mb-2" htmlFor="bericht">
-          Vertel ons over je bedrijf
+          Vertel ons over je bedrijf *
         </label>
         <textarea
           id="bericht"
           name="bericht"
           rows={5}
+          required
+          minLength={10}
           value={form.bericht}
           onChange={handleChange}
           className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-[#3D3D3D] focus:outline-none focus:border-[#F5A623] focus:shadow-[0_0_0_3px_rgba(245,166,35,0.15)] transition-[border-color,box-shadow] duration-200 resize-none"
