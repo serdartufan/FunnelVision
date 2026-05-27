@@ -22,7 +22,7 @@ export const articleContent: Record<string, ArticleContentData> = {
   ───────────────────────────────────────────── */
   'website-laten-bouwen-kosten': {
     quickAnswer:
-      'Een professionele website laten bouwen begint vanaf €500 voor een eenvoudige one-pager. Verwacht je een volledige bedrijfswebsite met meerdere pagina\'s en maatwerk design? Reken dan op €1.500 tot €5.000. Een webshop met betalingen en koppelingen kost al snel €5.000 of meer. De prijs hangt af van het aantal pagina\'s, de functionaliteiten en of je kiest voor een template of volledig maatwerk.',
+      'Een website laten bouwen begint vanaf €500. Wat je daarboven betaalt, hangt volledig af van wat je nodig hebt: het aantal pagina\'s, de functionaliteiten, of je kiest voor een template of maatwerk, en wie de content schrijft. Een website kan zo duur zijn als je zelf wilt. Wil je weten wat een website voor jouw situatie kost? Neem dan contact op voor een vrijblijvend gesprek.',
     faqs: [
       {
         q: 'Hoe lang gaat een website mee?',
@@ -30,7 +30,7 @@ export const articleContent: Record<string, ArticleContentData> = {
       },
       {
         q: 'Wat kost websiteonderhoud per maand?',
-        a: 'Kleine aanpassingen en beveiligingsupdates kosten €50 tot €100 per maand. Regelmatige contentupdates en doorontwikkeling lopen op tot €200 of meer. Als je het zelf doet, betaal je alleen voor hosting en eventuele plugins.',
+        a: 'Dat hangt af van wat je uitbesteedt. Als je het zelf doet, betaal je alleen voor hosting en eventuele plugins. Besteed je onderhoud en updates uit, dan betaal je voor de tijd die daarin gaat zitten. Hoe meer aanpassingen, hoe hoger de kosten. Vraag altijd om een concreet voorstel zodat je precies weet waar je aan toe bent.',
       },
       {
         q: 'Is een goedkopere website altijd van mindere kwaliteit?',
@@ -93,16 +93,16 @@ export const articleContent: Record<string, ArticleContentData> = {
           Denk aan een lokale kapper, coach, fotograaf of aannemer die een nette online aanwezigheid wil.
           Je hebt geen ingewikkelde functionaliteiten nodig, alleen een plek waar klanten je kunnen vinden en bereiken.
         </p>
-        <p className={p}>Wat je doorgaans krijgt voor €500 tot €1.500:</p>
+        <p className={p}>Wat je in deze categorie doorgaans krijgt:</p>
         <ul className={ul}>
-          <li>Één pagina of maximaal 3 tot 5 subpagina&apos;s</li>
+          <li>Één pagina of een kleine set subpagina&apos;s</li>
           <li>Een template-gebaseerd ontwerp aangepast naar je huisstijl</li>
           <li>Een contactformulier</li>
           <li>Mobiel- en tabletoptimalisatie</li>
           <li>Basis SEO-instellingen zodat Google je kan vinden</li>
         </ul>
         <p className={p}>
-          Voor dit budget koop je functionaliteit, geen originaliteit. Het ontwerp lijkt op dat van veel andere
+          Voor een instapbudget koop je functionaliteit, geen originaliteit. Het ontwerp lijkt op dat van veel andere
           websites. Dat hoeft geen probleem te zijn als jouw doel alleen is om online vindbaar te zijn.
         </p>
 
@@ -111,24 +111,26 @@ export const articleContent: Record<string, ArticleContentData> = {
         </h2>
         <p className={p}>
           Wil je een professionele website die jouw bedrijf goed vertegenwoordigt, bezoekers aanspreekt en
-          leads genereert? Dan zit je in de prijsklasse van €1.500 tot €5.000. Dit zijn de websites die echt
-          werken als marketingtool. Ze zijn gebouwd met oog voor conversie: de bezoeker wordt geleid naar een
-          actie, of dat nu een formulier invullen is, bellen of een aankoop doen.
+          leads genereert? Dan heb je meer nodig dan een eenvoudige one-pager. De prijs hangt af van hoeveel
+          pagina&apos;s je wil, of je kiest voor maatwerk design en welke functionaliteiten je nodig hebt.
+          Een website kan zo uitgebreid worden als jij wil, en de prijs groeit mee met de complexiteit.
         </p>
-        <p className={p}>Wat je doorgaans krijgt in deze prijsklasse:</p>
+        <p className={p}>Wat je bij een professionele bedrijfswebsite doorgaans terugziet:</p>
         <ul className={ul}>
-          <li>5 tot 15 pagina&apos;s</li>
-          <li>Maatwerk design afgestemd op jouw merk en doelgroep</li>
+          <li>Meerdere pagina&apos;s afgestemd op jouw diensten en doelgroep</li>
+          <li>Maatwerk design passend bij jouw merk</li>
           <li>Contactformulier met e-mailkoppeling</li>
           <li>SEO-technische basis: snelheid, metadata, sitemap</li>
           <li>Integraties zoals Google Analytics of CRM</li>
           <li>Een beheersysteem zodat je zelf teksten kunt aanpassen</li>
         </ul>
         <p className={p}>
-          Bij FunnelVision bouwen we websites in deze categorie die niet alleen mooi zijn, maar ook converteren.
+          Bij FunnelVision bouwen we websites die niet alleen mooi zijn, maar ook converteren.
           Bekijk onze{' '}
           <Link href="/diensten/website-bouwen" className={ilink}>dienst Website Bouwen</Link>
-          {' '}als je wil weten hoe we dat aanpakken.
+          {' '}of{' '}
+          <Link href="/contact" className={ilink}>neem contact op</Link>
+          {' '}voor een vrijblijvende prijsindicatie op maat.
         </p>
 
         <h2 style={{ fontFamily: 'var(--font-serif)' }} className={h2}>
@@ -137,18 +139,19 @@ export const articleContent: Record<string, ArticleContentData> = {
         <p className={p}>
           Een webshop is een ander verhaal dan een bedrijfswebsite. Naast de standaard onderdelen heb je
           betaalintegraties nodig, productpagina&apos;s, een winkelwagen, een bestelproces en koppelingen
-          met je logistiek of voorraadsysteem. Dat vraagt veel meer ontwikkelwerk.
+          met je logistiek of voorraadsysteem. Dat vraagt veel meer ontwikkelwerk en de investering groeit
+          mee met de complexiteit van jouw wensen.
         </p>
-        <p className={p}>Verwacht de volgende richtprijzen:</p>
-        <ul className={ul}>
-          <li>Eenvoudige webshop op Shopify of WooCommerce: €2.000 tot €5.000</li>
-          <li>Maatwerk webshop met eigen design en koppelingen: €5.000 tot €15.000</li>
-          <li>Complex platform met abonnementen, meerdere leveranciers of eigen logica: €15.000 of meer</li>
-        </ul>
+        <p className={p}>
+          Een eenvoudige webshop op een bestaand platform vraagt een andere investering dan een volledig
+          maatwerk platform met meerdere koppelingen, abonnementslogica of meerdere leveranciers.
+          De keuzes die je maakt op het vlak van platform, design en functionaliteiten bepalen uiteindelijk
+          wat je betaalt.
+        </p>
         <p className={p}>
           Bij webshops tellen ook de doorlopende kosten sterk mee: transactiekosten, softwarelicenties,
-          productfoto&apos;s, content schrijven en updates blijven doorlopen. Reken structureel €150 tot €500
-          per maand aan doorlopende kosten voor een gemiddelde webshop.
+          productfoto&apos;s, content schrijven en updates blijven doorlopen. Reken die structurele lasten
+          altijd mee in je totaalbudget voordat je een beslissing maakt.
         </p>
 
         <h2 style={{ fontFamily: 'var(--font-serif)' }} className={h2}>
@@ -159,15 +162,16 @@ export const articleContent: Record<string, ArticleContentData> = {
           is één ding, maar een website draaiende houden is een ander. Dit zijn de vaste lasten die je kunt verwachten:
         </p>
         <ul className={ul}>
-          <li><strong>Hosting:</strong> €5 tot €50 per maand, afhankelijk van de provider en het plan</li>
-          <li><strong>Domeinnaam:</strong> €10 tot €15 per jaar voor een .nl of .com domein</li>
-          <li><strong>SSL-certificaat:</strong> meestal inbegrepen bij hostingpakketten, anders €50 tot €100 per jaar</li>
-          <li><strong>Onderhoud en updates:</strong> €50 tot €200 per maand als je dit uitbesteedt</li>
+          <li><strong>Hosting:</strong> afhankelijk van de provider en het plan dat je kiest</li>
+          <li><strong>Domeinnaam:</strong> een jaarlijkse vergoeding voor je .nl of .com domein</li>
+          <li><strong>SSL-certificaat:</strong> meestal inbegrepen bij hostingpakketten, soms een apart jaarlijks bedrag</li>
+          <li><strong>Onderhoud en updates:</strong> wat je betaalt als je dit uitbesteedt, hangt af van hoeveel werk er is</li>
           <li><strong>Contentbeheer:</strong> als je regelmatig nieuwe teksten of afbeeldingen plaatst, kost dat tijd of geld</li>
         </ul>
         <p className={p}>
-          Voor een professionele bedrijfswebsite reken je op €100 tot €300 per maand aan terugkerende kosten.
-          Goedkopere hostingpakketten zijn er, maar voor snelheid en betrouwbaarheid is kwaliteitshosting de moeite waard.
+          Wat je precies betaalt aan terugkerende kosten hangt af van de keuzes die je maakt: welke hostingprovider,
+          welk onderhoudsniveau en hoe actief je de website wil bijhouden. Goedkopere hostingpakketten zijn er,
+          maar voor snelheid en betrouwbaarheid is kwaliteitshosting de moeite waard.
         </p>
 
         <h2 style={{ fontFamily: 'var(--font-serif)' }} className={h2}>
@@ -175,8 +179,9 @@ export const articleContent: Record<string, ArticleContentData> = {
         </h2>
         <p className={p}>
           Een website is een investering, geen kostenpost. De vraag is niet wat een website kost, maar wat
-          een website oplevert. Als je website maandelijks 5 nieuwe klanten genereert en elke klant is €500 waard,
-          dan heeft een website van €3.000 zich al terugverdiend in de eerste maand. Zo kijken wij ernaar.
+          een website oplevert. Als jouw website maandelijks nieuwe klanten of leads genereert, dan verdient
+          hij zichzelf terug. Hoe meer je investeert in een website die converteert, hoe groter dat effect kan zijn.
+          Zo kijken wij ernaar.
         </p>
         <p className={p}>Een grotere investering loont als:</p>
         <ul className={ul}>
@@ -189,6 +194,11 @@ export const articleContent: Record<string, ArticleContentData> = {
           Een eenvoudige website is prima als je al via andere kanalen voldoende klanten binnenhaalt en je website
           alleen hoeft te dienen als bevestiging dat je bestaat. Maar wil je groeien, dan is een professionele website
           de basis van alles wat daarna komt.
+        </p>
+        <p className={p}>
+          Wil je een concrete prijsindicatie voor jouw situatie?{' '}
+          <Link href="/contact" className={ilink}>Neem vrijblijvend contact op</Link>
+          {' '}en we denken graag met je mee.
         </p>
 
         <div className={qa}>
