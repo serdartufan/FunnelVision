@@ -41,7 +41,7 @@ const faqSchema = {
       name: 'Wat bouwt FunnelVision precies?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We bouwen maatwerk AI-systemen op basis van wat jouw bedrijf nodig heeft. Dat kan een slimme lead-assistent zijn, een chatbot die bezoekers kwalificeert, procesautomatisering of een koppeling tussen je systemen. Just Harry op justharry.co, onze eigen AI die leads kwalificeert voor dienstverleners, is een voorbeeld van wat we bouwen.',
+        text: 'We bouwen systemen die AI inzetten op de plekken waar het jouw bedrijf direct wat oplevert. Dat kan een slimme lead-assistent zijn, een chatbot die bezoekers kwalificeert, procesautomatisering of een koppeling tussen je systemen. Just Harry op justharry.co, ons eigen systeem dat met AI leads kwalificeert voor dienstverleners, laat zien hoe dat eruitziet.',
       },
     },
     {
@@ -89,7 +89,7 @@ export default function AiOplossingenPage() {
             className="text-4xl lg:text-6xl font-bold text-white leading-tight max-w-3xl"
             style={{ fontFamily: 'var(--font-serif)' }}
           >
-            Andere bureaus praten over AI. <em className="italic text-[#F5A623]">Wij bouwen het.</em>
+            Iedereen praat over AI. <em className="italic text-[#F5A623]">Wij zetten het aan het werk.</em>
           </h1>
           <p className="mt-6 text-lg text-gray-400 max-w-xl leading-relaxed">{service.description}</p>
         </div>

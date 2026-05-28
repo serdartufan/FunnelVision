@@ -68,7 +68,7 @@ Voor wie: Ondernemers die een nieuwe website of redesign nodig hebben.
 Resultaten: Gemiddelde laadtijd <1s, Core Web Vitals score 100/100.
 
 ### 4. AI Oplossingen (Slimmer Werken, Meer Tijd)
-Na twee jaar intern te werken met AI weten we wat werkt en wat niet. We bouwen praktische AI oplossingen voor bedrijven: van slimme applicaties tot geautomatiseerde workflows die FTEs besparen en processen versimpelen.
+Na twee jaar dagelijks werken met AI weten we wat werkt en wat niet. We bouwen systemen die AI inzetten waar het telt: van slimme lead-assistenten tot geautomatiseerde workflows die processen versimpelen en FTEs besparen.
 
 Wat is inbegrepen:
 - Maatwerk bedrijfsapplicaties op basis van AI

@@ -55,9 +55,9 @@ const dienstenCards = [
   {
     slug: 'ai-oplossingen',
     number: '04',
-    label: 'WIJ BOUWEN HET',
+    label: 'AI DIE WERKT',
     title: 'AI Oplossingen',
-    short: 'Andere bureaus praten over AI. Wij bouwen het. Maatwerk AI-systemen die werk automatiseren en je laten opschalen zonder meer personeel.',
+    short: 'Iedereen praat over AI. Wij zetten het aan het werk. Systemen die leads kwalificeren, processen automatiseren en je laten opschalen.',
     gradient: 'linear-gradient(135deg, #1a1020 0%, #1A1A1A 100%)',
     Icon: IconBrain,
     stats: [
@@ -124,7 +124,7 @@ const faqSchema = {
       name: 'Wat doet FunnelVision?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'FunnelVision is een groeipartner voor het MKB. We bouwen de marketing en AI-systemen die jouw bedrijf meer leads en klanten opleveren. Via Meta advertenties, Google Ads, conversiegerichte websites en maatwerk AI-systemen. Het verschil: wij bouwen AI daadwerkelijk, andere bureaus praten er alleen over.',
+        text: 'FunnelVision is een groeipartner voor het MKB. We bouwen de marketing en AI-systemen die jouw bedrijf meer leads en klanten opleveren. Via Meta advertenties, Google Ads, conversiegerichte websites en maatwerk systemen met AI. Het verschil: wij zetten AI daadwerkelijk aan het werk, andere bureaus praten er alleen over.',
       },
     },
     {
@@ -168,8 +168,8 @@ export default function HomePage() {
 
       <p className="sr-only speakable">
         FunnelVision bouwt de marketing en AI-systemen die Nederlandse ondernemers meer leads en klanten opleveren.
-        Via Meta advertenties, Google Ads en conversiegerichte websites, aangedreven door AI-systemen die wij
-        daadwerkelijk bouwen. Andere bureaus praten over AI. Wij bouwen het. Actief sinds 2019, werkzaam door heel Nederland.
+        Via Meta advertenties, Google Ads en conversiegerichte websites, met AI-systemen die wij daadwerkelijk
+        aan het werk zetten. Iedereen praat over AI. Wij zetten het aan het werk. Actief sinds 2019, werkzaam door heel Nederland.
       </p>
 
       {/* Hero */}
@@ -199,11 +199,11 @@ export default function HomePage() {
               className="hero-h1 text-white font-bold mb-8"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
-              Meer leads,
+              Iedereen praat
               <br />
-              meer klanten.
+              over AI.
               <br />
-              <em className="italic">Wij bouwen het.</em>
+              <em className="italic">Wij zetten het aan het werk.</em>
             </h1>
 
             <div style={{ maxWidth: '560px' }}>
@@ -211,7 +211,7 @@ export default function HomePage() {
                 className="mb-10"
                 style={{ fontFamily: 'var(--font-sans)', fontSize: '15px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.6 }}
               >
-                FunnelVision bouwt de marketing en AI-systemen die jouw bedrijf laten groeien. Andere bureaus praten over AI. Wij bouwen het daadwerkelijk.
+                Wij bouwen de marketing en AI-systemen die jouw bedrijf meer leads, klanten en tijd opleveren.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -502,8 +502,8 @@ export default function HomePage() {
                 desc: 'Elke maand een helder rapport. Jij ziet precies wat je uitgeeft, wat het oplevert en wat we volgende maand doen.',
               },
               {
-                title: 'Andere bureaus praten over AI. Wij bouwen het.',
-                desc: 'Just Harry, ons eigen AI-systeem dat leads kwalificeert voor dienstverleners, is het levende bewijs. Wat we voor jou bouwen hangt af van wat jouw bedrijf nodig heeft.',
+                title: 'Iedereen praat over AI. Wij zetten het aan het werk.',
+                desc: 'Just Harry, ons eigen systeem dat met AI leads kwalificeert voor dienstverleners, is het levende bewijs. Wat we voor jou inzetten hangt af van wat jouw bedrijf nodig heeft.',
               },
             ].map((item, i) => (
               <ScrollAnimation key={item.title} delay={i * 100}>
@@ -535,7 +535,7 @@ export default function HomePage() {
             {[
               {
                 q: 'Wat doet FunnelVision?',
-                a: 'FunnelVision is een groeipartner voor het MKB. We bouwen de marketing en AI-systemen die jouw bedrijf meer leads en klanten opleveren. Via Meta advertenties, Google Ads, conversiegerichte websites en maatwerk AI-systemen. Het verschil met andere bureaus: wij bouwen AI daadwerkelijk, in plaats van er alleen over te praten.',
+                a: 'FunnelVision is een groeipartner voor het MKB. We bouwen de marketing en AI-systemen die jouw bedrijf meer leads en klanten opleveren. Via Meta advertenties, Google Ads, conversiegerichte websites en maatwerk systemen met AI. Het verschil met andere bureaus: wij zetten AI daadwerkelijk aan het werk, in plaats van er alleen over te praten.',
               },
               {
                 q: 'Hoeveel kost het samenwerken met FunnelVision?',

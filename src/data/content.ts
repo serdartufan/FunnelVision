@@ -83,10 +83,10 @@ export const services = [
     slug: 'ai-oplossingen',
     number: '04',
     title: 'AI Oplossingen',
-    subtitle: 'Wij bouwen het',
-    short: 'Andere bureaus praten over AI. Wij bouwen het. Maatwerk AI-systemen die werk automatiseren, leads kwalificeren en je laten opschalen zonder meer personeel.',
+    subtitle: 'AI die werk uit handen neemt',
+    short: 'Iedereen praat over AI. Wij zetten het aan het werk. Systemen die leads kwalificeren, processen automatiseren en je laten opschalen zonder meer personeel.',
     description:
-      'Na twee jaar intern bouwen weten we wat werkt en wat niet. We maken AI-systemen op maat: van een slimme lead-assistent tot procesautomatisering en koppelingen tussen je systemen. Just Harry, onze eigen AI die leads kwalificeert voor dienstverleners op justharry.co, is een voorbeeld van wat we bouwen. Wat jij nodig hebt hangt af van je bedrijf, dat bepalen we samen.',
+      'Na twee jaar dagelijks werken met AI weten we wat werkt en wat niet. We bouwen systemen die AI inzetten waar het telt: leads kwalificeren, processen automatiseren en koppelingen leggen tussen je systemen. Just Harry, ons eigen systeem dat met AI leads kwalificeert voor dienstverleners op justharry.co, is een voorbeeld. Wat jij nodig hebt hangt af van je bedrijf, dat bepalen we samen.',
     bullets: [
       'Maatwerk AI-systemen die leads kwalificeren en opvolgen',
       'Automatisering van repetitieve processen',

@@ -144,8 +144,8 @@ export default function OverOnsPage() {
                   desc: 'Je krijgt maandelijks een helder rapport met alle cijfers. We leggen uit wat werkt, wat niet, en wat we gaan aanpassen.',
                 },
                 {
-                  title: 'Andere bureaus praten over AI. Wij bouwen het.',
-                  desc: 'Just Harry, ons eigen AI-systeem dat leads kwalificeert voor dienstverleners, is het bewijs. We gebruiken dezelfde tools die we voor klanten bouwen ook intern, zodat we weten wat werkt.',
+                  title: 'Iedereen praat over AI. Wij zetten het aan het werk.',
+                  desc: 'Just Harry, ons eigen systeem dat met AI leads kwalificeert voor dienstverleners, is het bewijs. We zetten dezelfde systemen intern in die we voor klanten bouwen, zodat we weten wat werkt.',
                 },
               ].map((item) => (
                 <div key={item.title} className="flex gap-6 items-start">
