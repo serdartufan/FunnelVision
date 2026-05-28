@@ -18,7 +18,7 @@ const dienstenCards = [
     number: '01',
     label: 'FACEBOOK & INSTAGRAM',
     title: 'Meta Advertenties',
-    short: 'Bereik jouw ideale klant op Facebook en Instagram met advertenties die écht converteren.',
+    short: 'De juiste mensen op het juiste moment bereiken. Zodat ze niet alleen zien wie jij bent, maar klant worden.',
     gradient: 'linear-gradient(135deg, #2a2010 0%, #1A1A1A 100%)',
     Icon: IconDeviceMobile,
     stats: [
@@ -31,7 +31,7 @@ const dienstenCards = [
     number: '02',
     label: 'SEARCH ENGINE ADVERTISING',
     title: 'Google Ads',
-    short: 'Word gevonden door mensen die nu actief zoeken naar jouw dienst of product.',
+    short: 'Als iemand zoekt naar wat jij aanbiedt, wil je bovenaan staan. Wij zorgen dat koopklare klanten bij jou uitkomen, niet bij de concurrent.',
     gradient: 'linear-gradient(135deg, #0d1f1a 0%, #1A1A1A 100%)',
     Icon: IconSearch,
     stats: [
@@ -42,9 +42,9 @@ const dienstenCards = [
   {
     slug: 'website-bouwen',
     number: '03',
-    label: 'CONVERSIEGERICHT & SNEL',
+    label: 'CONVERSIEGERICHT & AEO-KLAAR',
     title: 'Website Bouwen',
-    short: 'Een snelle, professionele website die bezoekers omzet in klanten. Gebouwd om te scoren.',
+    short: 'Een website die bezoekers omzet in klanten, gevonden wordt via Google én als antwoord verschijnt in ChatGPT en Gemini.',
     gradient: 'linear-gradient(135deg, #0d1a0d 0%, #1A1A1A 100%)',
     Icon: IconCode,
     stats: [
@@ -55,9 +55,9 @@ const dienstenCards = [
   {
     slug: 'ai-oplossingen',
     number: '04',
-    label: 'SLIMMER WERKEN, MEER TIJD',
+    label: 'WIJ BOUWEN HET',
     title: 'AI Oplossingen',
-    short: 'Van bedrijfsapplicaties tot geautomatiseerde processen die je team tijd teruggeven.',
+    short: 'Andere bureaus praten over AI. Wij bouwen het. Maatwerk AI-systemen die werk automatiseren en je laten opschalen zonder meer personeel.',
     gradient: 'linear-gradient(135deg, #1a1020 0%, #1A1A1A 100%)',
     Icon: IconBrain,
     stats: [
@@ -93,12 +93,12 @@ const bannerItems = [
 export const metadata: Metadata = {
   title: 'FunnelVision | Marketing Bureau voor het MKB',
   description:
-    'Meer klanten en omzet via Meta advertenties, Google Ads en websites die converteren. FunnelVision is jouw resultaatgerichte marketing partner.',
+    'FunnelVision bouwt de marketing en AI-systemen die jouw bedrijf meer leads en klanten opleveren. Groeipartner voor het Nederlandse MKB.',
   alternates: { canonical: 'https://funnelvisionagency.com' },
   openGraph: {
     url: 'https://funnelvisionagency.com',
     title: 'FunnelVision | Marketing Bureau voor het MKB',
-    description: 'Meer klanten en omzet via Meta advertenties, Google Ads en websites die converteren.',
+    description: 'FunnelVision bouwt de marketing en AI-systemen die jouw bedrijf meer leads en klanten opleveren.',
   },
 };
 
@@ -108,7 +108,7 @@ const webPageSchema = {
   name: 'FunnelVision | Marketing Bureau voor het MKB',
   url: 'https://funnelvisionagency.com',
   description:
-    'Meer klanten en omzet via Meta advertenties, Google Ads en websites die converteren. FunnelVision is jouw resultaatgerichte marketing partner.',
+    'FunnelVision bouwt de marketing en AI-systemen die jouw bedrijf meer leads en klanten opleveren. Groeipartner voor het Nederlandse MKB.',
   speakable: {
     '@type': 'SpeakableSpecification',
     cssSelector: ['h1', '.speakable'],
@@ -124,7 +124,7 @@ const faqSchema = {
       name: 'Wat doet FunnelVision?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'FunnelVision is een marketing bureau dat kleine en middelgrote bedrijven helpt groeien via betaalde advertenties en digitale marketing. We beheren Meta Advertenties (Facebook & Instagram), Google Ads, bouwen conversiegerichte websites en bieden AI Oplossingen.',
+        text: 'FunnelVision is een groeipartner voor het MKB. We bouwen de marketing en AI-systemen die jouw bedrijf meer leads en klanten opleveren. Via Meta advertenties, Google Ads, conversiegerichte websites en maatwerk AI-systemen. Het verschil: wij bouwen AI daadwerkelijk, andere bureaus praten er alleen over.',
       },
     },
     {
@@ -167,10 +167,9 @@ export default function HomePage() {
       />
 
       <p className="sr-only speakable">
-        FunnelVision is een resultaatgericht marketing bureau voor het Nederlandse MKB, gespecialiseerd in
-        Meta advertenties, Google Ads, website bouwen en AI oplossingen. Wij helpen ondernemers meer
-        klanten en omzet te genereren via betaalde advertenties en slimme digitale marketing. Actief sinds
-        2019, werkzaam door heel Nederland.
+        FunnelVision bouwt de marketing en AI-systemen die Nederlandse ondernemers meer leads en klanten opleveren.
+        Via Meta advertenties, Google Ads en conversiegerichte websites, aangedreven door AI-systemen die wij
+        daadwerkelijk bouwen. Andere bureaus praten over AI. Wij bouwen het. Actief sinds 2019, werkzaam door heel Nederland.
       </p>
 
       {/* Hero */}
@@ -200,11 +199,11 @@ export default function HomePage() {
               className="hero-h1 text-white font-bold mb-8"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
-              Meer klanten.
+              Meer leads,
               <br />
-              Meer omzet.
+              meer klanten.
               <br />
-              <em className="italic">Meer groei.</em>
+              <em className="italic">Wij bouwen het.</em>
             </h1>
 
             <div style={{ maxWidth: '560px' }}>
@@ -212,8 +211,7 @@ export default function HomePage() {
                 className="mb-10"
                 style={{ fontFamily: 'var(--font-sans)', fontSize: '15px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.6 }}
               >
-                FunnelVision helpt Nederlandse ondernemers groeien via resultaatgerichte Meta ads, Google Ads,
-                website bouwen en AI oplossingen.
+                FunnelVision bouwt de marketing en AI-systemen die jouw bedrijf laten groeien. Andere bureaus praten over AI. Wij bouwen het daadwerkelijk.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -504,8 +502,8 @@ export default function HomePage() {
                 desc: 'Elke maand een helder rapport. Jij ziet precies wat je uitgeeft, wat het oplevert en wat we volgende maand doen.',
               },
               {
-                title: 'Resultaat staat centraal',
-                desc: 'We meten alles. Elke euro die je uitgeeft aan advertenties wordt gevolgd en geoptimaliseerd op rendement.',
+                title: 'Andere bureaus praten over AI. Wij bouwen het.',
+                desc: 'Just Harry, ons eigen AI-systeem dat leads kwalificeert voor dienstverleners, is het levende bewijs. Wat we voor jou bouwen hangt af van wat jouw bedrijf nodig heeft.',
               },
             ].map((item, i) => (
               <ScrollAnimation key={item.title} delay={i * 100}>
@@ -537,7 +535,7 @@ export default function HomePage() {
             {[
               {
                 q: 'Wat doet FunnelVision?',
-                a: 'FunnelVision is een marketing bureau dat MKB-bedrijven helpt groeien via Meta advertenties, Google Ads, websitebouw en AI oplossingen.',
+                a: 'FunnelVision is een groeipartner voor het MKB. We bouwen de marketing en AI-systemen die jouw bedrijf meer leads en klanten opleveren. Via Meta advertenties, Google Ads, conversiegerichte websites en maatwerk AI-systemen. Het verschil met andere bureaus: wij bouwen AI daadwerkelijk, in plaats van er alleen over te praten.',
               },
               {
                 q: 'Hoeveel kost het samenwerken met FunnelVision?',

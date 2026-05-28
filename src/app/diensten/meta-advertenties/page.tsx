@@ -6,7 +6,7 @@ import { services } from '@/data/content';
 export const metadata: Metadata = {
   title: 'Meta Advertenties Bureau | Facebook & Instagram Ads | FunnelVision',
   description:
-    'Meer leads en omzet via Facebook en Instagram advertenties. FunnelVision bouwt winstgevende Meta campagnes voor het MKB.',
+    'Wij zorgen dat de juiste mensen jou vinden op Facebook en Instagram en klant worden. FunnelVision bouwt Meta campagnes die elke stap naar de aankoop optimaliseren.',
   alternates: { canonical: 'https://funnelvisionagency.com/diensten/meta-advertenties' },
 };
 

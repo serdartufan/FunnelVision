@@ -6,7 +6,7 @@ import { services } from '@/data/content';
 export const metadata: Metadata = {
   title: 'Google Ads Bureau voor MKB | FunnelVision',
   description:
-    'Word gevonden door koopklare klanten via Google Ads. FunnelVision bouwt gerichte Search en Shopping campagnes voor het MKB.',
+    'Als iemand zoekt naar wat jij aanbiedt, wil je bovenaan staan. FunnelVision bouwt Google Ads campagnes die koopklare klanten naar jou sturen, niet naar de concurrent.',
   alternates: { canonical: 'https://funnelvisionagency.com/diensten/google-ads' },
 };
 

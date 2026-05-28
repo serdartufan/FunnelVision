@@ -14,9 +14,9 @@ export const services = [
     number: '01',
     title: 'Meta Advertenties',
     subtitle: 'Facebook & Instagram Ads',
-    short: 'Bereik jouw ideale klant op Facebook en Instagram met advertenties die écht converteren.',
+    short: 'De juiste mensen op het juiste moment bereiken op Facebook en Instagram. Zodat ze niet alleen zien wie jij bent, maar klant worden.',
     description:
-      'We bouwen winstgevende Meta campagnes die jouw doelgroep raken op het juiste moment, van awareness tot aankoop. Geen verspild budget, alleen resultaat.',
+      'Wij bouwen Meta campagnes die jouw doelgroep niet alleen bereiken maar ook overtuigen. Van de eerste indruk tot de aanvraag of aankoop: we optimaliseren elke stap op conversie. Geen verspild budget, alleen resultaat dat je kunt meten.',
     bullets: [
       'Campagnestrategie op maat',
       'Doelgroep research en targeting',
@@ -37,9 +37,9 @@ export const services = [
     number: '02',
     title: 'Google Ads',
     subtitle: 'Search Engine Advertising',
-    short: 'Word gevonden door mensen die nu actief zoeken naar jouw dienst of product.',
+    short: 'Als iemand zoekt naar wat jij aanbiedt, wil je bovenaan staan. Wij zorgen dat koopklare klanten bij jou uitkomen, niet bij de concurrent.',
     description:
-      'Dogukan bouwt gerichte Google Ads campagnes die jouw bedrijf bovenaan zetten bij koopklare zoekopdrachten. Van zoekwoorden tot conversiemeting.',
+      'We bouwen Google Ads campagnes die jou zichtbaar maken op het moment dat het telt: als iemand actief zoekt naar jouw product of dienst. Van zoekwoordenstrategie tot conversiemeting, alles staat strak zodat elke euro advertentiebudget telt.',
     bullets: [
       'Zoekwoordenonderzoek en strategie',
       'Search, Shopping en Display campagnes',
@@ -59,19 +59,19 @@ export const services = [
     slug: 'website-bouwen',
     number: '03',
     title: 'Website Bouwen',
-    subtitle: 'Conversiegericht & Snel',
-    short: 'Een snelle, professionele website die bezoekers omzet in klanten. Gebouwd om te scoren.',
+    subtitle: 'Conversiegericht, SEO en AEO',
+    short: 'Een website die bezoekers omzet in klanten. Zo snel, zo scherp en zo technisch sterk dat je gevonden wordt via Google én als antwoord in ChatGPT en Gemini.',
     description:
-      'We bouwen strakke websites die niet alleen mooi zijn, maar ook converteren. Gebouwd op moderne technologie, geoptimaliseerd voor zoekmachines en volledig op maat.',
+      'We bouwen websites die converteren én gevonden worden. Technisch ijzersterk op SEO, maar ook geoptimaliseerd voor AEO zodat je zichtbaar bent als antwoord in AI-zoekmachines zoals ChatGPT en Gemini. Want jouw klanten zoeken niet meer alleen via Google.',
     bullets: [
       'Strategie en wireframes',
       'Custom design en ontwikkeling',
       'SEO-technische optimalisatie',
       'Contactformulieren en integraties',
-      'Snelheid en Core Web Vitals optimalisatie',
+      'AEO-optimalisatie voor zichtbaarheid in ChatGPT, Gemini en Perplexity',
     ],
     target:
-      'Ondernemers die een nieuwe website of redesign nodig hebben die klanten oplevert in plaats van alleen indruk maakt.',
+      'Ondernemers die een nieuwe website of redesign nodig hebben die klanten oplevert en gevonden wordt via zowel Google als AI-zoekmachines.',
     stats: [
       { label: 'Gem. laadtijd', value: '<1s' },
       { label: 'Core Web Vitals', value: '100/100' },
@@ -83,18 +83,18 @@ export const services = [
     slug: 'ai-oplossingen',
     number: '04',
     title: 'AI Oplossingen',
-    subtitle: 'Slimmer Werken, Meer Tijd',
-    short: 'Van bedrijfsapplicaties tot geautomatiseerde processen. Wij bouwen AI oplossingen die je team tijd teruggeven voor wat echt belangrijk is.',
+    subtitle: 'Wij bouwen het',
+    short: 'Andere bureaus praten over AI. Wij bouwen het. Maatwerk AI-systemen die werk automatiseren, leads kwalificeren en je laten opschalen zonder meer personeel.',
     description:
-      'Na twee jaar intern te werken met AI weten we wat werkt en wat niet. We bouwen praktische AI oplossingen voor bedrijven: van slimme applicaties tot geautomatiseerde workflows die FTEs besparen en processen versimpelen.',
+      'Na twee jaar intern bouwen weten we wat werkt en wat niet. We maken AI-systemen op maat: van een slimme lead-assistent tot procesautomatisering en koppelingen tussen je systemen. Just Harry, onze eigen AI die leads kwalificeert voor dienstverleners op justharry.co, is een voorbeeld van wat we bouwen. Wat jij nodig hebt hangt af van je bedrijf, dat bepalen we samen.',
     bullets: [
-      'Maatwerk bedrijfsapplicaties op basis van AI',
+      'Maatwerk AI-systemen die leads kwalificeren en opvolgen',
       'Automatisering van repetitieve processen',
-      'AI-gestuurde klantcommunicatie',
-      'Integratie met bestaande systemen',
-      'Training en implementatie voor je team',
+      'Slimme koppelingen tussen je bestaande systemen',
+      'AI-gestuurde klantcommunicatie via chat of e-mail',
+      'Van idee naar werkend systeem, inclusief implementatie',
     ],
-    target: 'Bedrijven die tijd willen besparen en interne processen willen moderniseren met AI.',
+    target: 'Bedrijven die willen opschalen zonder dat de werkdruk meegroeit. En dienstverleners die leads sneller en beter willen kwalificeren.',
     stats: [
       { label: 'Jaar intern ervaring', value: '2+' },
       { label: 'Tijdsbesparing', value: 'Tot 40%' },

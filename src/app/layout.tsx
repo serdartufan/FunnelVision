@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: '%s | FunnelVision',
   },
   description:
-    'Meer klanten en omzet via Meta advertenties, Google Ads en websites die converteren. FunnelVision is jouw resultaatgerichte marketing partner in Nederland.',
+    'FunnelVision bouwt marketing en AI-systemen die Nederlandse bedrijven meer leads en klanten opleveren. Groeipartner voor het MKB.',
   keywords: [
     'marketing bureau',
     'meta advertenties',
@@ -37,12 +37,12 @@ export const metadata: Metadata = {
     url: 'https://funnelvisionagency.com',
     siteName: 'FunnelVision',
     title: 'FunnelVision | Marketing Bureau voor het MKB',
-    description: 'Meer klanten en omzet via Meta advertenties, Google Ads en websites die converteren.',
+    description: 'FunnelVision bouwt marketing en AI-systemen die Nederlandse bedrijven meer leads en klanten opleveren.',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'FunnelVision | Marketing Bureau voor het MKB',
-    description: 'Meer klanten en omzet via Meta advertenties, Google Ads en websites die converteren.',
+    description: 'FunnelVision bouwt marketing en AI-systemen die Nederlandse bedrijven meer leads en klanten opleveren.',
   },
   alternates: {
     canonical: 'https://funnelvisionagency.com',
@@ -70,7 +70,7 @@ const organizationSchema = {
   },
   areaServed: 'NL',
   description:
-    'Resultaatgericht marketing bureau voor het Nederlandse MKB. Specialist in Meta advertenties, Google Ads, website bouwen en AI oplossingen.',
+    'FunnelVision bouwt de marketing en AI-systemen die Nederlandse bedrijven meer leads en klanten opleveren. Groeipartner voor het MKB, actief via Meta advertenties, Google Ads, websites en maatwerk AI-systemen.',
   foundingDate: '2019',
   numberOfEmployees: { '@type': 'QuantitativeValue', value: 2 },
   sameAs: [

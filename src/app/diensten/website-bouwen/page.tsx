@@ -6,7 +6,7 @@ import { services } from '@/data/content';
 export const metadata: Metadata = {
   title: 'Website Laten Bouwen voor MKB | FunnelVision',
   description:
-    'Een snelle, professionele website die bezoekers omzet in klanten. FunnelVision bouwt conversiegerichte websites voor het MKB.',
+    'Een website die bezoekers omzet in klanten en gevonden wordt via Google én in ChatGPT en Gemini. FunnelVision bouwt conversiegerichte, AEO-klare websites voor het MKB.',
   alternates: { canonical: 'https://funnelvisionagency.com/diensten/website-bouwen' },
 };
 
@@ -54,10 +54,10 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Is de website daarna van mij?',
+      name: 'Wat is AEO en waarom is het belangrijk?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja, volledig. Na oplevering en betaling is de website 100% jouw eigendom. Je krijgt alle inloggegevens en toegangen overgedragen.',
+        text: 'AEO staat voor Answer Engine Optimization: je website zo inrichten dat AI-tools zoals ChatGPT, Gemini en Perplexity jouw bedrijf noemen als antwoord op relevante vragen. Steeds meer mensen zoeken niet meer via Google maar stellen vragen aan AI. Als jij daar niet zichtbaar bent, mis je klanten. Wij bouwen websites die op beide gevonden worden.',
       },
     },
   ],
@@ -88,7 +88,7 @@ export default function WebsiteBouwenPage() {
             className="text-4xl lg:text-6xl font-bold text-white leading-tight max-w-3xl"
             style={{ fontFamily: 'var(--font-serif)' }}
           >
-            Een website die <em className="italic text-[#F5A623]">klanten oplevert.</em>
+            Een website die klanten oplevert <em className="italic text-[#F5A623]">én gevonden wordt.</em>
           </h1>
           <p className="mt-6 text-lg text-gray-400 max-w-xl leading-relaxed">{service.description}</p>
         </div>

@@ -6,7 +6,7 @@ import { services } from '@/data/content';
 export const metadata: Metadata = {
   title: 'AI Oplossingen voor Bedrijven | Automatisering en Applicaties | FunnelVision',
   description:
-    'Bespaar tijd en moderniseer je processen met praktische AI oplossingen. FunnelVision bouwt maatwerk AI applicaties en automatiseringen voor het MKB.',
+    'Andere bureaus praten over AI. FunnelVision bouwt het. Maatwerk AI-systemen die werk automatiseren, leads kwalificeren en je laten opschalen zonder meer personeel.',
   alternates: { canonical: 'https://funnelvisionagency.com/diensten/ai-oplossingen' },
 };
 
@@ -38,26 +38,26 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Wat zijn AI oplossingen voor bedrijven?',
+      name: 'Wat bouwt FunnelVision precies?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'AI oplossingen voor bedrijven zijn op maat gemaakte applicaties en geautomatiseerde workflows die gebruik maken van kunstmatige intelligentie om processen te versnellen, kosten te verlagen en betere beslissingen mogelijk te maken.',
+        text: 'We bouwen maatwerk AI-systemen op basis van wat jouw bedrijf nodig heeft. Dat kan een slimme lead-assistent zijn, een chatbot die bezoekers kwalificeert, procesautomatisering of een koppeling tussen je systemen. Just Harry op justharry.co, onze eigen AI die leads kwalificeert voor dienstverleners, is een voorbeeld van wat we bouwen.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Hoeveel tijd bespaar ik met AI automatisering?',
+      name: 'Hoeveel tijd bespaar ik met een AI-systeem?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Afhankelijk van het proces kan AI automatisering 20 tot 40% tijdsbesparing opleveren. Repetitieve taken zoals dataverwerking, klantvragen beantwoorden en rapportages kunnen grotendeels geautomatiseerd worden.',
+        text: 'Afhankelijk van het proces kan een goed gebouwd AI-systeem 20 tot 40% tijdsbesparing opleveren. Repetitieve taken zoals leads kwalificeren, klantvragen beantwoorden en rapportages zijn vaak volledig of grotendeels te automatiseren.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Werkt AI ook voor kleine bedrijven?',
+      name: 'Werkt dit ook voor kleine bedrijven?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja, zeker. AI hoeft niet complex of duur te zijn. We bouwen praktische oplossingen die direct waarde toevoegen, ook voor kleine teams. We starten altijd met een analyse van welke processen het meest geschikt zijn voor automatisering.',
+        text: 'Ja. AI hoeft niet complex of duur te zijn. We starten altijd met een analyse van waar de meeste winst te halen is. Daarna bouwen we iets dat direct waarde toevoegt, ook als je met een klein team werkt.',
       },
     },
   ],
@@ -89,7 +89,7 @@ export default function AiOplossingenPage() {
             className="text-4xl lg:text-6xl font-bold text-white leading-tight max-w-3xl"
             style={{ fontFamily: 'var(--font-serif)' }}
           >
-            <em className="italic text-[#F5A623]">AI Oplossingen</em> die écht tijd besparen.
+            Andere bureaus praten over AI. <em className="italic text-[#F5A623]">Wij bouwen het.</em>
           </h1>
           <p className="mt-6 text-lg text-gray-400 max-w-xl leading-relaxed">{service.description}</p>
         </div>
@@ -188,10 +188,10 @@ export default function AiOplossingenPage() {
             className="text-3xl lg:text-4xl font-bold text-[#3D3D3D] mb-6"
             style={{ fontFamily: 'var(--font-serif)' }}
           >
-            Klaar voor meer <em className="italic text-[#F5A623]">efficiëntie?</em>
+            Wil jij ook <em className="italic text-[#F5A623]">zo&apos;n systeem?</em>
           </h2>
           <p className="text-gray-500 mb-8">
-            Plan een gratis gesprek en ontdek welke processen in jouw bedrijf klaar zijn voor AI.
+            Plan een gratis gesprek en we kijken samen wat een AI-systeem voor jouw bedrijf kan doen.
           </p>
           <Link
             href="/contact"
