@@ -6,8 +6,6 @@ const urlList = [
   '/diensten',
   '/diensten/meta-advertenties',
   '/diensten/google-ads',
-  '/diensten/linkedin-advertising',
-  '/diensten/emailmarketing',
   '/diensten/website-bouwen',
   '/cases',
   '/over-ons',

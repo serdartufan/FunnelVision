@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     template: '%s | FunnelVision',
   },
   description:
-    'Meer klanten en omzet via Meta advertenties, Google Ads en e-mailmarketing. FunnelVision is jouw resultaatgerichte marketing partner in Nederland.',
+    'Meer klanten en omzet via Meta advertenties, Google Ads en websites die converteren. FunnelVision is jouw resultaatgerichte marketing partner in Nederland.',
   keywords: [
     'marketing bureau',
     'meta advertenties',
     'google ads bureau',
     'online marketing mkb',
-    'linkedin advertising',
-    'emailmarketing bureau nederland',
+    'website bouwen',
+    'ai oplossingen marketing',
   ],
   authors: [{ name: 'Serdar', url: 'https://funnelvisionagency.com/over-ons' }],
   creator: 'FunnelVision',
@@ -37,12 +37,12 @@ export const metadata: Metadata = {
     url: 'https://funnelvisionagency.com',
     siteName: 'FunnelVision',
     title: 'FunnelVision | Marketing Bureau voor het MKB',
-    description: 'Meer klanten en omzet via Meta advertenties, Google Ads en e-mailmarketing.',
+    description: 'Meer klanten en omzet via Meta advertenties, Google Ads en websites die converteren.',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'FunnelVision | Marketing Bureau voor het MKB',
-    description: 'Meer klanten en omzet via Meta advertenties, Google Ads en e-mailmarketing.',
+    description: 'Meer klanten en omzet via Meta advertenties, Google Ads en websites die converteren.',
   },
   alternates: {
     canonical: 'https://funnelvisionagency.com',
@@ -70,7 +70,7 @@ const organizationSchema = {
   },
   areaServed: 'NL',
   description:
-    'Resultaatgericht marketing bureau voor het Nederlandse MKB. Specialist in Meta advertenties, Google Ads, LinkedIn Advertising en e-mailmarketing.',
+    'Resultaatgericht marketing bureau voor het Nederlandse MKB. Specialist in Meta advertenties, Google Ads, website bouwen en AI oplossingen.',
   foundingDate: '2019',
   numberOfEmployees: { '@type': 'QuantitativeValue', value: 2 },
   sameAs: [
@@ -84,8 +84,6 @@ const organizationSchema = {
     itemListElement: [
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Meta Advertenties' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Google Ads' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'LinkedIn Advertising' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'E-mailmarketing' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Website Bouwen' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI Oplossingen' } },
     ],

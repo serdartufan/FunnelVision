@@ -57,9 +57,7 @@ export default function Footer() {
               {[
                 { href: '/diensten/meta-advertenties', label: 'Meta Advertenties' },
                 { href: '/diensten/google-ads', label: 'Google Ads' },
-                { href: '/diensten/emailmarketing', label: 'E-mailmarketing' },
                 { href: '/diensten/website-bouwen', label: 'Website Bouwen' },
-                { href: '/diensten/linkedin-advertising', label: 'LinkedIn Advertising' },
                 { href: '/diensten/ai-oplossingen', label: 'AI Oplossingen' },
               ].map((l) => (
                 <li key={l.href}>

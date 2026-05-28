@@ -53,33 +53,7 @@ Voor wie: MKB-bedrijven die direct zichtbaar willen zijn voor lokale of national
 
 Resultaten: Gemiddeld 42% CPC reductie, cost per lead vanaf €0,80.
 
-### 3. LinkedIn Advertising (B2B Lead Generatie)
-Gerichte LinkedIn campagnes die beslissers bereiken op het moment dat ze openstaan voor een aanbod, van awareness tot directe leadgeneratie.
-
-Wat is inbegrepen:
-- Doelgroep op functietitel, bedrijfsgrootte en branche
-- Sponsored Content en Message Ads
-- Lead Gen Forms voor directe conversie
-- Retargeting van websitebezoekers
-- Maandelijkse rapportage
-
-Voor wie: B2B bedrijven, consultants en dienstverleners die zakelijke klanten willen bereiken.
-
-### 4. E-mailmarketing (Automatisering & Campagnes)
-Geautomatiseerde e-mailsequenties die leads opwarmen, klanten terugbrengen en omzet verhogen, zonder dat je er dagelijks naar hoeft te kijken.
-
-Wat is inbegrepen:
-- Welkomstsequenties en nurture flows
-- Winkelwagen verlaten e-mails
-- Nieuwsbrief strategie en copy
-- Segmentatie en personalisatie
-- Rapportage en optimalisatie
-
-Voor wie: Webshops en dienstverleners met een bestaande klantenlijst.
-
-Resultaten: Gemiddelde open rate van 38%, +55% omzet via e-mail.
-
-### 5. Website Bouwen (Conversiegericht & Snel)
+### 3. Website Bouwen (Conversiegericht & Snel)
 Strakke websites die niet alleen mooi zijn, maar ook converteren. Gebouwd op moderne technologie.
 
 Wat is inbegrepen:
@@ -93,7 +67,7 @@ Voor wie: Ondernemers die een nieuwe website of redesign nodig hebben.
 
 Resultaten: Gemiddelde laadtijd <1s, Core Web Vitals score 100/100.
 
-### 6. AI Oplossingen (Slimmer Werken, Meer Tijd)
+### 4. AI Oplossingen (Slimmer Werken, Meer Tijd)
 Na twee jaar intern te werken met AI weten we wat werkt en wat niet. We bouwen praktische AI oplossingen voor bedrijven: van slimme applicaties tot geautomatiseerde workflows die FTEs besparen en processen versimpelen.
 
 Wat is inbegrepen:

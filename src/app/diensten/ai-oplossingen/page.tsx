@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://funnelvisionagency.com/diensten/ai-oplossingen' },
 };
 
-const service = services[5];
+const service = services[3];
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',

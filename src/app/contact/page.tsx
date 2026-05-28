@@ -6,7 +6,7 @@ import ContactForm from '@/components/ContactForm';
 export const metadata: Metadata = {
   title: 'Contact | FunnelVision Marketing Bureau',
   description:
-    'Plan een gratis kennismakingsgesprek met FunnelVision. We kijken samen wat Meta ads, Google Ads of e-mailmarketing voor jouw bedrijf kan betekenen.',
+    'Plan een gratis kennismakingsgesprek met FunnelVision. We kijken samen wat Meta ads, Google Ads of website bouwen voor jouw bedrijf kan betekenen.',
   alternates: { canonical: 'https://funnelvisionagency.com/contact' },
 };
 

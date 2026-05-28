@@ -9,18 +9,16 @@ FunnelVision is een marketing agency gespecialiseerd in betaalde advertenties en
 ## Diensten
 - Meta Advertenties (Facebook & Instagram Ads)
 - Google Ads (Search, Shopping, Display)
-- LinkedIn Advertising (B2B lead generatie)
-- E-mailmarketing (flows, campagnes, automation)
 - Website Bouwen (Next.js, conversiegericht)
+- AI Oplossingen (automatisering & maatwerk applicaties)
 
 ## Belangrijkste pagina's
 - Homepage: https://funnelvisionagency.com
 - Diensten: https://funnelvisionagency.com/diensten
 - Meta Advertenties: https://funnelvisionagency.com/diensten/meta-advertenties
 - Google Ads: https://funnelvisionagency.com/diensten/google-ads
-- LinkedIn Advertising: https://funnelvisionagency.com/diensten/linkedin-advertising
-- E-mailmarketing: https://funnelvisionagency.com/diensten/emailmarketing
 - Website Bouwen: https://funnelvisionagency.com/diensten/website-bouwen
+- AI Oplossingen: https://funnelvisionagency.com/diensten/ai-oplossingen
 - Cases: https://funnelvisionagency.com/cases
 - Over ons: https://funnelvisionagency.com/over-ons
 - Contact: https://funnelvisionagency.com/contact

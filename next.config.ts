@@ -2,6 +2,20 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  async redirects() {
+    return [
+      {
+        source: '/diensten/emailmarketing',
+        destination: '/diensten',
+        permanent: true,
+      },
+      {
+        source: '/diensten/linkedin-advertising',
+        destination: '/diensten',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 
 const milestones = [
   { year: '2019', event: 'Opgericht met focus op Meta Advertenties.' },
-  { year: '2022', event: 'Uitbreiding naar LinkedIn Ads en Google Ads.' },
-  { year: '2023', event: 'E-mailmarketing toegevoegd en meer dan 3 miljoen euro budget beheerd.' },
+  { year: '2022', event: 'Uitbreiding naar Google Ads en website bouwen.' },
+  { year: '2023', event: 'Meer dan 3 miljoen euro advertentiebudget beheerd.' },
   { year: '2026', event: 'AI oplossingen toegevoegd na 2 jaar intern gebruik.' },
 ];
 

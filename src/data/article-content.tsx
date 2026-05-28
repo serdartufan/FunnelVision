@@ -651,8 +651,7 @@ export const articleContent: Record<string, ArticleContentData> = {
         <p className={p}>
           Wat je hiermee kunt doen: geautomatiseerde opvolgsequenties na een eerste contact, een nieuwsbrief
           met waardevolle content die je expertise toont en aanbiedingen of nieuws delen met een warm publiek
-          dat al weet wie je bent. Bekijk onze aanpak voor{' '}
-          <Link href="/diensten/emailmarketing" className={ilink}>E-mailmarketing</Link>.
+          dat al weet wie je bent.
         </p>
 
         <h2 style={{ fontFamily: 'var(--font-serif)' }} className={h2}>
@@ -668,8 +667,7 @@ export const articleContent: Record<string, ArticleContentData> = {
           <li><strong>LinkedIn Ads:</strong> betaald adverteren met Lead Gen Forms die aanvragen direct in LinkedIn verzamelen</li>
         </ul>
         <p className={p}>
-          Meer over onze{' '}
-          <Link href="/diensten/linkedin-advertising" className={ilink}>LinkedIn Advertising aanpak</Link>.
+          LinkedIn is via zowel organische content, directe outreach als betaalde ads inzetbaar voor B2B leadgeneratie.
         </p>
 
         <h2 style={{ fontFamily: 'var(--font-serif)' }} className={h2}>
@@ -790,14 +788,6 @@ export const articleContent: Record<string, ArticleContentData> = {
           <li>
             <Link href="/diensten/google-ads" className={ilink}>Google Ads</Link>
             {': zichtbaarheid op het moment dat klanten actief zoeken'}
-          </li>
-          <li>
-            <Link href="/diensten/emailmarketing" className={ilink}>E-mailmarketing</Link>
-            {': geautomatiseerde flows die omzet genereren op de achtergrond'}
-          </li>
-          <li>
-            <Link href="/diensten/linkedin-advertising" className={ilink}>LinkedIn Advertising</Link>
-            {': B2B leads via het meest effectieve zakelijke netwerk'}
           </li>
           <li>
             <Link href="/diensten/website-bouwen" className={ilink}>Website Bouwen</Link>

@@ -5,8 +5,6 @@ import Image from 'next/image';
 import {
   IconDeviceMobile,
   IconSearch,
-  IconMail,
-  IconBrandLinkedin,
   IconCode,
   IconBrain,
 } from '@tabler/icons-react';
@@ -42,34 +40,8 @@ const dienstenCards = [
     ],
   },
   {
-    slug: 'emailmarketing',
-    number: '03',
-    label: 'AUTOMATISERING & CAMPAGNES',
-    title: 'E-mailmarketing',
-    short: 'Bouw een relatie met je klanten en genereer omzet op autopilot via slimme e-mailflows.',
-    gradient: 'linear-gradient(135deg, #1a0d1f 0%, #1A1A1A 100%)',
-    Icon: IconMail,
-    stats: [
-      { value: '45%', label: 'Open rate' },
-      { value: '3x', label: 'Meer omzet' },
-    ],
-  },
-  {
-    slug: 'linkedin-advertising',
-    number: '04',
-    label: 'B2B LEAD GENERATIE',
-    title: 'LinkedIn Advertising',
-    short: 'Bereik beslissers en professionals via het meest effectieve B2B advertentieplatform.',
-    gradient: 'linear-gradient(135deg, #0d1526 0%, #1A1A1A 100%)',
-    Icon: IconBrandLinkedin,
-    stats: [
-      { value: 'Hoog', label: 'Leadkwaliteit' },
-      { value: '1M+', label: 'B2B bereik' },
-    ],
-  },
-  {
     slug: 'website-bouwen',
-    number: '05',
+    number: '03',
     label: 'CONVERSIEGERICHT & SNEL',
     title: 'Website Bouwen',
     short: 'Een snelle, professionele website die bezoekers omzet in klanten. Gebouwd om te scoren.',
@@ -82,7 +54,7 @@ const dienstenCards = [
   },
   {
     slug: 'ai-oplossingen',
-    number: '06',
+    number: '04',
     label: 'SLIMMER WERKEN, MEER TIJD',
     title: 'AI Oplossingen',
     short: 'Van bedrijfsapplicaties tot geautomatiseerde processen die je team tijd teruggeven.',
@@ -121,12 +93,12 @@ const bannerItems = [
 export const metadata: Metadata = {
   title: 'FunnelVision | Marketing Bureau voor het MKB',
   description:
-    'Meer klanten en omzet via Meta advertenties, Google Ads en e-mailmarketing. FunnelVision is jouw resultaatgerichte marketing partner.',
+    'Meer klanten en omzet via Meta advertenties, Google Ads en websites die converteren. FunnelVision is jouw resultaatgerichte marketing partner.',
   alternates: { canonical: 'https://funnelvisionagency.com' },
   openGraph: {
     url: 'https://funnelvisionagency.com',
     title: 'FunnelVision | Marketing Bureau voor het MKB',
-    description: 'Meer klanten en omzet via Meta advertenties, Google Ads en e-mailmarketing.',
+    description: 'Meer klanten en omzet via Meta advertenties, Google Ads en websites die converteren.',
   },
 };
 
@@ -136,7 +108,7 @@ const webPageSchema = {
   name: 'FunnelVision | Marketing Bureau voor het MKB',
   url: 'https://funnelvisionagency.com',
   description:
-    'Meer klanten en omzet via Meta advertenties, Google Ads en e-mailmarketing. FunnelVision is jouw resultaatgerichte marketing partner.',
+    'Meer klanten en omzet via Meta advertenties, Google Ads en websites die converteren. FunnelVision is jouw resultaatgerichte marketing partner.',
   speakable: {
     '@type': 'SpeakableSpecification',
     cssSelector: ['h1', '.speakable'],
@@ -152,7 +124,7 @@ const faqSchema = {
       name: 'Wat doet FunnelVision?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'FunnelVision is een marketing bureau dat kleine en middelgrote bedrijven helpt groeien via betaalde advertenties. We beheren Meta Advertenties (Facebook & Instagram), Google Ads, LinkedIn Advertising, e-mailmarketing en bouwen conversiegerichte websites.',
+        text: 'FunnelVision is een marketing bureau dat kleine en middelgrote bedrijven helpt groeien via betaalde advertenties en digitale marketing. We beheren Meta Advertenties (Facebook & Instagram), Google Ads, bouwen conversiegerichte websites en bieden AI Oplossingen.',
       },
     },
     {
@@ -196,7 +168,7 @@ export default function HomePage() {
 
       <p className="sr-only speakable">
         FunnelVision is een resultaatgericht marketing bureau voor het Nederlandse MKB, gespecialiseerd in
-        Meta advertenties, Google Ads, LinkedIn Advertising en e-mailmarketing. Wij helpen ondernemers meer
+        Meta advertenties, Google Ads, website bouwen en AI oplossingen. Wij helpen ondernemers meer
         klanten en omzet te genereren via betaalde advertenties en slimme digitale marketing. Actief sinds
         2019, werkzaam door heel Nederland.
       </p>
@@ -240,8 +212,8 @@ export default function HomePage() {
                 className="mb-10"
                 style={{ fontFamily: 'var(--font-sans)', fontSize: '15px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.6 }}
               >
-                FunnelVision helpt Nederlandse ondernemers groeien via resultaatgerichte Meta ads, Google Ads en
-                e-mailmarketing.
+                FunnelVision helpt Nederlandse ondernemers groeien via resultaatgerichte Meta ads, Google Ads,
+                website bouwen en AI oplossingen.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -565,7 +537,7 @@ export default function HomePage() {
             {[
               {
                 q: 'Wat doet FunnelVision?',
-                a: 'FunnelVision is een marketing bureau dat MKB-bedrijven helpt groeien via Meta advertenties, Google Ads, LinkedIn Advertising, e-mailmarketing en websitebouw.',
+                a: 'FunnelVision is een marketing bureau dat MKB-bedrijven helpt groeien via Meta advertenties, Google Ads, websitebouw en AI oplossingen.',
               },
               {
                 q: 'Hoeveel kost het samenwerken met FunnelVision?',

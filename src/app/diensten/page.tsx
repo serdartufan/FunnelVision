@@ -6,7 +6,7 @@ import { services } from '@/data/content';
 export const metadata: Metadata = {
   title: 'Onze Diensten | FunnelVision Marketing Bureau',
   description:
-    'Meta advertenties, Google Ads, e-mailmarketing en website bouwen. Ontdek hoe FunnelVision jouw bedrijf laat groeien.',
+    'Meta advertenties, Google Ads, website bouwen en AI oplossingen. Ontdek hoe FunnelVision jouw bedrijf laat groeien.',
 };
 
 export default function DienstenPage() {
