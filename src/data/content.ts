@@ -114,15 +114,6 @@ export const cases = [
 
 export const kennisbank = [
   {
-    id: 'ai-consultant-inhuren',
-    title: 'AI consultant inhuren: wat doet hij en wat kost het?',
-    slug: 'ai-consultant-inhuren',
-    category: 'AI',
-    excerpt: 'Een AI consultant helpt je bedrijf slimmer werken met kunstmatige intelligentie. Maar wat doet hij precies en wat mag je verwachten?',
-    readTime: '6 min',
-    publishDate: '2026-05-27',
-  },
-  {
     id: 'google-ads-bureau-vergelijken',
     title: 'Google Ads bureau vergelijken: waar moet je op letten?',
     slug: 'google-ads-bureau-vergelijken',

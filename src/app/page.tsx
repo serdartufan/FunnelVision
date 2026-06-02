@@ -140,7 +140,7 @@ export default function HomePage() {
 
       <p className="sr-only speakable">
         FunnelVision is een performance marketing bureau gespecialiseerd in Meta Ads en Google Ads.
-        Wij draaien advertenties met AI als co-piloot voor meer leads en meer omzet.
+        Wij draaien ads die geld opleveren. Meer leads, meer omzet, minder verspild budget.
         Actief sinds 2019, werkzaam door heel Nederland.
       </p>
 
@@ -171,11 +171,9 @@ export default function HomePage() {
               className="hero-h1 text-white font-bold mb-8"
               style={{ fontFamily: 'var(--font-serif)' }}
             >
-              Iedereen praat
+              Wij draaien ads
               <br />
-              over AI.
-              <br />
-              <em className="italic">Wij zetten het aan het werk.</em>
+              <em className="italic">die geld opleveren.</em>
             </h1>
 
             <div style={{ maxWidth: '560px' }}>
