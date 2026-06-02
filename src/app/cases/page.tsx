@@ -5,7 +5,7 @@ import { cases } from '@/data/content';
 export const metadata: Metadata = {
   title: 'Cases & Resultaten | FunnelVision Marketing Bureau',
   description:
-    'Bekijk de resultaten die FunnelVision heeft behaald voor Nederlandse ondernemers via Meta ads, Google Ads en website bouwen.',
+    'Bekijk de resultaten die FunnelVision heeft behaald voor Nederlandse ondernemers via Meta Ads en Google Ads. Harde cijfers, echte klanten.',
   alternates: { canonical: 'https://funnelvisionagency.com/cases' },
 };
 
@@ -118,7 +118,7 @@ export default function CasesPage() {
             href="/contact"
             className="inline-flex items-center gap-2 bg-[#F5A623] text-white font-bold px-8 py-4 rounded-full hover:bg-[#e09520] transition-colors"
           >
-            Gratis kennismaken
+            Vraag een gratis audit aan
           </Link>
         </div>
       </section>

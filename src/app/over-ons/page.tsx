@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 
 const milestones = [
   { year: '2019', event: 'Opgericht met focus op Meta Advertenties.' },
-  { year: '2022', event: 'Uitbreiding naar Google Ads en website bouwen.' },
+  { year: '2022', event: 'Uitbreiding naar Google Ads. AI intern in gebruik genomen als optimalisatietool.' },
   { year: '2023', event: 'Meer dan 3 miljoen euro advertentiebudget beheerd.' },
-  { year: '2026', event: 'AI oplossingen toegevoegd na 2 jaar intern gebruik.' },
+  { year: '2026', event: 'Meer dan €6M beheerd budget. AI volledig geïntegreerd als co-piloot in onze werkwijze.' },
 ];
 
 const breadcrumbSchema = {
@@ -32,14 +32,14 @@ const personSchema = {
     {
       '@type': 'Person',
       name: 'Serdar',
-      jobTitle: 'Copywriter & Meta Ads Specialist',
+      jobTitle: 'Meta Ads Specialist & Strateeg',
       worksFor: { '@type': 'Organization', name: 'FunnelVision' },
       sameAs: ['https://www.linkedin.com/in/serdartufan'],
     },
     {
       '@type': 'Person',
       name: 'Dogukan',
-      jobTitle: 'Google Ads & LinkedIn Ads Specialist',
+      jobTitle: 'Google Ads Specialist',
       worksFor: { '@type': 'Organization', name: 'FunnelVision' },
     },
   ],
@@ -144,8 +144,8 @@ export default function OverOnsPage() {
                   desc: 'Je krijgt maandelijks een helder rapport met alle cijfers. We leggen uit wat werkt, wat niet, en wat we gaan aanpassen.',
                 },
                 {
-                  title: 'Iedereen praat over AI. Wij zetten het aan het werk.',
-                  desc: 'Just Harry, ons eigen systeem dat met AI leads kwalificeert voor dienstverleners, is het bewijs. We zetten dezelfde systemen intern in die we voor klanten bouwen, zodat we weten wat werkt.',
+                  title: 'AI als co-piloot, niet als apart product.',
+                  desc: 'We gebruiken AI om sneller te optimaliseren en betere resultaten te behalen voor onze klanten. Geen apart product, gewoon onderdeel van hoe wij advertenties bouwen en beheren.',
                 },
               ].map((item) => (
                 <div key={item.title} className="flex gap-6 items-start">
@@ -211,7 +211,7 @@ export default function OverOnsPage() {
             href="/contact"
             className="inline-flex items-center gap-2 bg-[#F5A623] text-white font-bold px-8 py-4 rounded-full hover:bg-[#e09520] transition-colors"
           >
-            Gratis kennismaken
+            Vraag een gratis audit aan
           </Link>
         </div>
       </section>

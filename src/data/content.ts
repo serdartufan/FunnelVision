@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: 'FunnelVision',
-  tagline: 'marketing · sales · strategies',
+  tagline: 'performance marketing · meta ads · google ads',
   email: 'serdar@funnelvisionagency.com',
   domain: 'funnelvisionagency.com',
   instagram: 'https://instagram.com/funnelvision',
@@ -16,12 +16,12 @@ export const services = [
     subtitle: 'Facebook & Instagram Ads',
     short: 'De juiste mensen op het juiste moment bereiken op Facebook en Instagram. Zodat ze niet alleen zien wie jij bent, maar klant worden.',
     description:
-      'Wij bouwen Meta campagnes die jouw doelgroep niet alleen bereiken maar ook overtuigen. Van de eerste indruk tot de aanvraag of aankoop: we optimaliseren elke stap op conversie. Geen verspild budget, alleen resultaat dat je kunt meten.',
+      'Wij bouwen Meta campagnes die jouw doelgroep niet alleen bereiken maar ook overtuigen. Van de eerste indruk tot de aanvraag of aankoop: we optimaliseren elke stap op conversie. Wij gebruiken AI om sneller te testen, beter te targeten en meer uit je budget te halen. Geen verspild budget, alleen resultaat dat je kunt meten.',
     bullets: [
       'Campagnestrategie op maat',
       'Doelgroep research en targeting',
       'Creatie van advertentieteksten en visuals',
-      'A/B-testen en optimalisatie',
+      'A/B-testen en optimalisatie met AI-ondersteuning',
       'Maandelijkse rapportage',
     ],
     target: 'Webshops, lokale dienstverleners en coaches die meer leads of verkopen willen via social media.',
@@ -39,7 +39,7 @@ export const services = [
     subtitle: 'Search Engine Advertising',
     short: 'Als iemand zoekt naar wat jij aanbiedt, wil je bovenaan staan. Wij zorgen dat koopklare klanten bij jou uitkomen, niet bij de concurrent.',
     description:
-      'We bouwen Google Ads campagnes die jou zichtbaar maken op het moment dat het telt: als iemand actief zoekt naar jouw product of dienst. Van zoekwoordenstrategie tot conversiemeting, alles staat strak zodat elke euro advertentiebudget telt.',
+      'We bouwen Google Ads campagnes die jou zichtbaar maken op het moment dat het telt: als iemand actief zoekt naar jouw product of dienst. Wij gebruiken AI om sneller te testen, beter te targeten en meer uit je budget te halen. Van zoekwoordenstrategie tot conversiemeting, alles staat strak zodat elke euro advertentiebudget telt.',
     bullets: [
       'Zoekwoordenonderzoek en strategie',
       'Search, Shopping en Display campagnes',
@@ -54,53 +54,6 @@ export const services = [
     ],
     unsplash: 'https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=800&q=80',
     unsplashAlt: 'Google zoekresultaten op laptop',
-  },
-  {
-    slug: 'website-bouwen',
-    number: '03',
-    title: 'Website Bouwen',
-    subtitle: 'Conversiegericht, SEO en AEO',
-    short: 'Een website die bezoekers omzet in klanten. Zo snel, zo scherp en zo technisch sterk dat je gevonden wordt via Google én als antwoord in ChatGPT en Gemini.',
-    description:
-      'We bouwen websites die converteren én gevonden worden. Technisch ijzersterk op SEO, maar ook geoptimaliseerd voor AEO zodat je zichtbaar bent als antwoord in AI-zoekmachines zoals ChatGPT en Gemini. Want jouw klanten zoeken niet meer alleen via Google.',
-    bullets: [
-      'Strategie en wireframes',
-      'Custom design en ontwikkeling',
-      'SEO-technische optimalisatie',
-      'Contactformulieren en integraties',
-      'AEO-optimalisatie voor zichtbaarheid in ChatGPT, Gemini en Perplexity',
-    ],
-    target:
-      'Ondernemers die een nieuwe website of redesign nodig hebben die klanten oplevert en gevonden wordt via zowel Google als AI-zoekmachines.',
-    stats: [
-      { label: 'Gem. laadtijd', value: '<1s' },
-      { label: 'Core Web Vitals', value: '100/100' },
-    ],
-    unsplash: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80',
-    unsplashAlt: 'Website design op meerdere apparaten',
-  },
-  {
-    slug: 'ai-oplossingen',
-    number: '04',
-    title: 'AI Oplossingen',
-    subtitle: 'AI die werk uit handen neemt',
-    short: 'Iedereen praat over AI. Wij zetten het aan het werk. Systemen die leads kwalificeren, processen automatiseren en je laten opschalen zonder meer personeel.',
-    description:
-      'Na twee jaar dagelijks werken met AI weten we wat werkt en wat niet. We bouwen systemen die AI inzetten waar het telt: leads kwalificeren, processen automatiseren en koppelingen leggen tussen je systemen. Just Harry, ons eigen systeem dat met AI leads kwalificeert voor dienstverleners op justharry.co, is een voorbeeld. Wat jij nodig hebt hangt af van je bedrijf, dat bepalen we samen.',
-    bullets: [
-      'Maatwerk AI-systemen die leads kwalificeren en opvolgen',
-      'Automatisering van repetitieve processen',
-      'Slimme koppelingen tussen je bestaande systemen',
-      'AI-gestuurde klantcommunicatie via chat of e-mail',
-      'Van idee naar werkend systeem, inclusief implementatie',
-    ],
-    target: 'Bedrijven die willen opschalen zonder dat de werkdruk meegroeit. En dienstverleners die leads sneller en beter willen kwalificeren.',
-    stats: [
-      { label: 'Jaar intern ervaring', value: '2+' },
-      { label: 'Tijdsbesparing', value: 'Tot 40%' },
-    ],
-    unsplash: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80',
-    unsplashAlt: 'AI oplossingen voor bedrijven',
   },
 ];
 
@@ -157,44 +110,9 @@ export const cases = [
     unsplash: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
     unsplashAlt: 'Bouwproject in uitvoering',
   },
-  {
-    id: 5,
-    company: 'My Miracle',
-    branch: 'Website & CRO + SEO',
-    result: '+40%',
-    metric: 'Meer klanten via website',
-    description: 'Conversie- en SEO-geoptimaliseerde website die actief klanten genereert.',
-    service: 'Website & CRO + SEO',
-    imageType: 'screenshot' as const,
-    imageSrc: '/cases/mymiracle-screenshot.png',
-    unsplash: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80',
-    unsplashAlt: 'Online webshop op laptop',
-  },
-  {
-    id: 6,
-    company: 'Just Harry',
-    branch: 'AI Development',
-    result: '30 dagen',
-    metric: 'Van idee naar werkend product',
-    description: 'Van idee naar volledig werkend AI lead assistent in slechts 30 dagen.',
-    service: 'AI Development',
-    imageType: 'screenshot' as const,
-    imageSrc: '/cases/justharry-screenshot.png',
-    unsplash: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80',
-    unsplashAlt: 'Sfeervol restaurant interieur',
-  },
 ];
 
 export const kennisbank = [
-  {
-    id: 'website-laten-bouwen-kosten',
-    title: 'Website laten bouwen: wat kost het in 2026?',
-    slug: 'website-laten-bouwen-kosten',
-    category: 'Website',
-    excerpt: 'De kosten voor een nieuwe website lopen sterk uiteen. Wij zetten de factoren op een rij zodat je een weloverwogen keuze maakt.',
-    readTime: '5 min',
-    publishDate: '2026-05-27',
-  },
   {
     id: 'ai-consultant-inhuren',
     title: 'AI consultant inhuren: wat doet hij en wat kost het?',
@@ -222,33 +140,24 @@ export const kennisbank = [
     readTime: '7 min',
     publishDate: '2026-05-27',
   },
-  {
-    id: 'marketing-bureau-groningen',
-    title: 'Marketing bureau Groningen: wat kun je verwachten?',
-    slug: 'marketing-bureau-groningen',
-    category: 'Marketing',
-    excerpt: 'Op zoek naar een marketing bureau in Groningen? Wij leggen uit wat je mag verwachten en waar je op moet letten.',
-    readTime: '4 min',
-    publishDate: '2026-05-27',
-  },
 ];
 
 export const team = [
   {
     name: 'Serdar',
-    role: 'Copywriter & Meta Ads Specialist',
+    role: 'Meta Ads Specialist & Strateeg',
     description:
-      "Serdar is de drijvende kracht achter FunnelVision's Meta campagnes en salesfunnels. Met jarenlange ervaring in Facebook en Instagram advertenties weet hij precies hoe hij jouw doelgroep bereikt en converteert.",
-    expertise: ['Meta Ads', 'Salesfunnels', 'Strategie', 'Copywriting', 'AI Oplossingen'],
+      "Serdar is de drijvende kracht achter FunnelVision's Meta campagnes en salesfunnels. Met jarenlange ervaring in Facebook en Instagram advertenties weet hij precies hoe hij jouw doelgroep bereikt en converteert. Hij gebruikt AI als co-piloot om sneller te optimaliseren en betere resultaten te behalen.",
+    expertise: ['Meta Ads', 'Salesfunnels', 'Strategie', 'Copywriting'],
     unsplash: '/Serdar.jpeg',
     unsplashAlt: 'Serdar, FunnelVision',
   },
   {
     name: 'Dogukan',
-    role: 'Google Ads & LinkedIn Ads Specialist',
+    role: 'Google Ads Specialist',
     description:
       'Dogukan is de Google Ads expert van het duo. Hij heeft een scherp oog voor zoekintentie en weet precies hoe hij campagnes inricht die zowel klikken als conversies opleveren voor een minimale investering.',
-    expertise: ['Google Ads', 'LinkedIn Ads', 'SEA', 'Analytics', 'Conversiemeting', 'AI Oplossingen'],
+    expertise: ['Google Ads', 'SEA', 'Analytics', 'Conversiemeting'],
     unsplash: '/Dogukan.jpeg',
     unsplashAlt: 'Dogukan, FunnelVision',
   },

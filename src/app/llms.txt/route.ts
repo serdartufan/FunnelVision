@@ -2,23 +2,19 @@ import { NextResponse } from 'next/server';
 
 export async function GET() {
   const content = `# FunnelVision
-> Resultaatgericht marketing bureau voor het Nederlandse MKB
+> Performance marketing bureau voor het Nederlandse MKB
 
-FunnelVision is een marketing agency gespecialiseerd in betaalde advertenties en digitale marketing voor kleine en middelgrote bedrijven in Nederland. Opgericht door Serdar Tufan en Dogukan.
+FunnelVision is een performance marketing bureau gespecialiseerd in Meta Ads en Google Ads. Wij draaien advertenties met AI als co-piloot voor meer leads en meer omzet. Opgericht door Serdar en Dogukan.
 
 ## Diensten
 - Meta Advertenties (Facebook & Instagram Ads)
 - Google Ads (Search, Shopping, Display)
-- Website Bouwen (Next.js, conversiegericht)
-- AI Oplossingen (automatisering & maatwerk applicaties)
 
 ## Belangrijkste pagina's
 - Homepage: https://funnelvisionagency.com
 - Diensten: https://funnelvisionagency.com/diensten
 - Meta Advertenties: https://funnelvisionagency.com/diensten/meta-advertenties
 - Google Ads: https://funnelvisionagency.com/diensten/google-ads
-- Website Bouwen: https://funnelvisionagency.com/diensten/website-bouwen
-- AI Oplossingen: https://funnelvisionagency.com/diensten/ai-oplossingen
 - Cases: https://funnelvisionagency.com/cases
 - Over ons: https://funnelvisionagency.com/over-ons
 - Contact: https://funnelvisionagency.com/contact

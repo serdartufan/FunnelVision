@@ -54,8 +54,6 @@ export default function AlgemeneVoorwaardenPage() {
               {[
                 'Meta Advertenties (Facebook & Instagram)',
                 'Google Ads (Search Engine Advertising)',
-                'Website bouwen en optimalisatie',
-                'AI Oplossingen en automatisering',
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-gray-600">
                   <span className="w-2 h-2 rounded-full bg-[#F5A623] shrink-0" />

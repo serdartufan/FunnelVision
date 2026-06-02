@@ -10,18 +10,18 @@ const cormorant = Cormorant({ subsets: ['latin'], variable: '--font-serif', disp
 export const metadata: Metadata = {
   metadataBase: new URL('https://funnelvisionagency.com'),
   title: {
-    default: 'FunnelVision | Marketing Bureau voor het MKB',
+    default: 'FunnelVision — AI-Powered Meta Ads & Google Ads Bureau',
     template: '%s | FunnelVision',
   },
   description:
-    'FunnelVision bouwt marketing en AI-systemen die Nederlandse bedrijven meer leads en klanten opleveren. Groeipartner voor het MKB.',
+    'FunnelVision is een performance marketing bureau gespecialiseerd in Meta Ads en Google Ads. Wij draaien advertenties met AI als co-piloot voor meer leads en meer omzet.',
   keywords: [
-    'marketing bureau',
-    'meta advertenties',
+    'meta ads bureau',
     'google ads bureau',
+    'performance marketing bureau',
+    'meta advertenties bureau',
+    'leads genereren',
     'online marketing mkb',
-    'website bouwen',
-    'ai oplossingen marketing',
   ],
   authors: [{ name: 'Serdar', url: 'https://funnelvisionagency.com/over-ons' }],
   creator: 'FunnelVision',
@@ -36,13 +36,13 @@ export const metadata: Metadata = {
     locale: 'nl_NL',
     url: 'https://funnelvisionagency.com',
     siteName: 'FunnelVision',
-    title: 'FunnelVision | Marketing Bureau voor het MKB',
-    description: 'FunnelVision bouwt marketing en AI-systemen die Nederlandse bedrijven meer leads en klanten opleveren.',
+    title: 'FunnelVision — AI-Powered Meta Ads & Google Ads Bureau',
+    description: 'FunnelVision is een performance marketing bureau gespecialiseerd in Meta Ads en Google Ads. Wij draaien advertenties met AI als co-piloot voor meer leads en meer omzet.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FunnelVision | Marketing Bureau voor het MKB',
-    description: 'FunnelVision bouwt marketing en AI-systemen die Nederlandse bedrijven meer leads en klanten opleveren.',
+    title: 'FunnelVision — AI-Powered Meta Ads & Google Ads Bureau',
+    description: 'FunnelVision is een performance marketing bureau gespecialiseerd in Meta Ads en Google Ads. Wij draaien advertenties met AI als co-piloot voor meer leads en meer omzet.',
   },
   alternates: {
     canonical: 'https://funnelvisionagency.com',
@@ -70,7 +70,7 @@ const organizationSchema = {
   },
   areaServed: 'NL',
   description:
-    'FunnelVision bouwt de marketing en AI-systemen die Nederlandse bedrijven meer leads en klanten opleveren. Groeipartner voor het MKB, actief via Meta advertenties, Google Ads, websites en maatwerk AI-systemen.',
+    'FunnelVision is een performance marketing bureau gespecialiseerd in Meta Ads en Google Ads. Wij draaien advertenties met AI als co-piloot voor meer leads en meer omzet voor het Nederlandse MKB.',
   foundingDate: '2019',
   numberOfEmployees: { '@type': 'QuantitativeValue', value: 2 },
   sameAs: [
@@ -84,8 +84,6 @@ const organizationSchema = {
     itemListElement: [
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Meta Advertenties' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Google Ads' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Website Bouwen' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI Oplossingen' } },
     ],
   },
 };

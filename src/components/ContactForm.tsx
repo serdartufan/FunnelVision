@@ -138,8 +138,6 @@ export default function ContactForm() {
           <option value="">Selecteer een dienst</option>
           <option value="meta">Meta Advertenties (Facebook & Instagram)</option>
           <option value="google">Google Ads</option>
-          <option value="website">Website Bouwen</option>
-          <option value="ai">AI Oplossingen</option>
           <option value="anders">Ik weet het nog niet</option>
         </select>
       </div>

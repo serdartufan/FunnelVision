@@ -5,8 +5,6 @@ import Image from 'next/image';
 import {
   IconDeviceMobile,
   IconSearch,
-  IconCode,
-  IconBrain,
 } from '@tabler/icons-react';
 import { cases, team } from '@/data/content';
 import ScrollAnimation from '@/components/ScrollAnimation';
@@ -18,7 +16,7 @@ const dienstenCards = [
     number: '01',
     label: 'FACEBOOK & INSTAGRAM',
     title: 'Meta Advertenties',
-    short: 'De juiste mensen op het juiste moment bereiken. Zodat ze niet alleen zien wie jij bent, maar klant worden.',
+    short: 'De juiste mensen op het juiste moment bereiken. Wij gebruiken AI om sneller te testen, beter te targeten en meer leads en sales uit je budget te halen.',
     gradient: 'linear-gradient(135deg, #2a2010 0%, #1A1A1A 100%)',
     Icon: IconDeviceMobile,
     stats: [
@@ -31,38 +29,12 @@ const dienstenCards = [
     number: '02',
     label: 'SEARCH ENGINE ADVERTISING',
     title: 'Google Ads',
-    short: 'Als iemand zoekt naar wat jij aanbiedt, wil je bovenaan staan. Wij zorgen dat koopklare klanten bij jou uitkomen, niet bij de concurrent.',
+    short: 'Als iemand zoekt naar wat jij aanbiedt, wil je bovenaan staan. Wij gebruiken AI om sneller te testen, beter te targeten en koopklare klanten bij jou te laten uitkomen.',
     gradient: 'linear-gradient(135deg, #0d1f1a 0%, #1A1A1A 100%)',
     Icon: IconSearch,
     stats: [
       { value: '€0,80', label: 'Cost per lead' },
       { value: '+280%', label: 'Meer leads' },
-    ],
-  },
-  {
-    slug: 'website-bouwen',
-    number: '03',
-    label: 'CONVERSIEGERICHT & AEO-KLAAR',
-    title: 'Website Bouwen',
-    short: 'Een website die bezoekers omzet in klanten, gevonden wordt via Google én als antwoord verschijnt in ChatGPT en Gemini.',
-    gradient: 'linear-gradient(135deg, #0d1a0d 0%, #1A1A1A 100%)',
-    Icon: IconCode,
-    stats: [
-      { value: '100%', label: 'Conversiegericht' },
-      { value: 'Snel', label: '& SEO-proof' },
-    ],
-  },
-  {
-    slug: 'ai-oplossingen',
-    number: '04',
-    label: 'AI DIE WERKT',
-    title: 'AI Oplossingen',
-    short: 'Iedereen praat over AI. Wij zetten het aan het werk. Systemen die leads kwalificeren, processen automatiseren en je laten opschalen.',
-    gradient: 'linear-gradient(135deg, #1a1020 0%, #1A1A1A 100%)',
-    Icon: IconBrain,
-    stats: [
-      { value: '2+', label: 'Jaar ervaring' },
-      { value: 'Tot 40%', label: 'Tijdsbesparing' },
     ],
   },
 ];
@@ -72,7 +44,7 @@ const row1Logos = [
   'cagedfight.png',
   'dreamfit.png',
   'verpoorten-vitality.png',
-  'mymiracle.svg',
+  'organiclink.jpg',
 ];
 const row2Logos = [
   'devideovakvrouw.png',
@@ -91,24 +63,24 @@ const bannerItems = [
 ];
 
 export const metadata: Metadata = {
-  title: 'FunnelVision | Marketing Bureau voor het MKB',
+  title: 'FunnelVision — AI-Powered Meta Ads & Google Ads Bureau',
   description:
-    'FunnelVision bouwt de marketing en AI-systemen die jouw bedrijf meer leads en klanten opleveren. Groeipartner voor het Nederlandse MKB.',
+    'FunnelVision is een performance marketing bureau gespecialiseerd in Meta Ads en Google Ads. Wij draaien advertenties met AI als co-piloot voor meer leads en meer omzet.',
   alternates: { canonical: 'https://funnelvisionagency.com' },
   openGraph: {
     url: 'https://funnelvisionagency.com',
-    title: 'FunnelVision | Marketing Bureau voor het MKB',
-    description: 'FunnelVision bouwt de marketing en AI-systemen die jouw bedrijf meer leads en klanten opleveren.',
+    title: 'FunnelVision — AI-Powered Meta Ads & Google Ads Bureau',
+    description: 'FunnelVision is een performance marketing bureau gespecialiseerd in Meta Ads en Google Ads. Wij draaien advertenties met AI als co-piloot voor meer leads en meer omzet.',
   },
 };
 
 const webPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'FunnelVision | Marketing Bureau voor het MKB',
+  name: 'FunnelVision — AI-Powered Meta Ads & Google Ads Bureau',
   url: 'https://funnelvisionagency.com',
   description:
-    'FunnelVision bouwt de marketing en AI-systemen die jouw bedrijf meer leads en klanten opleveren. Groeipartner voor het Nederlandse MKB.',
+    'FunnelVision is een performance marketing bureau gespecialiseerd in Meta Ads en Google Ads. Wij draaien advertenties met AI als co-piloot voor meer leads en meer omzet.',
   speakable: {
     '@type': 'SpeakableSpecification',
     cssSelector: ['h1', '.speakable'],
@@ -124,7 +96,7 @@ const faqSchema = {
       name: 'Wat doet FunnelVision?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'FunnelVision is een groeipartner voor het MKB. We bouwen de marketing en AI-systemen die jouw bedrijf meer leads en klanten opleveren. Via Meta advertenties, Google Ads, conversiegerichte websites en maatwerk systemen met AI. Het verschil: wij zetten AI daadwerkelijk aan het werk, andere bureaus praten er alleen over.',
+        text: 'FunnelVision is een performance marketing bureau gespecialiseerd in Meta Ads en Google Ads. Wij draaien advertenties met AI als co-piloot voor meer leads en meer omzet. Leads en sales zijn ons enige doel.',
       },
     },
     {
@@ -167,9 +139,9 @@ export default function HomePage() {
       />
 
       <p className="sr-only speakable">
-        FunnelVision bouwt de marketing en AI-systemen die Nederlandse ondernemers meer leads en klanten opleveren.
-        Via Meta advertenties, Google Ads en conversiegerichte websites, met AI-systemen die wij daadwerkelijk
-        aan het werk zetten. Iedereen praat over AI. Wij zetten het aan het werk. Actief sinds 2019, werkzaam door heel Nederland.
+        FunnelVision is een performance marketing bureau gespecialiseerd in Meta Ads en Google Ads.
+        Wij draaien advertenties met AI als co-piloot voor meer leads en meer omzet.
+        Actief sinds 2019, werkzaam door heel Nederland.
       </p>
 
       {/* Hero */}
@@ -211,23 +183,23 @@ export default function HomePage() {
                 className="mb-10"
                 style={{ fontFamily: 'var(--font-sans)', fontSize: '15px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.6 }}
               >
-                Wij bouwen de marketing en AI-systemen die jouw bedrijf meer leads, klanten en tijd opleveren.
+                Performance marketing bureau voor Meta Ads en Google Ads. Wij gebruiken AI om sneller te testen, beter te targeten en meer leads en sales uit jouw budget te halen.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/cases"
+                  href="/contact"
                   className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#F5A623] text-[#1A1A1A] font-semibold transition-[background-color,transform] duration-200 hover:bg-[#F0A020] btn-scale"
                   style={{ fontFamily: 'var(--font-sans)' }}
                 >
-                  Bekijk onze cases →
+                  Vraag een gratis audit aan →
                 </Link>
                 <Link
-                  href="/contact"
+                  href="/cases"
                   className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full font-semibold btn-secondary"
                   style={{ fontFamily: 'var(--font-sans)' }}
                 >
-                  Gratis kennismaken
+                  Bekijk onze cases
                 </Link>
               </div>
             </div>
@@ -367,7 +339,7 @@ export default function HomePage() {
             </h2>
           </ScrollAnimation>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {cases.filter(c => ['The Fight Company', 'Verpoorten Vitality', 'Just Harry'].includes(c.company)).map((c, i) => (
+            {cases.filter(c => ['The Fight Company', 'Dreamfit', 'Verpoorten Vitality'].includes(c.company)).map((c, i) => (
               <ScrollAnimation key={c.id} delay={i * 100}>
                 <article className="group rounded-2xl overflow-hidden bg-[#F5F2EB] cursor-pointer transition-[transform,box-shadow] duration-300 ease-out hover:-translate-y-[6px] hover:scale-[1.02] hover:shadow-[0_12px_40px_rgba(245,166,35,0.20)]">
                   {c.imageType === 'logo' ? (
@@ -502,8 +474,8 @@ export default function HomePage() {
                 desc: 'Elke maand een helder rapport. Jij ziet precies wat je uitgeeft, wat het oplevert en wat we volgende maand doen.',
               },
               {
-                title: 'Iedereen praat over AI. Wij zetten het aan het werk.',
-                desc: 'Just Harry, ons eigen systeem dat met AI leads kwalificeert voor dienstverleners, is het levende bewijs. Wat we voor jou inzetten hangt af van wat jouw bedrijf nodig heeft.',
+                title: 'AI als co-piloot, niet als apart product.',
+                desc: 'Wij gebruiken AI intern om sneller te testen, beter te targeten en campagnes continu te optimaliseren. Geen aparte dienst, gewoon onderdeel van hoe wij werken.',
               },
             ].map((item, i) => (
               <ScrollAnimation key={item.title} delay={i * 100}>
@@ -535,7 +507,7 @@ export default function HomePage() {
             {[
               {
                 q: 'Wat doet FunnelVision?',
-                a: 'FunnelVision is een groeipartner voor het MKB. We bouwen de marketing en AI-systemen die jouw bedrijf meer leads en klanten opleveren. Via Meta advertenties, Google Ads, conversiegerichte websites en maatwerk systemen met AI. Het verschil met andere bureaus: wij zetten AI daadwerkelijk aan het werk, in plaats van er alleen over te praten.',
+                a: 'FunnelVision is een performance marketing bureau gespecialiseerd in Meta Ads en Google Ads. Wij draaien advertenties met AI als co-piloot voor meer leads en meer omzet. Leads en sales zijn ons enige doel.',
               },
               {
                 q: 'Hoeveel kost het samenwerken met FunnelVision?',
@@ -574,13 +546,13 @@ export default function HomePage() {
               Klaar om te <em className="italic text-[#F5A623]">groeien?</em>
             </h2>
             <p className="text-lg text-gray-400 mb-10 leading-relaxed">
-              Plan een vrijblijvend kennismakingsgesprek en ontdek wat FunnelVision voor jouw bedrijf kan betekenen.
+              Wij analyseren je huidige advertenties en laten zien wat er beter kan. Vrijblijvend, zonder verplichtingen.
             </p>
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 bg-[#F5A623] text-white font-bold text-lg px-10 py-5 rounded-full transition-[background-color,transform] duration-200 hover:bg-[#F0A020] btn-scale"
             >
-              Gratis kennismaken
+              Vraag een gratis audit aan
             </Link>
           </ScrollAnimation>
         </div>

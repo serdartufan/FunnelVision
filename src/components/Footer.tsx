@@ -57,8 +57,6 @@ export default function Footer() {
               {[
                 { href: '/diensten/meta-advertenties', label: 'Meta Advertenties' },
                 { href: '/diensten/google-ads', label: 'Google Ads' },
-                { href: '/diensten/website-bouwen', label: 'Website Bouwen' },
-                { href: '/diensten/ai-oplossingen', label: 'AI Oplossingen' },
               ].map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} className="text-sm text-gray-400 hover:text-[#F5A623] transition-colors">

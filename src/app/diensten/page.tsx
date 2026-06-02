@@ -6,7 +6,7 @@ import { services } from '@/data/content';
 export const metadata: Metadata = {
   title: 'Onze Diensten | FunnelVision Marketing Bureau',
   description:
-    'FunnelVision bouwt de marketing en AI-systemen die jouw bedrijf meer leads en klanten opleveren. Van Meta ads en Google Ads tot conversiegerichte websites en maatwerk AI-systemen.',
+    'FunnelVision is gespecialiseerd in Meta Ads en Google Ads. Wij gebruiken AI als co-piloot om sneller te testen, beter te targeten en meer leads en sales uit jouw budget te halen.',
 };
 
 export default function DienstenPage() {
@@ -23,7 +23,7 @@ export default function DienstenPage() {
             Wat we <em className="italic text-[#F5A623]">voor je doen.</em>
           </h1>
           <p className="mt-6 text-lg text-gray-400 max-w-xl leading-relaxed">
-            Van advertenties tot websites, alles gericht op één doel: meer omzet voor jouw bedrijf.
+            Meta Ads en Google Ads, met AI als co-piloot. Alles gericht op één doel: meer leads en meer omzet.
           </p>
         </div>
       </section>
@@ -82,13 +82,13 @@ export default function DienstenPage() {
             Niet zeker welke dienst <em className="italic text-[#F5A623]">bij jou past?</em>
           </h2>
           <p className="text-gray-400 mb-8">
-            Plan een gratis gesprek en we kijken samen wat het meeste resultaat oplevert voor jouw bedrijf.
+            Wij analyseren je huidige advertenties en laten zien wat er beter kan. Vrijblijvend, zonder verplichtingen.
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 bg-[#F5A623] text-white font-bold px-8 py-4 rounded-full hover:bg-[#e09520] transition-colors"
           >
-            Gratis kennismaken
+            Vraag een gratis audit aan
           </Link>
         </div>
       </section>

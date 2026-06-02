@@ -8,8 +8,6 @@ import { usePathname } from 'next/navigation';
 const serviceLinks = [
   { href: '/diensten/meta-advertenties', label: 'Meta Advertenties' },
   { href: '/diensten/google-ads', label: 'Google Ads' },
-  { href: '/diensten/website-bouwen', label: 'Website Bouwen' },
-  { href: '/diensten/ai-oplossingen', label: 'AI Oplossingen' },
 ];
 
 export default function Navbar() {
