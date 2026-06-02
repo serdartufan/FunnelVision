@@ -135,10 +135,12 @@ export default function ContactForm() {
           onChange={handleChange}
           className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-[#3D3D3D] focus:outline-none focus:border-[#F5A623] focus:shadow-[0_0_0_3px_rgba(245,166,35,0.15)] transition-[border-color,box-shadow] duration-200 bg-white"
         >
-          <option value="">Selecteer een dienst</option>
-          <option value="meta">Meta Advertenties (Facebook & Instagram)</option>
-          <option value="google">Google Ads</option>
-          <option value="anders">Ik weet het nog niet</option>
+          <option value="" disabled>Selecteer een doel</option>
+          <option value="leads">Meer leads genereren</option>
+          <option value="verkopen">Meer verkopen via mijn webshop</option>
+          <option value="afspraken">Meer afspraken of boekingen</option>
+          <option value="merkbekendheid">Merkbekendheid vergroten</option>
+          <option value="weet-niet">Ik weet het nog niet</option>
         </select>
       </div>
       {/* honeypot — verborgen voor echte gebruikers, aantrekkelijk voor bots */}
