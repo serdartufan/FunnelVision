@@ -175,3 +175,33 @@
 - Claude.ai chat voor planning en instructies
 - Claude Code terminal voor bouwen en deployen
 - git push → automatische deploy via Vercel
+
+## Sessie 02-06-2026
+
+### Positionering gewijzigd
+- FunnelVision is nu volledig gefocust op performance marketing: Meta Ads en Google Ads
+- AI is geen apart aangeboden dienst meer, maar een intern tool voor optimalisatie
+- Nieuwe hero headline: "Wij draaien ads die geld opleveren."
+
+### Verwijderd
+- Diensten: LinkedIn Advertising, E-mailmarketing, Website Bouwen, AI Oplossingen
+- Cases: My Miracle, Just Harry
+- Kennisbank artikelen: website-laten-bouwen-kosten, marketing-bureau-groningen, ai-consultant-inhuren
+- Kennisbank heeft nu 2 artikelen over en is uit de navbar gehaald
+
+### Aangepast
+- Hero headline: "Wij draaien ads die geld opleveren."
+- Subtext: performance marketing gericht, AI als co-piloot
+- Primaire CTA overal: "Vraag een gratis audit aan"
+- Serdar titel: "Meta Ads Specialist & Strateeg"
+- Dogukan titel: "Google Ads Specialist"
+- Over ons mijlpalen bijgewerkt
+- Meta title: "FunnelVision — AI-Powered Meta Ads & Google Ads Bureau"
+- Meta description, schema markup, llms.txt en llms-full.txt gesynchroniseerd
+- Contactformulier dropdown: van diensten naar klantdoelen (meer leads, meer verkopen, meer afspraken, merkbekendheid, weet niet)
+- Algemene voorwaarden: verwijderde diensten eruit
+
+### To do
+- [ ] Hero headline nog verder aanscherpen indien gewenst
+- [ ] Kennisbank uitbreiden met performance marketing artikelen (meta advertising kosten, google ads vs meta ads, wat is ROAS, leads genereren met meta ads, google ads voor mkb)
+- [ ] Nieuwe Stackwerk.nl website bouwen
