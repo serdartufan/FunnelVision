@@ -1,0 +1,48 @@
+{
+    "version": "0.1.20260525",
+    "status_code": 20000,
+    "status_message": "Ok.",
+    "time": "0.1621 sec.",
+    "cost": 0.01,
+    "tasks_count": 1,
+    "tasks_error": 0,
+    "tasks": [
+        {
+            "id": "05271314-1738-0398-0000-5497a23b15b5",
+            "status_code": 20000,
+            "status_message": "Ok.",
+            "time": "0.0899 sec.",
+            "cost": 0.01,
+            "result_count": 1,
+            "path": [
+                "v3",
+                "dataforseo_labs",
+                "google",
+                "keywords_for_site",
+                "live"
+            ],
+            "data": {
+                "api": "dataforseo_labs",
+                "function": "keywords_for_site",
+                "se_type": "google",
+                "target": "mymiracle.nl",
+                "language_code": "nl",
+                "location_code": 2528,
+                "limit": 1000
+            },
+            "result": [
+                {
+                    "se_type": "google",
+                    "target": "mymiracle.nl",
+                    "location_code": 2528,
+                    "language_code": "nl",
+                    "total_count": null,
+                    "items_count": 0,
+                    "offset": 0,
+                    "offset_token": null,
+                    "items": null
+                }
+            ]
+        }
+    ]
+}
