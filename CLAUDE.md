@@ -11,7 +11,7 @@
 - Adres: Maluslaan 48, 9741 LM Groningen (alleen voor KVK, bedrijf werkt volledig remote)
 - Domein: https://funnelvisionagency.com
 - GitHub: https://github.com/serdartufan/FunnelVision
-- Vercel: https://funnelvision-lake.vercel.app/
+- Server: Hetzner VPS (CX22) — IP 46.225.5.91 — /var/www/funnelvision — poort 3003
 
 ## Diensten
 - Meta Advertenties (Facebook & Instagram)
@@ -23,7 +23,7 @@
 
 ## Stack
 - Next.js 16.2.6 (App Router), TypeScript, Tailwind CSS v4
-- Vercel hosting
+- Hetzner VPS (CX22), Nginx + Cloudflare (Flexible SSL)
 - next/font voor Google Fonts (geen externe CDN)
 - next/image voor alle afbeeldingen (Unsplash via remotePatterns)
 - Resend voor e-mail via /api/contact
@@ -95,7 +95,7 @@
 - public/logos/ — 10 klantenlogos (PNG/SVG)
 - public/cases/ — screenshots mymiracle.nl en justharry.co
 
-## Environment variables (Vercel)
+## Environment variables (op server: /var/www/funnelvision/.env)
 - RESEND_API_KEY — vereist voor werkend contactformulier
 - INDEXNOW_SECRET — vereist voor /api/indexnow (waarde: 32c8e6e5d347c820f31ceac4a10ff3e1)
 
@@ -174,7 +174,7 @@
 ## Workflow
 - Claude.ai chat voor planning en instructies
 - Claude Code terminal voor bouwen en deployen
-- git push → automatische deploy via Vercel
+- git push naar main → GitHub Action → SSH naar Hetzner VPS → git pull + npm install + npm run build + pm2 restart
 
 ## Sessie 02-06-2026
 
