@@ -10,7 +10,7 @@ function escHtml(s: string) {
 
 const ipRequestMap = new Map<string, { count: number; resetAt: number }>();
 const RATE_LIMIT = 5;
-const RATE_WINDOW = 60 * 60 * 1000;
+const RATE_WINDOW = 10 * 60 * 1000;
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
