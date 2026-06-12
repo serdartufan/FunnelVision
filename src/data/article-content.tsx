@@ -13,7 +13,7 @@ const h3 = 'text-lg font-bold text-[#3D3D3D] mt-6 mb-2';
 const p = 'text-[#3D3D3D] leading-relaxed mb-4';
 const ul = 'list-disc pl-6 mb-6 space-y-2 text-[#3D3D3D] leading-relaxed';
 const ilink = 'text-[#F5A623] font-semibold underline underline-offset-2 hover:opacity-80 transition-opacity';
-const qa = 'bg-[#F5F2EB] rounded-xl p-6 border-l-4 border-[#F5A623] my-8';
+const qa = 'bg-[#F5F2EB] rounded-xl p-6 border border-[#3D3D3D]/10 my-8';
 
 export const articleContent: Record<string, ArticleContentData> = {
 

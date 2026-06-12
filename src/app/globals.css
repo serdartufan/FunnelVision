@@ -185,3 +185,40 @@ body {
     transform: none !important;
   }
 }
+
+/* ── Craft-basis (agency-foundation) ─────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid #F5A623;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+::selection {
+  background: #F5A623;
+  color: #1A1A1A;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

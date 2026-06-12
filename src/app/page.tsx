@@ -63,13 +63,13 @@ const bannerItems = [
 ];
 
 export const metadata: Metadata = {
-  title: 'FunnelVision — AI-Powered Meta Ads & Google Ads Bureau',
+  title: 'FunnelVision | AI-Powered Meta Ads & Google Ads Bureau',
   description:
     'FunnelVision is een performance marketing bureau gespecialiseerd in Meta Ads en Google Ads. Wij draaien advertenties met AI als co-piloot voor meer leads en meer omzet.',
   alternates: { canonical: 'https://funnelvisionagency.com' },
   openGraph: {
     url: 'https://funnelvisionagency.com',
-    title: 'FunnelVision — AI-Powered Meta Ads & Google Ads Bureau',
+    title: 'FunnelVision | AI-Powered Meta Ads & Google Ads Bureau',
     description: 'FunnelVision is een performance marketing bureau gespecialiseerd in Meta Ads en Google Ads. Wij draaien advertenties met AI als co-piloot voor meer leads en meer omzet.',
   },
 };
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
 const webPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'FunnelVision — AI-Powered Meta Ads & Google Ads Bureau',
+  name: 'FunnelVision | AI-Powered Meta Ads & Google Ads Bureau',
   url: 'https://funnelvisionagency.com',
   description:
     'FunnelVision is een performance marketing bureau gespecialiseerd in Meta Ads en Google Ads. Wij draaien advertenties met AI als co-piloot voor meer leads en meer omzet.',

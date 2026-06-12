@@ -5,12 +5,12 @@ import { kennisbank } from '@/data/content';
 export const metadata: Metadata = {
   title: 'Kennisbank | FunnelVision',
   description:
-    'Praktische kennis over marketing, websites en AI — geschreven vanuit de praktijk door de specialisten van FunnelVision.',
+    'Praktische kennis over marketing, websites en AI, geschreven vanuit de praktijk door de specialisten van FunnelVision.',
   alternates: { canonical: 'https://funnelvisionagency.com/kennisbank' },
   openGraph: {
     url: 'https://funnelvisionagency.com/kennisbank',
     title: 'Kennisbank | FunnelVision',
-    description: 'Praktische kennis over marketing, websites en AI — geschreven vanuit de praktijk.',
+    description: 'Praktische kennis over marketing, websites en AI, geschreven vanuit de praktijk.',
   },
 };
 
@@ -49,7 +49,7 @@ export default function KennisbankPage() {
             Praktische kennis. <em className="italic text-[#F5A623]">Vanuit de praktijk.</em>
           </h1>
           <p className="mt-6 text-lg text-gray-400 max-w-xl leading-relaxed">
-            Praktische kennis over marketing, websites en AI — geschreven vanuit de praktijk.
+            Praktische kennis over marketing, websites en AI, geschreven vanuit de praktijk.
           </p>
         </div>
       </section>

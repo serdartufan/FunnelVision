@@ -10,7 +10,7 @@ const cormorant = Cormorant({ subsets: ['latin'], variable: '--font-serif', disp
 export const metadata: Metadata = {
   metadataBase: new URL('https://funnelvisionagency.com'),
   title: {
-    default: 'FunnelVision — AI-Powered Meta Ads & Google Ads Bureau',
+    default: 'FunnelVision | AI-Powered Meta Ads & Google Ads Bureau',
     template: '%s | FunnelVision',
   },
   description:
@@ -36,12 +36,12 @@ export const metadata: Metadata = {
     locale: 'nl_NL',
     url: 'https://funnelvisionagency.com',
     siteName: 'FunnelVision',
-    title: 'FunnelVision — AI-Powered Meta Ads & Google Ads Bureau',
+    title: 'FunnelVision | AI-Powered Meta Ads & Google Ads Bureau',
     description: 'FunnelVision is een performance marketing bureau gespecialiseerd in Meta Ads en Google Ads. Wij draaien advertenties met AI als co-piloot voor meer leads en meer omzet.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FunnelVision — AI-Powered Meta Ads & Google Ads Bureau',
+    title: 'FunnelVision | AI-Powered Meta Ads & Google Ads Bureau',
     description: 'FunnelVision is een performance marketing bureau gespecialiseerd in Meta Ads en Google Ads. Wij draaien advertenties met AI als co-piloot voor meer leads en meer omzet.',
   },
   alternates: {

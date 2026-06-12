@@ -35,6 +35,7 @@
 - Stijl: grote bold typografie, premium, veel witruimte, strakke kaarten
 - Taal: Nederlands
 - Primaire CTA overal: "Vraag een gratis audit aan"
+- Craft-basis (retrofit 2026-06-12): focus-visible (gouden outline), `::selection`, `text-wrap: balance`, `prefers-reduced-motion` fallback in globals.css; titel-separator is `|` (geen em-dashes in copy); QA-callouts met volledige subtiele border (geen border-left boxen)
 
 ## Pagina's (live)
 - / (homepage) — hero ("Wij draaien ads die geld opleveren."), stats, diensten, cases preview (3 cases), team, waarom, FAQ, CTA
