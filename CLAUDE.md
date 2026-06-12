@@ -9,7 +9,7 @@
 - Eigenaren: Serdar (Meta Ads Specialist & Strateeg) en Dogukan (Google Ads Specialist)
 - Email: serdar@funnelvisionagency.com
 - Adres: Maluslaan 48, 9741 LM Groningen (alleen voor KVK, bedrijf werkt volledig remote)
-- Domein: https://funnelvisionagency.com
+- Domein: https://funnelvisionagency.com (funnelvisionstrategies.com-root 301-redirect hierheen via nginx; alleen /sharm wordt daar geserveerd)
 - GitHub: https://github.com/serdartufan/FunnelVision
 - Server: Hetzner VPS (CX22) — IP 46.225.5.91 — /var/www/funnelvision — poort 3003
 
