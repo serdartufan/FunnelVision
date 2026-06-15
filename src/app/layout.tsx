@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Plus_Jakarta_Sans, Cormorant } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
@@ -101,6 +102,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="flex min-h-screen flex-col">
+        <Script
+          src="https://analytics.stackwerk.nl/script.js"
+          data-website-id="65dda1db-0f32-4dd5-a6ab-96e6aa7911b3"
+          strategy="afterInteractive"
+        />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
