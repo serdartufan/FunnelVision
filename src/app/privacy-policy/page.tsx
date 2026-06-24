@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
           >
             <em className="italic text-[#F5A623]">Privacybeleid</em>
           </h1>
-          <p className="mt-6 text-gray-400">Laatst bijgewerkt: mei 2026</p>
+          <p className="mt-6 text-gray-400">Laatst bijgewerkt: juni 2026</p>
         </div>
       </section>
 
@@ -101,7 +101,47 @@ export default function PrivacyPolicyPage() {
 
           <div>
             <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
-              6. Cookies en tracking
+              6. Gebruik van Meta Ads API — intern advertentiebeheer
+            </h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              FunnelVision maakt gebruik van een intern dashboard (adhub) voor het beheer van
+              Meta-advertentiecampagnes van klanten. Via de officiële Meta Marketing API worden
+              daarvoor de volgende gegevens verwerkt:
+            </p>
+            <ul className="space-y-2">
+              {[
+                'Campagnedata, advertentieprestaties en budgetten van klantaccounts',
+                'Advertentiecreatives (afbeeldingen, teksten, targetinginstellingen)',
+                'Inzichtdata zoals bereik, vertoningen, klikken en resultaten',
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-3 text-gray-600">
+                  <span className="w-2 h-2 rounded-full bg-[#F5A623] shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p className="text-gray-600 leading-relaxed mt-4">
+              <strong>Doel:</strong> Uitsluitend intern bureaugebruik voor het beheren en optimaliseren
+              van Meta-advertentiecampagnes namens klanten. De data wordt niet gedeeld met derden,
+              niet gebruikt voor andere doeleinden en niet verkocht.
+            </p>
+            <p className="text-gray-600 leading-relaxed mt-4">
+              <strong>Grondslag:</strong> Uitvoering van de overeenkomst met de klant (art. 6.1.b AVG).
+            </p>
+            <p className="text-gray-600 leading-relaxed mt-4">
+              <strong>Opslag:</strong> Data wordt opgeslagen op een beveiligde eigen server binnen de
+              Europese Unie en is uitsluitend toegankelijk voor medewerkers van FunnelVision met de
+              benodigde rechten.
+            </p>
+            <p className="text-gray-600 leading-relaxed mt-4">
+              <strong>Bewaartermijn:</strong> Advertentiedata wordt bewaard zolang de klantrelatie loopt
+              en maximaal 1 jaar na beëindiging daarvan.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
+              7. Cookies en tracking
             </h2>
             <p className="text-gray-600 leading-relaxed">
               Onze website maakt geen gebruik van tracking cookies of analytische cookies van derden.
@@ -111,7 +151,7 @@ export default function PrivacyPolicyPage() {
 
           <div>
             <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
-              7. Jouw rechten
+              8. Jouw rechten
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
               Op grond van de AVG heb je de volgende rechten:
@@ -142,7 +182,7 @@ export default function PrivacyPolicyPage() {
 
           <div>
             <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
-              8. Klacht indienen
+              9. Klacht indienen
             </h2>
             <p className="text-gray-600 leading-relaxed">
               Ben je niet tevreden met hoe wij omgaan met jouw persoonsgegevens? Dan heb je het recht om een
@@ -156,7 +196,7 @@ export default function PrivacyPolicyPage() {
 
           <div>
             <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4" style={{ fontFamily: 'var(--font-serif)' }}>
-              9. Wijzigingen
+              10. Wijzigingen
             </h2>
             <p className="text-gray-600 leading-relaxed">
               FunnelVision behoudt zich het recht voor dit privacybeleid te wijzigen. De meest actuele versie
